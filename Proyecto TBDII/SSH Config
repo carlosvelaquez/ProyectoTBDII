@@ -1,0 +1,9 @@
+ssh [usuario]@104.248.77.68
+
+ssh varela@04.248.77.68
+
+usuarios:
+varela
+leo
+
+pass: 12345
