@@ -7,8 +7,8 @@
 class Instancia {
 private:
   bool alterado;
-  bool nuevo;
   string uid;
+  string tablePath;
 
 public:
   //Instancia nueva, se asigna el UID como vacío para que se genere al pushear
@@ -18,6 +18,10 @@ public:
   Instancia(string);
 
   string getUID();
+  void setUID(string);
+  
+  string getTablePath();
+  bool isAlterado();
   virtual string toJSON();
 
   ~Instancia();

@@ -29,7 +29,41 @@ Database::Database(){
 
 bool Database::actualizarInstancia(Instancia* i){
   if (i->getUID() == "") {
-    //QUERY DE INSERCION
+    CassUuidGen* uuid_gen = cass_uuid_gen_new();
+    CassUuid uuid;
+    cass_uuid_gen_random(uuid_gen, &uuid);
+
+    /* Get string representation of the UUID */
+    char uuid_str[CASS_UUID_STRING_LENGTH];
+    cass_uuid_string(uuid, uuid_str);
+
+    string nUID(uuid_str);
+
+    cass_uuid_gen_free(uuid_gen);
+
+    i->setUID();
+
+    string query;
+    query += "INSERT INTO ";
+    query += i->getTablePath();
+    query += " ";
+    query += i->getAttributes();
+    query += " JSON \'";
+    query += i->toJSON();
+    query += "\';";
+
+    qDebug() << "QI: " << query.c_str();
+
+    CassStatement* statement = cass_statement_new(query.c_str(), 0);
+    CassFuture* query_future = cass_session_execute(session, statement);
+
+    cass_statement_free(statement);
+
+    /* This will block until the query has finished */
+    CassError rc = cass_future_error_code(query_future);
+
+    qDebug() << QString("Resultado: ") + QString(cass_error_desc(rc));
+    cass_future_free(query_future);
   }else{
     //QUERY DE ACTUALIZACION
   }
@@ -72,15 +106,16 @@ QString Database::version(){
   return ver;
 }
 
-bool pull(){
-  //Jalar de la db
-  for (size_t i = 0; i < count; i++) {
-    /* code */
-  }
+bool Database::pull(){
+
 }
 
-bool push(){
-  //Empujar a la db
+bool Database::push(){
+  for (for i = 0; i < instancias.size(); i++) {
+    if (instancias[i]->isAlterado()) {
+      actualizarInstancia(instancias[i]);
+    }
+  }
 }
 
 Database::~Database(){

@@ -5,7 +5,21 @@
 #include <QString>
 #include <QDebug>
 #include <vector>
+
 #include "Instancia.h"
+#include "Empleado.h"
+#include "Profesor.h"
+#include "Clase.h"
+#include "ClaseTeorica.h"
+#include "ClasePractica.h"
+#include "PruebaTeorica.h"
+#include "PruebaPractica.h"
+#include "Alumno.h"
+#include "Pago.h"
+#include "Vehiculo.h"
+#include "Categoria.h"
+#include "Tarifa.h"
+#include "TipoLicencia.h"
 
 class Database {
 private:
@@ -18,6 +32,8 @@ private:
   bool actualizarInstancia(Instancia*);
 
   //Listas de Instancias
+  vector<Instancia> instancias;
+
   vector<Empleado> empleados;
   vector<Profesor> profesores;
   vector<Clase> clases;
@@ -38,6 +54,7 @@ public:
 
   bool pull();
   bool push();
+
 
   ~Database();
 };
