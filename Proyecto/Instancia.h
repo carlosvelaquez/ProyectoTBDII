@@ -19,7 +19,7 @@ public:
 
   string getUID();
   void setUID(string);
-  
+
   string getTablePath();
   bool isAlterado();
   virtual string toJSON();

@@ -18,7 +18,6 @@
 #include "Pago.h"
 #include "Vehiculo.h"
 #include "Categoria.h"
-#include "Tarifa.h"
 #include "TipoLicencia.h"
 
 class Database {
@@ -45,7 +44,6 @@ private:
   vector<Pago> pagos;
   vector<Vehiculo> vehiculos;
   vector<Categoria> categorias;
-  vector<Tarifa> tarifas;
   vector<TipoLicencia> tiposLicencia;
 
 public:

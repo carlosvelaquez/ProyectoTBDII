@@ -5,6 +5,10 @@
 
 class Alumno : public Instancia{
 
+private:
+
+public:
+  Alumno();
 
 };
 
