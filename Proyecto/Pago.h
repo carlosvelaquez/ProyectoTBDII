@@ -5,6 +5,9 @@
 
 class Pago : public Instancia{
 
+  Private:
+    
+  Public:
 
 };
 

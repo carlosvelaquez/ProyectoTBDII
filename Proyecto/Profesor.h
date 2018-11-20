@@ -2,19 +2,18 @@
 #define PROFESOR_H
 
 #include "Instancia.h"
+#include <string>
 
 class Profesor : public Instancia{
 
   private:
     string uidEmpleado;
-    // Categoria* categoria;
+    int categoria;
 
   public:
 
-    Profesor();
-    //Profesor existente con UID
-
-    //Profesor(string, Categoria*);
+    Profesor(string, string, int);
+    Profesor(string, int);
 };
 
 #endif
