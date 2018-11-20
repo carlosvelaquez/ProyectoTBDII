@@ -10,6 +10,9 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Proyecto
 TEMPLATE = app
+INCLUDEPATH += include
+LIBS += -L"lib" -lcassandra
+CONFIG += console
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -30,7 +33,8 @@ SOURCES += \
     adminempleado.cpp \
     adminprofesor.cpp \
     adminlicencia.cpp \
-    adminclase.cpp
+    adminclase.cpp \
+    Database.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -38,7 +42,8 @@ HEADERS += \
     adminempleado.h \
     adminprofesor.h \
     adminlicencia.h \
-    adminclase.h
+    adminclase.h \
+    Database.h
 
 FORMS += \
         mainwindow.ui \

@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\adminalumno.o
+./debug\adminempleado.o
+./debug\adminprofesor.o
+./debug\adminlicencia.o
+./debug\adminclase.o
+./debug\Database.o
+./debug\moc_mainwindow.o
+./debug\moc_adminalumno.o
+./debug\moc_adminempleado.o
+./debug\moc_adminprofesor.o
+./debug\moc_adminlicencia.o
+./debug\moc_adminclase.o
+);

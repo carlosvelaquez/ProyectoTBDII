@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\adminalumno.o
+./release\adminempleado.o
+./release\adminprofesor.o
+./release\adminlicencia.o
+./release\adminclase.o
+./release\Database.o
+./release\moc_mainwindow.o
+./release\moc_adminalumno.o
+./release\moc_adminempleado.o
+./release\moc_adminprofesor.o
+./release\moc_adminlicencia.o
+./release\moc_adminclase.o
+);
