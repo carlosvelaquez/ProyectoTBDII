@@ -6,6 +6,7 @@ private:
   string nombres;
   string apellidos;
   float salario;
+  string tablePath = "autoescuela.empleados";
 
 public:
   //Empleado existente con UID
