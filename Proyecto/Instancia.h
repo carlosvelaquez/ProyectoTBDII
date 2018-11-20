@@ -22,6 +22,8 @@ public:
 
   string getTablePath();
   bool isAlterado();
+
+  virtual string fromJSON();
   virtual string toJSON();
 
   ~Instancia();
