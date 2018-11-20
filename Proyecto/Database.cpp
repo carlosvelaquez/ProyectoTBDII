@@ -27,6 +27,14 @@ Database::Database(){
   }
 }
 
+bool Database::actualizarInstancia(Instancia* i){
+  if (i->getUID() == "") {
+    //QUERY DE INSERCION
+  }else{
+    //QUERY DE ACTUALIZACION
+  }
+}
+
 QString Database::version(){
   /* Build statement and execute query */
   const char* query = "SELECT release_version FROM system.local";
@@ -62,6 +70,17 @@ QString Database::version(){
   cass_future_free(result_future);
 
   return ver;
+}
+
+bool pull(){
+  //Jalar de la db
+  for (size_t i = 0; i < count; i++) {
+    /* code */
+  }
+}
+
+bool push(){
+  //Empujar a la db
 }
 
 Database::~Database(){
