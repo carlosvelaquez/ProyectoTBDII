@@ -33,20 +33,22 @@ private:
   bool actualizarInstancia(Instancia*);
 
   //Listas de Instancias
-  vector<Instancia> instancias;
+  vector<Instancia*> instancias;
 
-  vector<Empleado> empleados;
-  vector<Profesor> profesores;
-  vector<Clase> clases;
-  vector<ClaseTeorica> clasesTeoricas;
-  vector<ClasePractica> clasesPracticas;
-  vector<PruebaTeorica> pruebasTeoricas;
-  vector<PruebaPractica> pruebasPracticas;
-  vector<Alumno> alumnos;
-  vector<Pago> pagos;
-  vector<Vehiculo> vehiculos;
-  vector<Categoria> categorias;
-  vector<TipoLicencia> tiposLicencia;
+  vector<Empleado*> empleados;
+  vector<Profesor*> profesores;
+  vector<Clase*> clases;
+  vector<ClaseTeorica*> clasesTeoricas;
+  vector<ClasePractica*> clasesPracticas;
+  vector<PruebaTeorica*> pruebasTeoricas;
+  vector<PruebaPractica*> pruebasPracticas;
+  vector<Alumno*> alumnos;
+  vector<Pago*> pagos;
+  vector<Vehiculo*> vehiculos;
+  vector<Categoria*> categorias;
+  vector<TipoLicencia*> tiposLicencia;
+
+  bool runQuery();
 
 public:
   Database();

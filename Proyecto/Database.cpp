@@ -27,6 +27,21 @@ Database::Database(){
   }
 }
 
+bool Database::runQuery(string query){
+  CassStatement* statement = cass_statement_new(query.c_str(), 0);
+  CassFuture* query_future = cass_session_execute(session, statement);
+
+  cass_statement_free(statement);
+
+  /* This will block until the query has finished */
+  CassError rc = cass_future_error_code(query_future);
+
+  qDebug() << QString("Corriendo Query: ") + QString(query.c_str());
+  qDebug() << QString("Resultado: ") + QString(cass_error_desc(rc));
+  cass_future_free(query_future);
+  return true;
+}
+
 bool Database::actualizarInstancia(Instancia* i){
   if (i->getUID() == "") {
     CassUuidGen* uuid_gen = cass_uuid_gen_new();
@@ -46,26 +61,36 @@ bool Database::actualizarInstancia(Instancia* i){
     string query;
     query += "INSERT INTO ";
     query += i->getTablePath();
-    query += " ";
-    query += i->getAttributes();
     query += " JSON \'";
     query += i->toJSON();
     query += "\';";
 
-    qDebug() << "QI: " << query.c_str();
+    runQuery(query);
 
-    CassStatement* statement = cass_statement_new(query.c_str(), 0);
-    CassFuture* query_future = cass_session_execute(session, statement);
+  }else if(i->isBorrado()){
+    //QUERY DE BORRADO POR UID
+    //DELETE FROM cycling.cyclist_name WHERE id=e7ae5cf3-d358-4d99-b900-85902fda9bb0 IF EXISTS;
 
-    cass_statement_free(statement);
-
-    /* This will block until the query has finished */
-    CassError rc = cass_future_error_code(query_future);
-
-    qDebug() << QString("Resultado: ") + QString(cass_error_desc(rc));
-    cass_future_free(query_future);
+    string query;
+    query += "DELETE FROM ";
+    query += i->getTablePath();
+    query += " WHERE id=";
+    query += i->getUID();
+    query += " IF EXISTS;";
+    
+    runQuery(query);
   }else{
     //QUERY DE ACTUALIZACION
+    //INSERT INTO table_name JSON '{"column1": "value1", "column2": "value2"}' DEFAULT UNSET;
+
+    string query;
+    query += "INSERT INTO ";
+    query += i->getTablePath();
+    query += " JSON \'";
+    query += i->toJSON();
+    query += "\' DEFAULT UNSET;";
+
+    runQuery(query);
   }
 }
 
@@ -107,7 +132,7 @@ QString Database::version(){
 }
 
 bool Database::pull(){
-  
+
 }
 
 bool Database::push(){
