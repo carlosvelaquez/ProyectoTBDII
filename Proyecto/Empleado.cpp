@@ -19,6 +19,36 @@ Empleado::Empleado(string nNombres, string nApellidos, float nSalario) : Instanc
   salario = nSalario;
 }
 
+string Empleado::getNombres(){
+  return nombres;
+}
+
+string Empleado::getApellidos(){
+  return apellidos;
+}
+
+float Empleado::getSalario(){
+  return salario;
+}
+
+
+//EN TODOS ESTOS SE PONE ALTERADO = TRUE
+void Empleado::setNombres(string nNombres){
+  alterado = true;
+  nombres = nNombres;
+}
+
+void Empleado::setApellidos(string nApellidos){
+  alterado = true;
+  apellidos = nApellidos;
+}
+
+void Empleado::setSalario(float nSalario){
+  alterado = true;
+  salario = nSalario;
+}
+
+
 bool Empleado::fromJSON(string cadena){
   QString json = QString::fromStdString(cadena); // String que contiene el JSON
   QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
