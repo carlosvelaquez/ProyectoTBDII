@@ -1,6 +1,11 @@
 #ifndef EMPLEADO_H
 #define EMPLEADO_H
 
+#include "Instancia.h"
+#include <string>
+
+using namespace std;
+
 class Empleado : public Instancia{
 private:
   string nombres;

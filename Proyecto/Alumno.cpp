@@ -19,5 +19,5 @@ bool Alumno::fromJSON(string cadena){
   return true;
 }
 string Alumno::toJSON(){
-
+  return "";
 }

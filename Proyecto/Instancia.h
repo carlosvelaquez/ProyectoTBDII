@@ -1,7 +1,6 @@
 #ifndef INSTANCIA_H
 #define INSTANCIA_H
 
-#include "Database.h"
 #include <string>
 
 using namespace std;

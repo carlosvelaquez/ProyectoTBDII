@@ -202,32 +202,32 @@ compiler_moc_header_clean:
 release/moc_adminalumno.cpp: adminalumno.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminalumno.h -o release\moc_adminalumno.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminalumno.h -o release\moc_adminalumno.cpp
 
 release/moc_adminclase.cpp: adminclase.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminclase.h -o release\moc_adminclase.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminclase.h -o release\moc_adminclase.cpp
 
 release/moc_adminempleado.cpp: adminempleado.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminempleado.h -o release\moc_adminempleado.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminempleado.h -o release\moc_adminempleado.cpp
 
 release/moc_adminlicencia.cpp: adminlicencia.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminlicencia.h -o release\moc_adminlicencia.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminlicencia.h -o release\moc_adminlicencia.cpp
 
 release/moc_adminprofesor.cpp: adminprofesor.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminprofesor.h -o release\moc_adminprofesor.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminprofesor.h -o release\moc_adminprofesor.cpp
 
 release/moc_mainwindow.cpp: mainwindow.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o release\moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -889,11 +889,10 @@ release/adminprofesor.o: adminprofesor.cpp adminprofesor.h \
 
 release/Alumno.o: Alumno.cpp Alumno.h \
 		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
@@ -915,306 +914,35 @@ release/Alumno.o: Alumno.cpp Alumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		PruebaPractica.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Alumno.o Alumno.cpp
 
 release/CapacitadoEn.o: CapacitadoEn.cpp CapacitadoEn.h \
-		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\CapacitadoEn.o CapacitadoEn.cpp
 
 release/Categoria.o: Categoria.cpp Categoria.h \
-		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		TipoLicencia.h
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Categoria.o Categoria.cpp
 
 release/Clase.o: Clase.cpp Clase.h \
-		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Clase.o Clase.cpp
 
 release/ClasePractica.o: ClasePractica.cpp ClasePractica.h
@@ -1305,89 +1033,11 @@ release/Database.o: Database.cpp Database.h \
 		TipoLicencia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Database.o Database.cpp
 
-release/Empleado.o: Empleado.cpp Empleado.h
+release/Empleado.o: Empleado.cpp Empleado.h \
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Empleado.o Empleado.cpp
 
-release/Instancia.o: Instancia.cpp Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h
+release/Instancia.o: Instancia.cpp Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Instancia.o Instancia.cpp
 
 release/main.o: main.cpp mainwindow.h \
@@ -1612,495 +1262,27 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o mainwindow.cpp
 
 release/Pago.o: Pago.cpp Pago.h \
-		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Pago.o Pago.cpp
 
 release/Profesor.o: Profesor.cpp Profesor.h \
-		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Profesor.o Profesor.cpp
 
 release/PruebaPractica.o: PruebaPractica.cpp PruebaPractica.h \
-		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\PruebaPractica.o PruebaPractica.cpp
 
 release/PruebaTeorica.o: PruebaTeorica.cpp PruebaTeorica.h \
-		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\PruebaTeorica.o PruebaTeorica.cpp
 
 release/TipoLicencia.o: TipoLicencia.cpp TipoLicencia.h \
-		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\TipoLicencia.o TipoLicencia.cpp
 
 release/Vehiculo.o: Vehiculo.cpp Vehiculo.h \
-		Instancia.h \
-		Database.h \
-		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Empleado.h \
-		Profesor.h \
-		Clase.h \
-		ClaseTeorica.h \
-		ClasePractica.h \
-		PruebaTeorica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Categoria.h \
-		TipoLicencia.h
+		Instancia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Vehiculo.o Vehiculo.cpp
 
 release/moc_adminalumno.o: release/moc_adminalumno.cpp 

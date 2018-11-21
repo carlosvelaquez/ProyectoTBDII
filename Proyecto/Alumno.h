@@ -2,6 +2,9 @@
 #define ALUMNO_H
 
 #include "Instancia.h"
+#include <string>
+
+using namespace std;
 
 class Alumno : public Instancia{
 
@@ -12,10 +15,11 @@ private:
 
 public:
 
-  bool fromJSON(string);
-  string toJSON();
   Alumno(string, string);
   Alumno(string);
+  bool fromJSON(string);
+  string toJSON();
+
 };
 
 #endif
