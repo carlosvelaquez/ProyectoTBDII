@@ -7,6 +7,7 @@
 class Vehiculo : public Instancia{
 
 private:
+  
   string uidCategoria;
 
 public:

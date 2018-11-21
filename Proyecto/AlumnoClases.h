@@ -5,7 +5,6 @@
 
 class AlumnoClases : public Instancia{
 
-
 };
 
 #endif

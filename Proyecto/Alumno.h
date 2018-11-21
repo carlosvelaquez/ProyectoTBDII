@@ -7,9 +7,15 @@ class Alumno : public Instancia{
 
 private:
 
-public:
-  Alumno();
+  string nombres;
+  string apellidos;
 
+public:
+
+  bool fromJSON(string);
+  string toJSON();
+  Vehiculo(string, string);
+  Vehiculo(string);
 };
 
 #endif
