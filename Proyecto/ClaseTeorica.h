@@ -2,7 +2,7 @@
 #define CLASETEORICA_H
 
 #include "Instancia.h"
-##include <string>
+#include <string>
 
 class ClaseTeorica : public Instancia{
   private:

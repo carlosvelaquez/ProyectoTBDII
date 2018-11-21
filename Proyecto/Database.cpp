@@ -16,7 +16,6 @@ Database::Database(){
   connect_future = cass_session_connect(session, cluster);
 
   if (cass_future_error_code(connect_future) == CASS_OK) {
-    CassFuture* close_future = NULL;
     isConnected = true;
   } else {
     /* Handle error */
@@ -25,21 +24,6 @@ Database::Database(){
     cass_future_error_message(connect_future, &message, &message_length);
     qDebug() << "Error";
   }
-}
-
-bool Database::runQuery(string query){
-  CassStatement* statement = cass_statement_new(query.c_str(), 0);
-  CassFuture* query_future = cass_session_execute(session, statement);
-
-  cass_statement_free(statement);
-
-  /* This will block until the query has finished */
-  CassError rc = cass_future_error_code(query_future);
-
-  qDebug() << QString("Corriendo Query: ") + QString(query.c_str());
-  qDebug() << QString("Resultado: ") + QString(cass_error_desc(rc));
-  cass_future_free(query_future);
-  return true;
 }
 
 bool Database::actualizarInstancia(Instancia* i){
@@ -56,7 +40,7 @@ bool Database::actualizarInstancia(Instancia* i){
 
     cass_uuid_gen_free(uuid_gen);
 
-    i->setUID();
+    i->setUID(nUID);
 
     string query;
     query += "INSERT INTO ";
@@ -77,7 +61,7 @@ bool Database::actualizarInstancia(Instancia* i){
     query += " WHERE id=";
     query += i->getUID();
     query += " IF EXISTS;";
-    
+
     runQuery(query);
   }else{
     //QUERY DE ACTUALIZACION
@@ -92,19 +76,13 @@ bool Database::actualizarInstancia(Instancia* i){
 
     runQuery(query);
   }
+
+  return true;
 }
 
 QString Database::version(){
-  /* Build statement and execute query */
-  const char* query = "SELECT release_version FROM system.local";
-  CassStatement* statement = cass_statement_new(query, 0);
-  CassFuture* result_future = cass_session_execute(session, statement);
-
-  QString ver = "undefined";
-
-  if (cass_future_error_code(result_future) == CASS_OK) {
-    /* Retrieve result set and get the first row */
-    const CassResult* result = cass_future_get_result(result_future);
+    QString ver = "undefined";
+    runQuery("SELECT release_version FROM system.local");
     const CassRow* row = cass_result_first_row(result);
 
     if (row) {
@@ -115,36 +93,63 @@ QString Database::version(){
       cass_value_get_string(value, &release_version, &release_version_length);
       ver = QString(release_version);
     } else {
-      /* Handle error */
-      const char* message;
-      size_t message_length;
-      cass_future_error_message(result_future, &message, &message_length);
-      qDebug() << "Error";
+      qDebug() << "ERROR - " << error.c_str();
     }
-
-    cass_result_free(result);
-  }
-
-  cass_statement_free(statement);
-  cass_future_free(result_future);
 
   return ver;
 }
 
 bool Database::pull(){
-
+  return true;
 }
 
 bool Database::push(){
-  for (for i = 0; i < instancias.size(); i++) {
+  for (size_t i = 0; i < instancias.size(); i++) {
     if (instancias[i]->isAlterado()) {
       actualizarInstancia(instancias[i]);
     }
   }
+
+  return true;
+}
+
+bool Database::runQuery(string query){
+  qDebug() << QString("Ejecutando Query: ") + QString(query.c_str());
+
+  CassStatement* statement = cass_statement_new(query.c_str(), 0);
+  CassFuture* query_future = cass_session_execute(session, statement);
+
+  cass_statement_free(statement);
+
+  /* This will block until the query has finished */
+  if (cass_future_error_code(query_future) == CASS_OK) {
+    cass_result_free(result);
+
+    result = const_cast<CassResult*>(cass_future_get_result(query_future));
+    qDebug() << "Query ejecutado exitosamente.";
+    cass_future_free(query_future);
+    return true;
+  }else{
+    CassError rc = cass_future_error_code(query_future);
+    error = cass_error_desc(rc);
+    qDebug() << QString("ERROR - ") + error.c_str();
+    cass_future_free(query_future);
+    return false;
+  }
+}
+
+CassResult* Database::getResult(){
+  return result;
 }
 
 Database::~Database(){
+  CassFuture* close_future = cass_session_close(session);
+
+  cass_future_wait(close_future);
+  cass_future_free(close_future);
   cass_future_free(connect_future);
+
   cass_cluster_free(cluster);
   cass_session_free(session);
+  cass_result_free(result);
 }

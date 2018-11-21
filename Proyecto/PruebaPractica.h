@@ -6,7 +6,7 @@
 class PruebaPractica : public Instancia{
 
   private:
-    string uidClasePractica
+    string uidClasePractica;
     float notaMaxima;
     float notaObtenida;
     string uidAlumno;

@@ -13,6 +13,6 @@ class Pago : public Instancia{
   public:
       Pago(string, string, float, string);
       Pago(string, float, string);
-}
+};
 
 #endif

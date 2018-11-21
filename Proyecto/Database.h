@@ -28,7 +28,10 @@ private:
   CassFuture* connect_future;
   CassCluster* cluster;
   CassSession* session;
+  CassResult* result;
   char* hosts;
+
+  string error;
 
   bool actualizarInstancia(Instancia*);
 
@@ -48,8 +51,6 @@ private:
   vector<Categoria*> categorias;
   vector<TipoLicencia*> tiposLicencia;
 
-  bool runQuery();
-
 public:
   Database();
   QString version();
@@ -57,6 +58,8 @@ public:
   bool pull();
   bool push();
 
+  bool runQuery(string);
+  CassResult* getResult();
 
   ~Database();
 };
