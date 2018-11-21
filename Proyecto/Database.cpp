@@ -7,7 +7,6 @@ Database::Database(){
   connect_future = NULL;
   cluster = cass_cluster_new();
   session = cass_session_new();
-  hosts = "198.211.112.163";
 
   /* Add contact points */
   cass_cluster_set_contact_points(cluster, hosts);
@@ -100,6 +99,36 @@ QString Database::version(){
 }
 
 bool Database::pull(){
+  /*
+select json * from autoescuela.empleado;
+select json * from autoescuela.profesor;
+select json * from autoescuela.alumno;
+select json * from autoescuela.categoriavehiculo;
+select json * from autoescuela.vehiculo;
+select json * from autoescuela.clase;
+select json * from autoescuela.claseteorica;
+select json * from autoescuela.pruebateorica;
+select json * from autoescuela.clasepractica;
+select json * from autoescuela.pruebapractica;
+select json * from autoescuela.pago;
+select json * from autoescuela.tipolicencia;
+  */
+  runQuery("select json * from autoescuela.empleado");
+  vector<string> strings = resultStrings();
+
+  empleados.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    Empleado* nEmpleado = new Empleado();
+
+    nEmpleado->fromJSON(strings[i]);
+    empleados.push_back(nEmpleado);
+
+    Instancia* nInstancia;
+    nInstancia = nEmpleado;
+    instancias.push_back(nInstancia);
+  }
+
   return true;
 }
 
@@ -140,6 +169,24 @@ bool Database::runQuery(string query){
 
 CassResult* Database::getResult(){
   return result;
+}
+
+vector<string> Database::resultStrings(){
+  vector<string> strings;
+  CassIterator* iterator = cass_iterator_from_result(result);
+  CassRow* row;
+
+  while (cass_iterator_next (iterator)) {
+    row = const_cast<CassRow*>(cass_iterator_get_row(iterator));
+
+   const CassValue* value = cass_row_get_column ( row, 0 );
+   const char* valString;
+   size_t valSize;
+   cass_value_get_string(value, &valString, &valSize);
+   strings.push_back(string(valString));
+ }
+
+  return strings;
 }
 
 Database::~Database(){

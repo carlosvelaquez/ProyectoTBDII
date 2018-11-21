@@ -5,6 +5,7 @@
 #include <QString>
 #include <QDebug>
 #include <vector>
+#include <string>
 
 #include "Instancia.h"
 #include "Empleado.h"
@@ -29,7 +30,7 @@ private:
   CassCluster* cluster;
   CassSession* session;
   CassResult* result;
-  char* hosts;
+  char* hosts = "198.211.112.163";
 
   string error;
 
@@ -60,6 +61,7 @@ public:
 
   bool runQuery(string);
   CassResult* getResult();
+  vector<string> resultStrings();
 
   ~Database();
 };

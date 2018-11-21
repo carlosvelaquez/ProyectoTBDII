@@ -6,7 +6,7 @@
 using namespace std;
 
 class Instancia {
-private:
+protected:
   bool alterado;
   bool borrar;
   string uid;
