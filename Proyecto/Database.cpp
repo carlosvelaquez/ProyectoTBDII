@@ -9,7 +9,7 @@ Database::Database(){
   session = cass_session_new();
 
   /* Add contact points */
-  cass_cluster_set_contact_points(cluster, hosts);
+  cass_cluster_set_contact_points(cluster, hosts.c_str());
 
   /* Provide the cluster object as configuration to connect the session */
   connect_future = cass_session_connect(session, cluster);

@@ -30,7 +30,7 @@ private:
   CassCluster* cluster;
   CassSession* session;
   CassResult* result;
-  char* hosts = "198.211.112.163";
+  string hosts = "198.211.112.163";
 
   string error;
 

@@ -43,7 +43,8 @@ void Instancia::setBorrar(bool nBorrar){
 }
 
 bool Instancia::fromJSON(string json){
-  qDebug() << "Importando instancia generica desde json:" << json.c_str() ;
+  qDebug() << "Importando instancia generica desde json:" << json.c_str();
+  return false;
 }
 
 string Instancia::toJSON(){
