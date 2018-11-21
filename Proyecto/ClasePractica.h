@@ -2,6 +2,7 @@
 #define CLASEPRACTICA_H
 
 #include <string>
+#include "Instancia.h"
 
 class ClasePractica : public Instancia{
 

@@ -1,5 +1,9 @@
 #include "Empleado.h"
 
+Empleado::Empleado(string json){
+  fromJSON(json);
+}
+
 Empleado::Empleado(string nUID, string nNombres, string nApellidos, float nSalario) : Instancia(nUID){
   uid = nUID;
   nombres = nNombres;

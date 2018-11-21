@@ -5,7 +5,7 @@ Profesor::Profesor(string nUID, string nUidEmpleado, int nCategoria): Instancia(
   uid = nUID;
   string uidEmpleado = nUidEmpleado;
   int categoria = nCategoria;
-  tablePath  = "autoescuela.profesor"
+  tablePath  = "autoescuela.profesor";
 }
 
 Profesor::Profesor(string nUidEmpleado, int nCategoria) : Instancia(){

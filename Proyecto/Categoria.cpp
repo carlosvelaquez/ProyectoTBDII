@@ -23,7 +23,7 @@ bool Categoria::fromJSON(string cadena){
     uid = doc["id"].toString().toStdString();
     lujo = doc["lujo"].toString().toStdString();
     tamano = doc["tamano"].toString().toStdString();
-    tarifa = doc["tarifa"].toString().toStdString();
+    tarifa = stof(doc["tarifa"].toString().toStdString());
     return true;
   }
   return false;
@@ -34,7 +34,7 @@ string Categoria::toJSON(){
   jsonObj.insert("id",QString::fromStdString(uid));
   jsonObj.insert("lujo",QString::fromStdString(lujo));
   jsonObj.insert("tamano",QString::fromStdString(tamano));
-  jsonObj.insert("tarifa",QString::fromStdString(tarifa));
+  jsonObj.insert("tarifa",tarifa);
   QJsonDocument dec(jsonObj);
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();

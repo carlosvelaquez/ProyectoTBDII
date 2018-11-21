@@ -14,6 +14,9 @@ private:
   string tablePath = "autoescuela.empleados";
 
 public:
+  //Empleado desde JSON
+  Empleado(string);
+  
   //Empleado existente con UID
   Empleado(string, string, string, float);
 

@@ -5,6 +5,7 @@
 #include <QJsonArray>
 #include <QJsonObject>
 #include <QJsonDocument>
+#include <QDebug>
 
 using namespace std;
 
@@ -33,7 +34,7 @@ public:
   virtual bool fromJSON(string);
   virtual string toJSON();
 
-  ~Instancia();
+  virtual ~Instancia();
 };
 
 #endif /* end of include guard: INSTANCIA_H */

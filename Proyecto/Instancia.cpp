@@ -22,12 +22,8 @@ void Instancia::setUID(string nUID){
   uid = nUID;
 }
 
-bool Instancia::isBorrado(){
-  return borrar;
-}
-
-void Instancia::setBorrar(bool nBorrar){
-  borrar = nBorrar;
+string Instancia::getTablePath(){
+  return tablePath;
 }
 
 bool Instancia::isAlterado(){
@@ -36,4 +32,25 @@ bool Instancia::isAlterado(){
   }else{
     return false;
   }
+}
+
+bool Instancia::isBorrado(){
+  return borrar;
+}
+
+void Instancia::setBorrar(bool nBorrar){
+  borrar = nBorrar;
+}
+
+bool Instancia::fromJSON(string json){
+  qDebug() << "Importando instancia generica desde json:" << json.c_str() ;
+}
+
+string Instancia::toJSON(){
+  qDebug() << "Exportando instancia generica a json";
+  return "undefined";
+}
+
+Instancia::~Instancia(){
+  uid = "borrado";
 }

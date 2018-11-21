@@ -5,7 +5,6 @@ INPUT(
 ./release\adminlicencia.o
 ./release\adminprofesor.o
 ./release\Alumno.o
-./release\CapacitadoEn.o
 ./release\Categoria.o
 ./release\Clase.o
 ./release\ClasePractica.o

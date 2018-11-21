@@ -119,14 +119,9 @@ select json * from autoescuela.tipolicencia;
   empleados.clear();
 
   for (size_t i = 0; i < strings.size(); i++) {
-    Empleado* nEmpleado = new Empleado();
-
-    nEmpleado->fromJSON(strings[i]);
+    Empleado* nEmpleado = new Empleado(strings[i]);
     empleados.push_back(nEmpleado);
-
-    Instancia* nInstancia;
-    nInstancia = nEmpleado;
-    instancias.push_back(nInstancia);
+    instancias.push_back(nEmpleado);
   }
 
   return true;

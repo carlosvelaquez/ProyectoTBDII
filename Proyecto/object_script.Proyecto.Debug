@@ -5,7 +5,6 @@ INPUT(
 ./debug\adminlicencia.o
 ./debug\adminprofesor.o
 ./debug\Alumno.o
-./debug\CapacitadoEn.o
 ./debug\Categoria.o
 ./debug\Clase.o
 ./debug\ClasePractica.o

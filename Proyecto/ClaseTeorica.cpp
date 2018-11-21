@@ -1,4 +1,4 @@
-#include "ClaseTeorica.h
+#include "ClaseTeorica.h"
 
 
 ClaseTeorica::ClaseTeorica(string nUID, string nUidClase):Instancia(nUID){
