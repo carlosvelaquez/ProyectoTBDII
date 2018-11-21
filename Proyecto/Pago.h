@@ -5,10 +5,14 @@
 
 class Pago : public Instancia{
 
-  Private:
-    
-  Public:
+  private:
+      string uidAlumno;
+      float monto;
+      string motivo;
 
-};
+  public:
+      Pago(string, string, float, string);
+      Pago(string, float, string);
+}
 
 #endif

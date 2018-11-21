@@ -14,10 +14,10 @@ Alumno::Alumno(string nNombres, string nApellidos) : Instancia(){
   apellidos = nApellidos;
 }
 
-bool fromJSON(string cadena){
-  if(cadena=="") return false;
-  QString word = QString::fromStdString(cadena);
-  
+bool Alumno::fromJSON(string cadena){
+
   return true;
 }
-string toJSON();
+string Alumno::toJSON(){
+
+}

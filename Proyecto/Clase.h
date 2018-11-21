@@ -10,7 +10,9 @@ class Clase : public Instancia{
     string uidProfesor;
 
   public:
-    
+
+    Clase(string,string,string);
+    Clase(string,string);
 };
 
 #endif

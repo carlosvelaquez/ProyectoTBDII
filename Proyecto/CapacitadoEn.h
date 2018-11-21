@@ -10,8 +10,8 @@ class CapacitadoEn : public Instancia{
     string uidClase;
 
   public:
-    CapacitadoEn();
-    
+    CapacitadoEn(string,string,string);
+    CapacitadoEn(string,string);
 };
 
 #endif

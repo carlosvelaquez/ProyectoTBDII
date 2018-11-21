@@ -14,8 +14,8 @@ public:
 
   bool fromJSON(string);
   string toJSON();
-  Vehiculo(string, string);
-  Vehiculo(string);
+  Alumno(string, string);
+  Alumno(string);
 };
 
 #endif
