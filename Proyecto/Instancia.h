@@ -4,9 +4,12 @@
 #include "Database.h"
 #include <string>
 
+using namespace std;
+
 class Instancia {
 private:
   bool alterado;
+  bool borrar;
   string uid;
   string tablePath;
 
@@ -22,6 +25,8 @@ public:
 
   string getTablePath();
   bool isAlterado();
+  bool isBorrado();
+  void setBorrar(bool);
 
   virtual bool fromJSON(string);
   virtual string toJSON();
