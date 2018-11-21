@@ -7,18 +7,17 @@
 using namespace std;
 
 class Alumno : public Instancia{
+  private:
 
-private:
+    string nombres;
+    string apellidos;
 
-  string nombres;
-  string apellidos;
+  public:
 
-public:
-
-  Alumno(string, string);
-  Alumno(string);
-  bool fromJSON(string);
-  string toJSON();
+    Alumno(string, string, string);
+    Alumno(string, string);
+    bool fromJSON(string);
+    string toJSON();
 
 };
 

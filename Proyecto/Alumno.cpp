@@ -6,7 +6,7 @@ Alumno::Alumno(string nUID, string nNombres, string nApellidos) : Instancia(nUID
   uid = nUID;
   nombres = nNombres;
   apellidos = nApellidos;
-  tablePath = "autoescuela.vehiculos";
+  tablePath = "autoescuela.alumno";
 }
 
 Alumno::Alumno(string nNombres, string nApellidos) : Instancia(){
