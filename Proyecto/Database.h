@@ -20,6 +20,8 @@
 #include "Categoria.h"
 #include "TipoLicencia.h"
 
+using namespace std;
+
 class Database {
 private:
   bool isConnected;

@@ -23,7 +23,7 @@ public:
   string getTablePath();
   bool isAlterado();
 
-  virtual string fromJSON();
+  virtual bool fromJSON(string);
   virtual string toJSON();
 
   ~Instancia();

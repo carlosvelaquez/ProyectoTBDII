@@ -107,7 +107,7 @@ QString Database::version(){
 }
 
 bool Database::pull(){
-
+  
 }
 
 bool Database::push(){
