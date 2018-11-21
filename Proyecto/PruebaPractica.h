@@ -1,5 +1,5 @@
 #ifndef PRUEBAPRACTICA_H
-#ifndef PRUEBAPRACTICA_H
+#define PRUEBAPRACTICA_H
 
 #include "Instancia.h"
 
