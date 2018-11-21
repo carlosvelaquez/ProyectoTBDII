@@ -1,5 +1,3 @@
 #include "Pago.h"
 
-Pago::Pago(): Instancia(){
-  
-}
+Pago::Pago(): Instancia(){}

@@ -1072,30 +1072,8 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
 		ui_mainwindow.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		adminalumno.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		adminprofesor.h \
 		adminempleado.h \
 		adminclase.h \
@@ -1206,28 +1184,7 @@ debug/adminalumno.o: adminalumno.cpp adminalumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_adminalumno.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout
+		ui_adminalumno.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\adminalumno.o adminalumno.cpp
 
 debug/adminempleado.o: adminempleado.cpp adminempleado.h \
@@ -1334,26 +1291,7 @@ debug/adminempleado.o: adminempleado.cpp adminempleado.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_adminempleado.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h
+		ui_adminempleado.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\adminempleado.o adminempleado.cpp
 
 debug/adminprofesor.o: adminprofesor.cpp adminprofesor.h \
@@ -1460,26 +1398,7 @@ debug/adminprofesor.o: adminprofesor.cpp adminprofesor.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_adminprofesor.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h
+		ui_adminprofesor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\adminprofesor.o adminprofesor.cpp
 
 debug/adminlicencia.o: adminlicencia.cpp adminlicencia.h \
@@ -1586,26 +1505,7 @@ debug/adminlicencia.o: adminlicencia.cpp adminlicencia.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_adminlicencia.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h
+		ui_adminlicencia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\adminlicencia.o adminlicencia.cpp
 
 debug/adminclase.o: adminclase.cpp adminclase.h \
@@ -1712,26 +1612,7 @@ debug/adminclase.o: adminclase.cpp adminclase.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_adminclase.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h
+		ui_adminclase.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\adminclase.o adminclase.cpp
 
 debug/Database.o: Database.cpp Database.h \

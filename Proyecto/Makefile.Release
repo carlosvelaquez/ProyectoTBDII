@@ -795,11 +795,3 @@ compiler_moc_source_clean:
 compiler_uic_make_all: ui_mainwindow.h ui_adminalumno.h ui_adminempleado.h ui_adminprofesor.h ui_adminlicencia.h ui_adminclase.h
 compiler_uic_clean:
 	-$(DEL_FILE) ui_mainwindow.h ui_adminalumno.h ui_adminempleado.h ui_adminprofesor.h ui_adminlicencia.h ui_adminclase.h
-ui_mainwindow.h: mainwindow.ui \
-		C:/Qt/5.11.2/mingw53_32/bin/uic.exe
-	C:\Qt\5.11.2\mingw53_32\bin\uic.exe mainwindow.ui -o ui_mainwindow.h
-
-ui_adminalumno.h: adminalumno.ui \
-		C:/Qt/5.11.2/mingw53_32/bin/uic.exe
-	C:\Qt\5.11.2\mingw53_32\bin\uic.exe adminalumno.ui -o ui_adminalumno.h
-
