@@ -78,15 +78,5 @@ void AdminAlumno::on_pushButtonAplicarCambiosAlumno_clicked()
 //Agrega un tipo de licencia
 void AdminAlumno::on_pushButtonAgregarTipoLicencia_clicked()
 {
-    QString nombre = ui->lineEditNombreAlumno->text();
-    QString apellido = ui->lineEditApellidoAlumno->text();
-    if(nombre == ""|| apellido == ""){
-        ui->lineEditNombreAlumno->setText(" -- Llene esta información");
-        ui->lineEditApellidoAlumno->setText(" -- Llene esta información");
-    }else{
-        TipoLicencia* licencia = new TipoLicencia(ui->doubleSpinBoxCostoLicencia->value(), ui->lineEditDocumentoAlumno->text().toStdString());
-        newAlumno->getLicencias()->push_back(licencia);
-        licencia = NULL;
-        delete licencia;
-    }
+
 }

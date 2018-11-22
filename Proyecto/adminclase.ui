@@ -50,6 +50,26 @@
         <widget class="QLineEdit" name="lineEdit"/>
        </item>
        <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Seleccionar Vehiculo:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxClaseVehiculo"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Seleccionar Profesor:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxClaseProfesor"/>
+       </item>
+       <item>
         <widget class="QLabel" name="label_2">
          <property name="text">
           <string/>
@@ -57,9 +77,9 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="pushButtonAgregarClase">
          <property name="text">
-          <string>PushButton</string>
+          <string>Agregar Clases</string>
          </property>
         </widget>
        </item>
@@ -69,11 +89,69 @@
       <attribute name="title">
        <string>Eliminar Clases</string>
       </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Seleccionar Clase para eliminar:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxClasesEliminar"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonEliminarClases">
+         <property name="text">
+          <string>Eliminar Clases</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
      <widget class="QWidget" name="tab_2">
       <attribute name="title">
        <string>Modificar Clase</string>
       </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Nombre:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditClaseNombreNuevo"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Seleccionar Vehiculo:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxClaseVehiculoNuevo"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Seleccionar Profesor:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxClaseProfesorNuevo"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonModificarClase">
+         <property name="text">
+          <string>Agregar Clases</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
    </item>

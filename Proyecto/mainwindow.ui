@@ -75,6 +75,13 @@
         </widget>
        </item>
        <item>
+        <widget class="QPushButton" name="pushButtonPago">
+         <property name="text">
+          <string>Pago</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="AdminClaseButton">
          <property name="text">
           <string>Administrar Clase</string>

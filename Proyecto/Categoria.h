@@ -15,7 +15,7 @@ class Categoria : public Instancia{
     vector<Vehiculo*> vehiculos;
 
   public:
-    Categoria();
+    Categoria(string);
     Categoria(string, string, string, float);
     Categoria(string, string , float);
 

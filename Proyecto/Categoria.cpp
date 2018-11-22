@@ -1,5 +1,9 @@
 #include "Categoria.h"
 
+Categoria::Categoria(string json){
+    fromJSON(json);
+}
+
 Categoria::Categoria(string nUID, string nLujo, string nTamano, float nTarifa) : Instancia(nUID){
   uid = nUID;
   lujo = nLujo;
