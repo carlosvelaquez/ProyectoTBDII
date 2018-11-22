@@ -270,6 +270,21 @@ bool Database::pull(){
     }
   }
 
+  //Alumno -> Licencia
+  for (size_t i = 0; i <tiposLicencia.size() ; i++) {
+    vector<string> strings = get_Alumnos_LicenciaAlumno(tipoLicencia[i]->getUID());
+    for (size_t j = 0; j < strings.size(); j++) {
+      tipoLicencia[i]->getAlumnos().push_back(strings[j]);
+    }
+  }
+
+  //Licencia -> Alumno
+  for (size_t i = 0; i < alumnos.size(); i++) {
+    vector<string> strings = get_Licencias_LicenciaAlumno(alumnos[i]->getUID());
+    for (size_t j = 0; j < string.size(); j++) {
+      alumnos[i]->getLicencias().push_back(strings[j]);
+    }
+  }
 
   return true;
 }
