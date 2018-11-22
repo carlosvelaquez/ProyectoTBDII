@@ -15,6 +15,10 @@ public:
     explicit AdminClase(QWidget *parent = 0);
     ~AdminClase();
 
+private slots:
+
+  void on_pushButtonAgregarClase_clicked();
+
 private:
     Ui::AdminClase *ui;
 };

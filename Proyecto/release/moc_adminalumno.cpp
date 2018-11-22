@@ -79,6 +79,7 @@ void AdminAlumno::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 0: _t->on_pushButtonEliminarAlumno_clicked(); break;
         case 1: _t->on_pushButtonAgregarAlumnos_clicked(); break;
         case 2: _t->on_pushButtonAplicarCambiosAlumno_clicked(); break;
+        case 3: _t->on_pushButtonAgregarTipoLicencia_clicked(); break;
         default: ;
         }
     }

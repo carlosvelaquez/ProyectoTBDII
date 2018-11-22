@@ -1084,6 +1084,8 @@ release/adminalumno.o: adminalumno.cpp adminalumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QDoubleSpinBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QGridLayout \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
@@ -1099,12 +1101,6 @@ release/adminalumno.o: adminalumno.cpp adminalumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidget \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \

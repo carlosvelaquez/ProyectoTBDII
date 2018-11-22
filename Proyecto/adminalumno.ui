@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>664</width>
-    <height>344</height>
+    <width>641</width>
+    <height>376</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,18 +51,11 @@
        <string>Agregar Alumno</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="4" column="0">
-        <widget class="QLabel" name="label_8">
-         <property name="text">
-          <string>Clases:</string>
-         </property>
-        </widget>
-       </item>
        <item row="3" column="0">
         <widget class="QLineEdit" name="lineEditApellidoAlumno"/>
        </item>
-       <item row="6" column="0">
-        <widget class="QPushButton" name="pushButtonAgregarAlumnos">
+       <item row="5" column="0">
+        <widget class="QPushButton" name="pushButtonAgregarAlumno">
          <property name="text">
           <string>Agregar</string>
          </property>
@@ -85,8 +78,44 @@
          </property>
         </widget>
        </item>
-       <item row="5" column="0">
-        <widget class="QListWidget" name="listWidgetClasesAlumnos"/>
+       <item row="4" column="0">
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Costo:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="doubleSpinBoxCostoLicencia"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>Documento:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditDocumentoAlumno"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonAgregarTipoLicencia">
+            <property name="text">
+             <string>Agregar Tipo de licencia</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </item>
       </layout>
      </widget>

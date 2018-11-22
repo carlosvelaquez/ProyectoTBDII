@@ -6,7 +6,7 @@ AdminClase::AdminClase(QWidget *parent) :
     ui(new Ui::AdminClase)
 {
     ui->setupUi(this);
-    //connect(ui->pushButtonAgregarClase, SIGNAL(clicked()), this, SLOT(takefile()));
+    connect(ui->pushbutton_load, SIGNAL(clicked()), this, SLOT(takefile()));
 }
 
 AdminClase::~AdminClase()

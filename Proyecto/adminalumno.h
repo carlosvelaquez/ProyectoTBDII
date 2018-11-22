@@ -28,6 +28,8 @@ private slots:
 
     void on_pushButtonAplicarCambiosAlumno_clicked();
 
+    void on_pushButtonAgregarTipoLicencia_clicked();
+
 private:
     Database* database;
     Ui::AdminAlumno *ui;

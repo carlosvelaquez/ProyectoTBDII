@@ -56,9 +56,14 @@ static const uint qt_meta_data_AdminClase[] = {
 
 void AdminClase::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
+  if (_c == QMetaObject::InvokeMetaMethod) {
+      AdminAlumno *_t = static_cast<AdminAlumno *>(_o);
+      Q_UNUSED(_t)
+      switch (_id) {
+      case 0: _t->on_pushButtonAgregarClase_clicked(); break;
+      default: ;
+      }
+  }
     Q_UNUSED(_a);
 }
 

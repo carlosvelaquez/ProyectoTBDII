@@ -33,7 +33,7 @@ void AdminAlumno::setDatabase(Database* ndatabase){
 //Boton que elimina un alumno.
 void AdminAlumno::on_pushButtonEliminarAlumno_clicked()
 {
-    
+
 }
 
 
@@ -68,6 +68,12 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
 
 //Boton que aplica los cambios hechos al alumno.
 void AdminAlumno::on_pushButtonAplicarCambiosAlumno_clicked()
+{
+
+}
+
+//Agrega un tipo de licencia
+void AdminAlumno::on_pushButtonAgregarTipoLicencia_clicked()
 {
 
 }
