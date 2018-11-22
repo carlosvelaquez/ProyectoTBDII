@@ -47,7 +47,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="lineEditNombreClase"/>
        </item>
        <item>
         <widget class="QLabel" name="label_2">
@@ -57,9 +57,29 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QLabel" name="label_4">
          <property name="text">
-          <string>PushButton</string>
+          <string>Profesor:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxProfesoresClase"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Vehiculo:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxVehiculosClase"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonAgregarClase">
+         <property name="text">
+          <string>Agregar Clase</string>
          </property>
         </widget>
        </item>

@@ -10,6 +10,8 @@ class Pago;
 #include "Pago.h"
 
 #include <string>
+#include <vector>
+#include "Clase.h"
 
 using namespace std;
 
@@ -18,6 +20,7 @@ class Alumno : public Instancia{
   private:
     string nombres;
     string apellidos;
+    vector<Clase*> clases;
 
     vector<Clase*> clases;
     vector<TipoLicencia*> licencias;

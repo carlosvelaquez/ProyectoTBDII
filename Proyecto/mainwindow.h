@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "Database.h"
 
 namespace Ui {
 class MainWindow;
@@ -29,6 +30,7 @@ private slots:
     void on_AdminClaseButton_clicked();
 
 private:
+    Database database;
     Ui::MainWindow *ui;
 };
 

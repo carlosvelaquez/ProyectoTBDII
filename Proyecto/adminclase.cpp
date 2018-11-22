@@ -12,3 +12,5 @@ AdminClase::~AdminClase()
 {
     delete ui;
 }
+
+// Boton que agrega una clase nueva.

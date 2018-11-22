@@ -52,6 +52,8 @@ private:
   vector<Categoria*> categorias;
   vector<TipoLicencia*> tiposLicencia;
 
+/* comparar el idclase de alumno con el idClase de clase
+*/
 public:
   Database();
   QString version();
