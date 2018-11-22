@@ -2,6 +2,7 @@
 
 Pago::Pago(string json){
   fromJSON(json);
+  tablePath = "autoescuela.pago";
 }
 
 Pago::Pago(string nUID, string nUidAlumno, float nMonto, string nMotivo): Instancia(nUID){
@@ -16,6 +17,7 @@ Pago::Pago(string nUidAlumno, float nMonto, string nMotivo): Instancia(){
   uidAlumno = nUidAlumno;
   monto = nMonto;
   motivo = nMotivo;
+  tablePath = "autoescuela.pago";
 }
 
 bool Pago::fromJSON(string cadena){

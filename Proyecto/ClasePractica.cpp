@@ -3,6 +3,7 @@
 
 ClasePractica::ClasePractica(string json) : Instancia(){
     fromJSON(json);
+    tablePath = "autoescuela.clasepractica";
 }
 
 ClasePractica::ClasePractica(string nUID,string nUidClase):Instancia(nUID){

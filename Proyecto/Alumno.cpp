@@ -9,6 +9,7 @@ Alumno::Alumno(){}
 
 Alumno::Alumno(string json){
   fromJSON(json);
+  tablePath = "autoescuela.alumno";
 }
 
 Alumno::Alumno(string nUID, string nNombres, string nApellidos) : Instancia(nUID){
@@ -20,6 +21,7 @@ Alumno::Alumno(string nUID, string nNombres, string nApellidos) : Instancia(nUID
 Alumno::Alumno(string nNombres, string nApellidos) : Instancia(){
   nombres = nNombres;
   apellidos = nApellidos;
+  tablePath = "autoescuela.alumno";
 }
 
 bool Alumno::fromJSON(string cadena){
