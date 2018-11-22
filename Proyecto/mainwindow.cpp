@@ -5,12 +5,14 @@
 #include "adminempleado.h"
 #include "adminclase.h"
 #include "adminlicencia.h"
+#include "Database.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
@@ -18,10 +20,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
+// Administrar Alumnos
 void MainWindow::on_AdminAlumnosButton_clicked()
 {
     AdminAlumno* ad = new AdminAlumno();
+
     ad->show();
 }
 

@@ -292,6 +292,30 @@ release/moc_adminalumno.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		Database.h \
+		include/cassandra.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h \
+		Empleado.h \
+		Profesor.h \
+		Clase.h \
+		ClaseTeorica.h \
+		ClasePractica.h \
+		PruebaTeorica.h \
+		PruebaPractica.h \
+		Alumno.h \
+		Pago.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
 		adminalumno.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
@@ -835,6 +859,30 @@ release/moc_mainwindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindo
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		Database.h \
+		include/cassandra.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h \
+		Empleado.h \
+		Profesor.h \
+		Clase.h \
+		ClaseTeorica.h \
+		ClasePractica.h \
+		PruebaTeorica.h \
+		PruebaPractica.h \
+		Alumno.h \
+		Pago.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
 		mainwindow.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
@@ -987,6 +1035,30 @@ release/adminalumno.o: adminalumno.cpp adminalumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		Database.h \
+		include/cassandra.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h \
+		Empleado.h \
+		Profesor.h \
+		Clase.h \
+		ClaseTeorica.h \
+		ClasePractica.h \
+		PruebaTeorica.h \
+		PruebaPractica.h \
+		Alumno.h \
+		Pago.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
 		ui_adminalumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
@@ -996,8 +1068,23 @@ release/adminalumno.o: adminalumno.cpp adminalumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QGridLayout \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
@@ -1012,13 +1099,18 @@ release/adminalumno.o: adminalumno.cpp adminalumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\adminalumno.o adminalumno.cpp
 
 release/adminclase.o: adminclase.cpp adminclase.h \
@@ -1137,9 +1229,18 @@ release/adminclase.o: adminclase.cpp adminclase.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
@@ -1598,6 +1699,7 @@ release/Alumno.o: Alumno.cpp Alumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		Clase.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Alumno.o Alumno.cpp
@@ -2247,17 +2349,10 @@ release/main.o: main.cpp mainwindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		Database.h \
 		include/cassandra.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		Database.h \
 		Instancia.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
@@ -2277,7 +2372,14 @@ release/main.o: main.cpp mainwindow.h \
 		Pago.h \
 		Vehiculo.h \
 		Categoria.h \
-		TipoLicencia.h
+		TipoLicencia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
 
 release/mainwindow.o: mainwindow.cpp mainwindow.h \
@@ -2387,6 +2489,30 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		Database.h \
+		include/cassandra.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h \
+		Empleado.h \
+		Profesor.h \
+		Clase.h \
+		ClaseTeorica.h \
+		ClasePractica.h \
+		PruebaTeorica.h \
+		PruebaPractica.h \
+		Alumno.h \
+		Pago.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
 		ui_mainwindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \

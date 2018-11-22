@@ -3,6 +3,8 @@
 
 #include "Instancia.h"
 #include <string>
+#include <vector>
+#include "Clase.h"
 
 using namespace std;
 
@@ -11,6 +13,7 @@ class Alumno : public Instancia{
   private:
     string nombres;
     string apellidos;
+    vector<Clase*> clases;
 
   public:
     Alumno(string, string, string);

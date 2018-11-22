@@ -1,0 +1,30 @@
+#include "adminalumno.h"
+#include "ui_adminalumno.h"
+
+AdminAlumno::AdminAlumno(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::AdminAlumno)
+{
+    ui->setupUi(this);
+}
+
+AdminAlumno::~AdminAlumno()
+{
+    delete ui;
+}
+
+void AdminAlumno::on_pushButtonEliminarAlumno_clicked()
+{
+
+}
+
+void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
+{
+
+}
+
+
+void AdminAlumno::on_pushButtonAplicarCambiosAlumno_clicked()
+{
+
+}
