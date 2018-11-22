@@ -21,7 +21,10 @@ INPUT(
 ./debug\TipoLicencia.o
 ./debug\Vehiculo.o
 ./debug\adminvehiculo.o
+<<<<<<< HEAD
 ./debug\pagoalumno.o
+=======
+>>>>>>> 76fe86c347f8c484851fe091fe209595fe431b06
 ./debug\moc_adminalumno.o
 ./debug\moc_adminclase.o
 ./debug\moc_adminempleado.o
@@ -29,5 +32,8 @@ INPUT(
 ./debug\moc_adminprofesor.o
 ./debug\moc_mainwindow.o
 ./debug\moc_adminvehiculo.o
+<<<<<<< HEAD
 ./debug\moc_pagoalumno.o
+=======
+>>>>>>> 76fe86c347f8c484851fe091fe209595fe431b06
 );

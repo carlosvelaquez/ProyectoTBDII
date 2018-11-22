@@ -9,7 +9,7 @@ class PruebaPractica : public Instancia{
     string uidClasePractica;
     float notaMaxima;
     float notaObtenida;
-    string uidAlumno  ;
+    string uidAlumno;
     int Horas;
     int Intento;
 

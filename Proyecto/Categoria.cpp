@@ -70,3 +70,7 @@ string  Categoria::getTamano(){
 float Categoria::getTarifa(){
   return tarifa;
 }
+
+vector<Vehiculo*>* Categoria::getVehiculos(){
+  return &vehiculos;
+}

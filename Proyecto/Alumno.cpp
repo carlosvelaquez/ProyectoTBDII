@@ -76,3 +76,11 @@ vector<TipoLicencia*>* Alumno::getLicencias(){
 vector<Pago*>* Alumno::getPagos(){
   return &pagos;
 }
+
+vector<PruebaTeorica*>* Alumno::getPruebasT(){
+  return &pruebasT;
+}
+
+vector<PruebaPractica*>* Alumno::getPruebasP(){
+  return &pruebasP;
+}
