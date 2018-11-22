@@ -254,6 +254,23 @@ bool Database::pull(){
     }
   }
 
+  //Alumnos -> Clase
+  for (size_t i = 0; i < clases.size(); i++) {
+    vector<string> strings = get_Alumnos_AlumnosClases(clases[i]->getUID());
+    for (size_t j = 0; j < strings.size(); j++) {
+      clases[i]->getAlumnos().push_back(strings[j]);
+    }
+  }
+
+  //Clase -> Alumnos
+  for (size_t i = 0; i < alumnos.size(); i++) {
+    vector<string> strings = get_Clases_AlumnosClases(alumnos[i]->getUID());
+    for (size_t j = 0; j < strings.size(); j++) {
+      alumnos[i]->getClases().push_back(strings[j]);
+    }
+  }
+
+
   return true;
 }
 

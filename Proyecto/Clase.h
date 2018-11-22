@@ -2,8 +2,10 @@
 #define CLASE_H
 
 class Profesor;
+class Alumno;
 
 #include "Instancia.h"
+#include "Alumno.h"
 #include "Profesor.h"
 #include "Vehiculo.h"
 
@@ -16,6 +18,7 @@ class Clase : public Instancia{
 
     Profesor* profesor;
     Vehiculo* vehiculo;
+    vector<Alumno*> alumnos;
 
   public:
     Clase(string,string,string,string);
@@ -37,6 +40,7 @@ class Clase : public Instancia{
     string getUIDProfesor();
     Profesor* getProfesor();
     Vehiculo* getVehiculo();
+    vector<Alumno*>* getAlumnos();
 };
 
 #endif
