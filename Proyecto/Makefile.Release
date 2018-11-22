@@ -318,7 +318,7 @@ release/moc_adminalumno.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		adminalumno.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminalumno.h -o release\moc_adminalumno.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminalumno.h -o release\moc_adminalumno.cpp
 
 release/moc_adminclase.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
@@ -426,7 +426,7 @@ release/moc_adminclase.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		adminclase.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminclase.h -o release\moc_adminclase.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminclase.h -o release\moc_adminclase.cpp
 
 release/moc_adminempleado.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
@@ -534,7 +534,7 @@ release/moc_adminempleado.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget
 		adminempleado.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminempleado.h -o release\moc_adminempleado.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminempleado.h -o release\moc_adminempleado.cpp
 
 release/moc_adminlicencia.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
@@ -642,7 +642,7 @@ release/moc_adminlicencia.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget
 		adminlicencia.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminlicencia.h -o release\moc_adminlicencia.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminlicencia.h -o release\moc_adminlicencia.cpp
 
 release/moc_adminprofesor.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
@@ -750,7 +750,7 @@ release/moc_adminprofesor.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget
 		adminprofesor.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminprofesor.h -o release\moc_adminprofesor.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminprofesor.h -o release\moc_adminprofesor.cpp
 
 release/moc_mainwindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h \
@@ -884,7 +884,7 @@ release/moc_mainwindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindo
 		mainwindow.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o release\moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1057,6 +1057,52 @@ release/adminalumno.o: adminalumno.cpp adminalumno.h \
 		PruebaTeorica.h \
 		PruebaPractica.h \
 		ui_adminalumno.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QDoubleSpinBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QGridLayout \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\adminalumno.o adminalumno.cpp
 
@@ -1164,7 +1210,35 @@ release/adminclase.o: adminclase.cpp adminclase.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_adminclase.h
+		ui_adminclase.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\adminclase.o adminclase.cpp
 
 release/adminempleado.o: adminempleado.cpp adminempleado.h \
@@ -1271,7 +1345,50 @@ release/adminempleado.o: adminempleado.cpp adminempleado.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_adminempleado.h
+		ui_adminempleado.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QDoubleSpinBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\adminempleado.o adminempleado.cpp
 
 release/adminlicencia.o: adminlicencia.cpp adminlicencia.h \
@@ -1378,7 +1495,26 @@ release/adminlicencia.o: adminlicencia.cpp adminlicencia.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_adminlicencia.h
+		ui_adminlicencia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\adminlicencia.o adminlicencia.cpp
 
 release/adminprofesor.o: adminprofesor.cpp adminprofesor.h \
@@ -1485,7 +1621,26 @@ release/adminprofesor.o: adminprofesor.cpp adminprofesor.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_adminprofesor.h
+		ui_adminprofesor.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\adminprofesor.o adminprofesor.cpp
 
 release/Alumno.o: Alumno.cpp Alumno.h \
@@ -2310,8 +2465,30 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		PruebaTeorica.h \
 		PruebaPractica.h \
 		ui_mainwindow.h \
-		adminalumno.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
+		adminalumno.h \
 		adminprofesor.h \
 		adminempleado.h \
 		adminclase.h \
