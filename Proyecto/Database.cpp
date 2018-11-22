@@ -299,7 +299,6 @@ bool Database::pull(){
           alumnos[i]->getLicencias()->push_back(tiposLicencia[k]);
         }
       }
-      alumnos[i]->getLicencias()->push_back(strings[j]);
     }
   }
 
