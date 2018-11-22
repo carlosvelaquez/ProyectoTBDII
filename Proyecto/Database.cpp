@@ -99,20 +99,7 @@ QString Database::version(){
 }
 
 bool Database::pull(){
-  /*
-select json * from autoescuela.empleado;
-select json * from autoescuela.profesor;
-select json * from autoescuela.alumno;
-select json * from autoescuela.categoriavehiculo;
-select json * from autoescuela.vehiculo;
-select json * from autoescuela.clase;
-select json * from autoescuela.claseteorica;
-select json * from autoescuela.pruebateorica;
-select json * from autoescuela.clasepractica;
-select json * from autoescuela.pruebapractica;
-select json * from autoescuela.pago;
-select json * from autoescuela.tipolicencia;
-  */
+  //EMPLEADO
   runQuery("select json * from autoescuela.empleado");
   vector<string> strings = resultStrings();
 
@@ -123,6 +110,142 @@ select json * from autoescuela.tipolicencia;
     empleados.push_back(nEmpleado);
     instancias.push_back(nEmpleado);
   }
+
+  //PROFESOR
+  runQuery("select json * from autoescuela.profesor");
+  vector<string> strings = resultStrings();
+
+  profesores.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    Profesor* nProfesor = new Profesor(strings[i]);
+    profesores.push_back(nProfesor);
+    instancias.push_back(nProfesor);
+  }
+
+  //ALUMNO
+  runQuery("select json * from autoescuela.alumno");
+  vector<string> strings = resultStrings();
+
+  alumnos.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    Alumno* nAlumno = new Alumno(strings[i]);
+    alumnos.push_back(nAlumno);
+    instancias.push_back(nAlumno);
+  }
+
+  //CATEGORIA VEHICULO
+  runQuery("select json * from autoescuela.categoriavehiculo");
+  vector<string> strings = resultStrings();
+
+  categorias.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    Categoria* nCategoria = new Categoria(strings[i]);
+    categorias.push_back(nCategoria);
+    instancias.push_back(nCategoria);
+  }
+
+  //VEHICULO
+  runQuery("select json * from autoescuela.vehiculo");
+  vector<string> strings = resultStrings();
+
+  vehiculos.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    Vehiculo* nVehiculo = new Vehiculo(strings[i]);
+    vehiculos.push_back(nVehiculo);
+    instancias.push_back(nVehiculo);
+  }
+
+  //CLASE
+  runQuery("select json * from autoescuela.clase");
+  vector<string> strings = resultStrings();
+
+  clases.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    Clase* nClase = new Clase(strings[i]);
+    clases.push_back(nClase);
+    instancias.push_back(nClase);
+  }
+
+  //CLASE TEORICA
+  runQuery("select json * from autoescuela.claseteorica");
+  vector<string> strings = resultStrings();
+
+  clasesTeoricas.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    ClaseTeorica* nClaseTeorica = new ClaseTeorica(strings[i]);
+    clasesTeoricas.push_back(nClaseTeorica);
+    instancias.push_back(nClaseTeorica);
+  }
+
+  //CLASE PRACTICA
+  runQuery("select json * from autoescuela.clasepractica");
+  vector<string> strings = resultStrings();
+
+  clasesPracticas.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    ClasePractica* nClasePractica = new ClasePractica(strings[i]);
+    clasesPracticas.push_back(nClasePractica);
+    instancias.push_back(nClasePractica);
+  }
+
+  //PRUEBA TEORICA
+  runQuery("select json * from autoescuela.pruebateorica");
+  vector<string> strings = resultStrings();
+
+  pruebasTeoricas.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    PruebaTeorica* nPruebaTeorica = new PruebaTeorica(strings[i]);
+    pruebasTeoricas.push_back(nPruebaTeorica);
+    instancias.push_back(nPruebaTeorica);
+  }
+
+  //PRUEBA PRACTICA
+  runQuery("select json * from autoescuela.pruebapractica");
+  vector<string> strings = resultStrings();
+
+  pruebasPracticas.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    PruebaPractica* nPruebaPractica = new PruebaPractica(strings[i]);
+    pruebasPracticas.push_back(nPruebaPractica);
+    instancias.push_back(nPruebaPractica);
+  }
+
+  //PAGO
+  runQuery("select json * from autoescuela.pago");
+  vector<string> strings = resultStrings();
+
+  pagos.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    Pago* nPago = new Pago(strings[i]);
+    pagos.push_back(nPagos);
+    instancias.push_back(nPagos);
+  }
+
+  //TIPO LICENCIA
+  runQuery("select json * from autoescuela.tipolicencia");
+  vector<string> strings = resultStrings();
+
+  TipoLicencia.clear();
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    TipoLicencia* nTipoLicencia = new TipoLicencia(strings[i]);
+    tiposLicencia.push_back(nTipoLicencia);
+    instancias.push_back(nTipoLicencia);
+  }
+
+  //TRANSACCIONALES
+
+
 
   return true;
 }
@@ -141,7 +264,7 @@ bool Database::push(){
   }
 
   //AQUI VA EL MAPEO DE APUNTADORES
-  
+
 
   return true;
 }
