@@ -5,6 +5,8 @@
 #include <QJsonObject>
 #include <QJsonDocument>
 
+Alumno::Alumno(){}
+
 Alumno::Alumno(string nUID, string nNombres, string nApellidos) : Instancia(nUID){
   nombres = nNombres;
   apellidos = nApellidos;

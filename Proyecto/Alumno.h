@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include "Clase.h"
+#include "Pago.h"
 
 using namespace std;
 
@@ -14,12 +15,12 @@ class Alumno : public Instancia{
     string nombres;
     string apellidos;
     vector<Clase*> clases;
-
-    vector<Clases*> clases;
-    vector<Licencias*> licencias;
+    vector<Clase*> clases;
+    vector<Licencia*> licencias;
     vector<Pago*> pagos;
 
   public:
+    Alumno();
     Alumno(string, string, string);
     Alumno(string, string);
 

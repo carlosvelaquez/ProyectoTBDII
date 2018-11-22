@@ -24,7 +24,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_AdminAlumnosButton_clicked()
 {
     AdminAlumno* ad = new AdminAlumno();
-
+    ad->setDatabase(&database);
     ad->show();
 }
 

@@ -46,7 +46,7 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
         a->setApellidos(ui->lineEditApellidoAlumno->text().toStdString())
         //Agregando las clases a las que pertenece
         for(int i=0; i<ui->listWidgetClasesAlumnos->selectedItems().size(); i++){
-
+            
         }
     }
 }

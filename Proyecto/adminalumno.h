@@ -15,6 +15,7 @@ class AdminAlumno : public QWidget
 
 public:
     void setDatabase(Database*);
+
     explicit AdminAlumno(QWidget *parent = 0);
     ~AdminAlumno();
 
