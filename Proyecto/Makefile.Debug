@@ -307,11 +307,11 @@ debug/moc_adminalumno.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Alumno.h \
+		TipoLicencia.h \
+		Pago.h \
 		Vehiculo.h \
 		Categoria.h \
-		TipoLicencia.h \
-		Alumno.h \
-		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
@@ -319,7 +319,7 @@ debug/moc_adminalumno.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		adminalumno.h \
 		debug/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/debug/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminalumno.h -o debug\moc_adminalumno.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/debug/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminalumno.h -o debug\moc_adminalumno.cpp
 
 debug/moc_adminclase.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
@@ -427,7 +427,7 @@ debug/moc_adminclase.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		adminclase.h \
 		debug/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/debug/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminclase.h -o debug\moc_adminclase.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/debug/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminclase.h -o debug\moc_adminclase.cpp
 
 debug/moc_adminempleado.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
@@ -535,7 +535,7 @@ debug/moc_adminempleado.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		adminempleado.h \
 		debug/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/debug/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminempleado.h -o debug\moc_adminempleado.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/debug/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminempleado.h -o debug\moc_adminempleado.cpp
 
 debug/moc_adminlicencia.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
@@ -643,7 +643,7 @@ debug/moc_adminlicencia.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		adminlicencia.h \
 		debug/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/debug/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminlicencia.h -o debug\moc_adminlicencia.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/debug/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminlicencia.h -o debug\moc_adminlicencia.cpp
 
 debug/moc_adminprofesor.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
@@ -751,7 +751,7 @@ debug/moc_adminprofesor.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		adminprofesor.h \
 		debug/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/debug/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminprofesor.h -o debug\moc_adminprofesor.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/debug/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward adminprofesor.h -o debug\moc_adminprofesor.cpp
 
 debug/moc_mainwindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h \
@@ -874,11 +874,11 @@ debug/moc_mainwindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow 
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Alumno.h \
+		TipoLicencia.h \
+		Pago.h \
 		Vehiculo.h \
 		Categoria.h \
-		TipoLicencia.h \
-		Alumno.h \
-		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
@@ -886,7 +886,7 @@ debug/moc_mainwindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow 
 		mainwindow.h \
 		debug/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/debug/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto" -I"C:/Users/carlo/Desktop/TDB II/ProyectoTBDII/Proyecto/include" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o debug\moc_mainwindow.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/debug/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto -IC:/Users/imado/Documents/Unitec/Proyecto_TBDII/Proyecto/include -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o debug\moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1050,11 +1050,11 @@ debug/adminalumno.o: adminalumno.cpp adminalumno.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Alumno.h \
+		TipoLicencia.h \
+		Pago.h \
 		Vehiculo.h \
 		Categoria.h \
-		TipoLicencia.h \
-		Alumno.h \
-		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
@@ -1857,10 +1857,10 @@ debug/Clase.o: Clase.cpp Clase.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		Profesor.h \
-		TipoLicencia.h \
 		Alumno.h \
+		TipoLicencia.h \
 		Pago.h \
+		Profesor.h \
 		Vehiculo.h \
 		Categoria.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\Clase.o Clase.cpp
@@ -2093,11 +2093,11 @@ debug/Database.o: Database.cpp Database.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Alumno.h \
+		TipoLicencia.h \
+		Pago.h \
 		Vehiculo.h \
 		Categoria.h \
-		TipoLicencia.h \
-		Alumno.h \
-		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
@@ -2375,11 +2375,11 @@ debug/main.o: main.cpp mainwindow.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Alumno.h \
+		TipoLicencia.h \
+		Pago.h \
 		Vehiculo.h \
 		Categoria.h \
-		TipoLicencia.h \
-		Alumno.h \
-		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
@@ -2515,11 +2515,11 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Alumno.h \
+		TipoLicencia.h \
+		Pago.h \
 		Vehiculo.h \
 		Categoria.h \
-		TipoLicencia.h \
-		Alumno.h \
-		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
@@ -2710,11 +2710,11 @@ debug/Profesor.o: Profesor.cpp Profesor.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
 		Clase.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h \
 		Alumno.h \
-		Pago.h
+		TipoLicencia.h \
+		Pago.h \
+		Vehiculo.h \
+		Categoria.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\Profesor.o Profesor.cpp
 
 debug/PruebaPractica.o: PruebaPractica.cpp PruebaPractica.h \

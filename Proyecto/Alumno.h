@@ -3,6 +3,7 @@
 
 class TipoLicencia;
 class Pago;
+class Clase;
 
 #include "Instancia.h"
 #include "Clase.h"
