@@ -1,6 +1,9 @@
 #include "Alumno.h"
 #include <QStringList>
 #include <QString>
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QJsonDocument>
 
 Alumno::Alumno(string nUID, string nNombres, string nApellidos) : Instancia(nUID){
   nombres = nNombres;
@@ -14,9 +17,24 @@ Alumno::Alumno(string nNombres, string nApellidos) : Instancia(){
 }
 
 bool Alumno::fromJSON(string cadena){
-
-  return true;
+  QString json = QString::fromStdString(cadena); // String que contiene el JSON
+  QJsonDocument doc = QJsonDocument::fromJson(data.toUtf8());
+  if(doc.object().isEmpty()){
+    return false;
+  }else{
+    nombres = doc["nombres"].toString();
+    apellidos = doc["apellidos"].toString();
+    return true;
+  }
+  return false;
 }
+
 string Alumno::toJSON(){
-  return "";
+  QJsonObject jsonObj;
+  jsonObj.insert("id",uid);
+  jsonObj.insert("apellidos",apellidos);
+  jsonObj.insert("nombres",nombres);
+  QJsonDocument dec(jsonObj);
+  QString strJson(dec.toJson(QJsonDocument::Compact));
+  return strJson.toStdString();
 }
