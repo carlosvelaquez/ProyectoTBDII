@@ -15,6 +15,7 @@ class Pago : public Instancia{
       Alumno* alumno;
 
   public:
+      Pago(string);
       Pago(string, string, float, string);
       Pago(string, float, string);
 

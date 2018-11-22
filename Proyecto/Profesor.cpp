@@ -1,5 +1,8 @@
 #include "Profesor.h"
 
+Profesor::Profesor(string json){
+  fromJSON(json);
+}
 
 Profesor::Profesor(string nUID, string nUidEmpleado, int nCategoria): Instancia(nUID){
   uid = nUID;

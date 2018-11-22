@@ -1,10 +1,9 @@
 #include "Pago.h"
 
-/*
-string uidAlumno;
-float monto;
-string motivo;
-*/
+Pago::Pago(string json){
+  fromJSON(json);
+}
+
 Pago::Pago(string nUID, string nUidAlumno, float nMonto, string nMotivo): Instancia(nUID){
   uid = nUID;
   uidAlumno = nUidAlumno;

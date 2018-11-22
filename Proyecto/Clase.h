@@ -21,6 +21,7 @@ class Clase : public Instancia{
     vector<Alumno*> alumnos;
 
   public:
+    Clase(string);
     Clase(string,string,string,string);
     Clase(string,string,string);
 

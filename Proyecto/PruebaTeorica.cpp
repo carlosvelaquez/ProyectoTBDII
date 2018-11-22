@@ -1,5 +1,9 @@
 #include "PruebaTeorica.h"
 
+PruebaTeorica::PruebaTeorica(string json){
+  fromJSON(json);
+}
+
 PruebaTeorica::PruebaTeorica(string nUID, string nUidClaseTeorica, float nNotaMaxima, float nNotaObtenida, string nNuidAlumno) : Instancia(nUID){
   uid = nUID;
   uidClaseTeorica = nUidClaseTeorica;

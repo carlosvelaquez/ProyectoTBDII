@@ -17,6 +17,7 @@ class TipoLicencia : public Instancia{
     vector<Alumno*> alumnos;
 
   public:
+    TipoLicencia(string);
     TipoLicencia(string, float, string);
     TipoLicencia(float, string);
 

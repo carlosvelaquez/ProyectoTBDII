@@ -1,5 +1,9 @@
 #include "Vehiculo.h"
 
+Vehiculo::Vehiculo(string json){
+  fromJSON(json);
+}
+
 Vehiculo::Vehiculo(string nUID, string nUIDCategoria) : Instancia(nUID){
   uid = nUID;
   uidCategoria = nUIDCategoria;

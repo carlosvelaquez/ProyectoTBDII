@@ -1,5 +1,10 @@
 #include "ClasePractica.h"
 
+
+ClasePractica::ClasePractica(string json){
+    fromJSON(json);
+}
+
 ClasePractica::ClasePractica(string nUID,string nUidClase):Instancia(nUID){
   uid = nUID;
   uidClase = nUidClase;

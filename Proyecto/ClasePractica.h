@@ -10,6 +10,7 @@ class ClasePractica : public Instancia{
     string uidClase;
 
   public:
+    ClasePractica(string);
     ClasePractica(string,string);
     ClasePractica(string);
 

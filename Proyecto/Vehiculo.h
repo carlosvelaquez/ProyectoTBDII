@@ -13,7 +13,7 @@ class Vehiculo : public Instancia{
     Categoria* categoria;
 
   public:
-
+    Vehiculo(string);
     Vehiculo(string, string);
     Vehiculo(string);
 

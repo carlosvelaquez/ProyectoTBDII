@@ -1,5 +1,8 @@
 #include "ClaseTeorica.h"
 
+ClaseTeorica::ClaseTeorica(string json){
+  fromJSON(json);
+}
 
 ClaseTeorica::ClaseTeorica(string nUID, string nUidClase):Instancia(nUID){
   uid = nUID;

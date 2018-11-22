@@ -1,5 +1,9 @@
 #include "Clase.h"
 
+Clase::Clase(string json){
+  fromJSON(json);
+}
+
 Clase::Clase(string nUID, string nNombre,string nUidProfesor, string nUidVehiculo): Instancia(nUID){
   uid = nUID;
   nombre = nNombre;

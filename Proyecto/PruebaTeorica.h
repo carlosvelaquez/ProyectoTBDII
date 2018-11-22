@@ -13,6 +13,7 @@ class PruebaTeorica : public Instancia{
     string uidAlumno;
 
   public:
+    PruebaTeorica(string);
     PruebaTeorica(string, string, float, float, string);
     PruebaTeorica(string, float, float, string);
 

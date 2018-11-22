@@ -7,6 +7,10 @@
 
 Alumno::Alumno(){}
 
+Alumno::Alumno(string json){
+  fromJSON(json);
+}
+
 Alumno::Alumno(string nUID, string nNombres, string nApellidos) : Instancia(nUID){
   nombres = nNombres;
   apellidos = nApellidos;

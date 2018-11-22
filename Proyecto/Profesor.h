@@ -19,7 +19,7 @@ class Profesor : public Instancia{
     vector<TipoLicencia*> capacitadoEn;
 
   public:
-
+    Profesor(string);
     Profesor(string, string, int);
     Profesor(string, int);
 

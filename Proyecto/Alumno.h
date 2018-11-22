@@ -24,6 +24,7 @@ class Alumno : public Instancia{
 
   public:
     Alumno();
+    Alumno(string);
     Alumno(string, string, string);
     Alumno(string, string);
 

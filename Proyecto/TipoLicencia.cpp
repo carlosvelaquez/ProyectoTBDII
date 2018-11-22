@@ -1,5 +1,9 @@
 #include "TipoLicencia.h"
 
+TipoLicencia::TipoLicencia(string json){
+  fromJSON(json);
+}
+
 TipoLicencia::TipoLicencia(string nUID, float nCantidadMatricula, string nDocumentos) : Instancia(nUID){
   uid = nUID;
   costoMatricula = nCantidadMatricula;

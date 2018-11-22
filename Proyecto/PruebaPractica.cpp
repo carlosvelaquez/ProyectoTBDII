@@ -1,5 +1,9 @@
 #include "PruebaPractica.h"
 
+PruebaPractica::PruebaPractica(string json){
+  fromJSON(json);
+}
+
 PruebaPractica::PruebaPractica(string nUID, string nUidClasePractica, float nNotaMaxima, float nNotaObtenida, string nUidAlumno, int nHoras, int nIntentos ) : Instancia(nUID){
   uid = nUID;
   uidClasePractica = nUidClasePractica;
