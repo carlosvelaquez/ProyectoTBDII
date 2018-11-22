@@ -57,3 +57,11 @@ string Profesor::getUIDEmpleado(){
 int Profesor::getCategoria(){
   return categoria;
 }
+
+vector<Clase*>* Profesor::getClases(){
+  return &clases;
+}
+
+vector<TipoLicencia*>* Profesor::getCapacitadoEn(){
+  return &capacitadoEn;
+}

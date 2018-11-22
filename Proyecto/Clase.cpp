@@ -56,6 +56,18 @@ void Clase::setUIDProfesor(string nUidProfesor){
   alterado = true;
 }
 
+void Clase::setProfesor(Profesor* nProfesor){
+  profesor = nProfesor;
+  uidProfesor = nProfesor->getUID();
+  alterado = true;
+}
+
+void Clase::setVehiculo(Vehiculo* nVehiculo){
+  vehiculo = nVehiculo;
+  uidVehiculo = nVehiculo->getUID();
+  alterado = true;
+}
+
 //Getters
 string Clase::getNombre(){
   return nombre;
@@ -67,4 +79,16 @@ string Clase::getUIDVehiculo(){
 
 string Clase::getUIDProfesor(){
   return uidProfesor;
+}
+
+Profesor* Clase::getProfesor(){
+  return profesor;
+}
+
+Vehiculo* Clase::getVehiculo(){
+  return vehiculo;
+}
+
+vector<Profesor*>* Clase::getProfesoresCapacitados(){
+  return &profesoresCapacitados;
 }

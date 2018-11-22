@@ -56,3 +56,7 @@ float TipoLicencia::getCostoMatricula(){
 string TipoLicencia::getDocumentos(){
   return documentos;
 }
+
+vector<Alumno*>* TipoLicencia::getAlumnos(){
+  return &alumnos;
+}

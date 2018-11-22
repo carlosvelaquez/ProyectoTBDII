@@ -43,8 +43,8 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
     }else{
         //Creando el nuevo alumno
         a->setNombres(ui->lineEditNombreAlumno->text().toStdString());
-        a->setApellidos(ui->lineEditApellidoAlumno->text().toStdString())
-        //Agregando las clases a las que pertenece
+        //a->setApellidos(ui->lineEditApellidoAlumno->text().toStdString())
+        //Agregando las clases a las que se matricula
         for(int i=0; i<ui->listWidgetClasesAlumnos->selectedItems().size(); i++){
 
         }

@@ -2,6 +2,7 @@
 #define VEHICULO_H
 
 #include "Instancia.h"
+#include "Categoria.h"
 #include <string>
 
 class Vehiculo : public Instancia{
@@ -9,6 +10,7 @@ class Vehiculo : public Instancia{
   private:
 
     string uidCategoria;
+    Categoria* categoria;
 
   public:
 
