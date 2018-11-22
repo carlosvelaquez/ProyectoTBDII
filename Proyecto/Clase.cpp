@@ -88,7 +88,3 @@ Profesor* Clase::getProfesor(){
 Vehiculo* Clase::getVehiculo(){
   return vehiculo;
 }
-
-vector<Profesor*>* Clase::getProfesoresCapacitados(){
-  return &profesoresCapacitados;
-}
