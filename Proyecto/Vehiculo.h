@@ -11,6 +11,7 @@ class Vehiculo : public Instancia{
 
     string uidCategoria;
     Categoria* categoria;
+    Clase* clase;
 
   public:
     Vehiculo(string);
@@ -21,9 +22,11 @@ class Vehiculo : public Instancia{
 
     //Setters
     void setUIDCategoria(string);
+    void setClase(Clase*);
 
     //Getters
     string getUIDCategoria();
+    Clase* getClase();
 };
 
 #endif

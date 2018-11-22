@@ -38,8 +38,16 @@ void Vehiculo::setUIDCategoria(string nUIDCategoria){
   uidCategoria = nUIDCategoria;
 }
 
+void Vehiculo::setClase(Clase* nClase){
+  clase = nClase;
+  alterado = true;
+}
 
 //Getters
 string Vehiculo::getUIDCategoria(){
   return uidCategoria;
+}
+
+Clase* Vehiculo::getClase(){
+  return clase
 }

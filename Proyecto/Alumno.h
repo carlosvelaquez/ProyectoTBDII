@@ -21,6 +21,8 @@ class Alumno : public Instancia{
     vector<Clase*> clases;
     vector<TipoLicencia*> licencias;
     vector<Pago*> pagos;
+    vector<PruebaTeorica*> pruebasT;
+    vector<PruebaPractica*> pruebasP;
 
   public:
     Alumno();
@@ -41,6 +43,8 @@ class Alumno : public Instancia{
     vector<Clase*>* getClases();
     vector<TipoLicencia*>* getLicencias();
     vector<Pago*>* getPagos();
+    vector<PruebaTeorica*>* getPruebasT;
+    vector<PruebaPractica*>* getPruebasP;
 };
 
 #endif

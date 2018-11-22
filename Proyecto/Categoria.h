@@ -9,6 +9,7 @@ class Categoria : public Instancia{
     string lujo;
     string tamano;
     float tarifa;
+    vector<Vehiculo*> vehiculos;
 
   public:
     Categoria();
@@ -28,6 +29,7 @@ class Categoria : public Instancia{
     string getLujo();
     string getTamano();
     float getTarifa();
+    vector<Vehiculo*>* getVehiculos();
 };
 
 #endif

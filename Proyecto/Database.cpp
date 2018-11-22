@@ -113,7 +113,7 @@ bool Database::pull(){
 
   //PROFESOR
   runQuery("select json * from autoescuela.profesor");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   profesores.clear();
 
@@ -125,7 +125,7 @@ bool Database::pull(){
 
   //ALUMNO
   runQuery("select json * from autoescuela.alumno");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   alumnos.clear();
 
@@ -137,7 +137,7 @@ bool Database::pull(){
 
   //CATEGORIA VEHICULO
   runQuery("select json * from autoescuela.categoriavehiculo");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   categorias.clear();
 
@@ -149,7 +149,7 @@ bool Database::pull(){
 
   //VEHICULO
   runQuery("select json * from autoescuela.vehiculo");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   vehiculos.clear();
 
@@ -161,7 +161,7 @@ bool Database::pull(){
 
   //CLASE
   runQuery("select json * from autoescuela.clase");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   clases.clear();
 
@@ -173,7 +173,7 @@ bool Database::pull(){
 
   //CLASE TEORICA
   runQuery("select json * from autoescuela.claseteorica");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   clasesTeoricas.clear();
 
@@ -185,7 +185,7 @@ bool Database::pull(){
 
   //CLASE PRACTICA
   runQuery("select json * from autoescuela.clasepractica");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   clasesPracticas.clear();
 
@@ -197,7 +197,7 @@ bool Database::pull(){
 
   //PRUEBA TEORICA
   runQuery("select json * from autoescuela.pruebateorica");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   pruebasTeoricas.clear();
 
@@ -209,7 +209,7 @@ bool Database::pull(){
 
   //PRUEBA PRACTICA
   runQuery("select json * from autoescuela.pruebapractica");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   pruebasPracticas.clear();
 
@@ -221,7 +221,7 @@ bool Database::pull(){
 
   //PAGO
   runQuery("select json * from autoescuela.pago");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   pagos.clear();
 
@@ -233,7 +233,7 @@ bool Database::pull(){
 
   //TIPO LICENCIA
   runQuery("select json * from autoescuela.tipolicencia");
-  vector<string> strings = resultStrings();
+  strings = resultStrings();
 
   TipoLicencia.clear();
 
@@ -285,6 +285,53 @@ bool Database::pull(){
       alumnos[i]->getLicencias().push_back(strings[j]);
     }
   }
+
+  //Alumno / pruebasPracticas
+  for (size_t i = 0; i < alumnos.size(); i++) {
+    for (size_t j = 0; j < pruebasPracticas.size(); j++) {
+      if (pruebasPracticas[j]->getUIDAlumno() == alumnos[i]->getUID()) {
+        alumnos[i]->getPruebasP().push_back(pruebasPracticas[j]);
+      }
+    }
+  }
+
+  //Alumno / pruebasTeoricas
+  for (size_t i = 0; i < alumnos.size(); i++) {
+    for (size_t j = 0; j < pruebasTeoricas.size(); j++) {
+      if (pruebasTeoricas[j]->getUIDAlumno() == alumnos[i]->getUID()) {
+        alumnos[i]->getPruebasT().push_back(pruebasTeoricas[j]);
+      }
+    }
+  }
+
+  //Alumno / Pago
+  for (size_t i = 0; i < alumnos.size(); i++) {
+    for (size_t j = 0; j < pagos.size(); j++) {
+      if (pagos[j]->getUIDAlumno() == alumnos[i]->getUID()) {
+        alumnos[i]->getPagos().push_back(pagos[j]);
+      }
+    }
+  }
+
+  //Vehiculo / Categoria
+  for (size_t i = 0; i < categorias.size(); i++) {
+    for (size_t j = 0; j < vehiculos.size(); j++) {
+      if (vehiculos[j]->getUIDCategoria() == categorias[i]->getUID()) {
+        categorias[i]->getVehiculos().push_back(vehiculos[j]);
+      }
+    }
+  }
+
+  //Vehiculo / Clase
+  for (size_t i = 0; i < clases.size(); i++) {
+    for (size_t j = 0; j < vehiculos.size(); j++) {
+      if (vehiculo[j]->getUID() == clases[i]->getUIDVehiculo()) {
+        clases[i]->setVehiculo(vehiculos[j]);
+        vehiculos[j]->setClase(clases[i]);
+      }
+    }
+  }
+
 
   return true;
 }
