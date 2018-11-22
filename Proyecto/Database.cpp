@@ -23,7 +23,7 @@ Database::Database(){
     const char* message;
     size_t message_length;
     cass_future_error_message(connect_future, &message, &message_length);
-    qDebug() << "Error";
+    qDebug() << "Error de conexion - " << message;
   }
 }
 
@@ -383,6 +383,7 @@ bool Database::runQuery(string query){
 
   /* This will block until the query has finished */
   if (cass_future_error_code(query_future) == CASS_OK) {
+
     if (result) {
       cass_result_free(result);
     }
