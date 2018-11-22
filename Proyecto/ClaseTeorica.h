@@ -12,7 +12,7 @@ class ClaseTeorica : public Instancia{
   public:
     ClaseTeorica(string);
     ClaseTeorica(string, string);
-    ClaseTeorica(string);
+    //ClaseTeorica(string);
 
     bool fromJSON(string);
     string toJSON();

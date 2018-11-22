@@ -10,9 +10,9 @@ Vehiculo::Vehiculo(string nUID, string nUIDCategoria) : Instancia(nUID){
   tablePath = "autoescuela.vehiculos";
 }
 
-Vehiculo::Vehiculo(string nUIDCategoria) : Instancia(){
+/*Vehiculo::Vehiculo(string nUIDCategoria) : Instancia(){
   uidCategoria = nUIDCategoria;
-}
+}*/
 
 bool Vehiculo::fromJSON(string cadena){
   QString json = QString::fromStdString(cadena); // String que contiene el JSON

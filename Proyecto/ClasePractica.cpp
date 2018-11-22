@@ -11,9 +11,9 @@ ClasePractica::ClasePractica(string nUID,string nUidClase):Instancia(nUID){
   tablePath = "autoescuela.clasepractica";
 }
 
-ClasePractica::ClasePractica(string nUidClase):Instancia(){
+/*ClasePractica::ClasePractica(string nUidClase):Instancia(){
   uidClase = nUidClase;
-}
+}*/
 
 bool ClasePractica::fromJSON(string cadena){
   QString json = QString::fromStdString(cadena); // String que contiene el JSON

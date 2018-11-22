@@ -15,7 +15,7 @@ class Vehiculo : public Instancia{
   public:
     Vehiculo(string);
     Vehiculo(string, string);
-    Vehiculo(string);
+    //Vehiculo(string);
 
     bool fromJSON(string);
     string toJSON();

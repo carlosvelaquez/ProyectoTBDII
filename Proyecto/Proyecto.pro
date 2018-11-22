@@ -41,14 +41,16 @@ HEADERS += adminalumno.h \
            PruebaTeorica.h \
            TipoLicencia.h \
            Vehiculo.h \ 
-    adminvehiculo.h
+    adminvehiculo.h \
+    pagoalumno.h
 FORMS += adminalumno.ui \
          adminclase.ui \
          adminempleado.ui \
          adminlicencia.ui \
          adminprofesor.ui \
          mainwindow.ui \
-    adminvehiculo.ui
+    adminvehiculo.ui \
+    pagoalumno.ui
 SOURCES += adminalumno.cpp \
            adminclase.cpp \
            adminempleado.cpp \
@@ -70,4 +72,5 @@ SOURCES += adminalumno.cpp \
            PruebaTeorica.cpp \
            TipoLicencia.cpp \
            Vehiculo.cpp \
-    adminvehiculo.cpp
+    adminvehiculo.cpp \
+    pagoalumno.cpp

@@ -11,9 +11,9 @@ ClaseTeorica::ClaseTeorica(string nUID, string nUidClase):Instancia(nUID){
 }
 
 
-ClaseTeorica::ClaseTeorica(string nUidClase):Instancia(){
+/*ClaseTeorica::ClaseTeorica(string nUidClase):Instancia(){
   uidClase = nUidClase;
-}
+}*/
 
 bool ClaseTeorica::fromJSON(string cadena){
   QString json = QString::fromStdString(cadena); // String que contiene el JSON
