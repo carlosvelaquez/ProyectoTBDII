@@ -129,6 +129,7 @@ select json * from autoescuela.tipolicencia;
 
 bool Database::push(){
   qDebug() << "Pushing... Instancias size: " << instancias.size();
+
   for (size_t i = 0; i < instancias.size(); i++) {
     qDebug() << "Empujando elemento " << i;
     if (instancias[i]->isAlterado()) {
@@ -138,6 +139,9 @@ bool Database::push(){
       qDebug() << "Elemento no alterado. Abortando.";
     }
   }
+
+  //AQUI VA EL MAPEO DE APUNTADORES
+  
 
   return true;
 }
@@ -298,6 +302,59 @@ vector<Categoria*>* Database::getCategorias(){
 
 vector<TipoLicencia*>* Database::getTiposLicencia(){
   return &tiposLicencia;
+}
+
+
+//TRANSACCIONALES
+
+/*
+CapacitadoEn
+select json id_profesor from autoescuela.capacitadoen where id_clase=? allow filtering;
+select json id_clase from autoescuela.capacitadoen where id_profesor=? allow filtering;
+*/
+vector<string> Database::get_Profesores_CapacitadoEn(string uid){
+  runQuery("select id_profesor from autoescuela.capacitadoen where id_clase=" + uid + " allow filtering;");
+  return resultStrings();
+}
+
+vector<string> Database::get_Clases_CapacitadoEn(string uid){
+  runQuery("select id_clase from autoescuela.capacitadoen where id_profesor=" + uid + " allow filtering;");
+  return resultStrings();
+}
+
+/*
+AlumnosClases
+select id_alumno from autoescuela.alumnosclases where id_clase=? allow filtering;
+select id_clase from autoescuela.alumnosclases where id_alumno=? allow filtering;
+*/
+vector<string> Database::get_Alumnos_AlumnosClases(string uid){
+  runQuery("select id_alumno from autoescuela.alumnosclases where id_clase=" + uid + " allow filtering;");
+  return resultStrings();
+}
+
+vector<string> Database::get_Clases_AlumnosClases(string uid){
+  runQuery("select id_clase from autoescuela.alumnosclases where id_alumno=" + uid + " allow filtering;");
+  return resultStrings();
+}
+
+/*
+LicenciaAlumno
+select id_licencia from autoescuela.licenciaalumno where id_alumno=? allow filtering;
+select id_alumno from autoescuela.licenciaalumno where id_licencia=? allow filtering;
+*/
+vector<string> Database::get_Alumnos_LicenciaAlumno(string uid){
+  runQuery("select id_alumno from autoescuela.licenciaalumno where id_licencia=" + uid + " allow filtering;");
+  return resultStrings();
+}
+
+vector<string> Database::get_Licencias_LicenciaAlumno(string uid){
+  runQuery("select id_licencia from autoescuela.licenciaalumno where id_alumno=" + uid + " allow filtering;");
+  return resultStrings();
+}
+
+vector<string> Database::get_Profesor_LicenciaAlumno(string uidAlumno, string uidLicencia){
+  runQuery("select id_profesor from autoescuela.licenciaalumno where id_alumno=" + uidAlumno + " AND id_licencia=" + uidLicencia + "allow filtering;");
+  return resultStrings();
 }
 
 
