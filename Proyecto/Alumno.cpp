@@ -3,7 +3,6 @@
 #include <QString>
 
 Alumno::Alumno(string nUID, string nNombres, string nApellidos) : Instancia(nUID){
-  uid = nUID;
   nombres = nNombres;
   apellidos = nApellidos;
   tablePath = "autoescuela.alumno";
