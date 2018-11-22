@@ -4,6 +4,8 @@
 #include <QWidget>
 #include "Database.h"
 #include "Alumno.h"
+#include "Clase.h"
+#include <vector>
 
 namespace Ui {
 class AdminAlumno;
@@ -14,7 +16,11 @@ class AdminAlumno : public QWidget
     Q_OBJECT
 
 public:
+
+    //Metodo que toma el "DataBase" principal
     void setDatabase(Database*);
+
+    //Metodo que refresca los comboBox y la Table
     void refreshWidgets();
 
     explicit AdminAlumno(QWidget *parent = 0);
@@ -31,7 +37,9 @@ private slots:
 
     void on_pushButtonAgregarTipoLicencia_clicked();
 
+
 private:
+    vector<Clase*>* clasesSeleccionadas;
     Alumno* newAlumno;
     Database* database;
     Ui::AdminAlumno *ui;
