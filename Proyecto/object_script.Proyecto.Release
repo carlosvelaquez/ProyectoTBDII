@@ -20,10 +20,12 @@ INPUT(
 ./release\PruebaTeorica.o
 ./release\TipoLicencia.o
 ./release\Vehiculo.o
+./release\adminvehiculo.o
 ./release\moc_adminalumno.o
 ./release\moc_adminclase.o
 ./release\moc_adminempleado.o
 ./release\moc_adminlicencia.o
 ./release\moc_adminprofesor.o
 ./release\moc_mainwindow.o
+./release\moc_adminvehiculo.o
 );

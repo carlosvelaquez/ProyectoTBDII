@@ -20,10 +20,12 @@ INPUT(
 ./debug\PruebaTeorica.o
 ./debug\TipoLicencia.o
 ./debug\Vehiculo.o
+./debug\adminvehiculo.o
 ./debug\moc_adminalumno.o
 ./debug\moc_adminclase.o
 ./debug\moc_adminempleado.o
 ./debug\moc_adminlicencia.o
 ./debug\moc_adminprofesor.o
 ./debug\moc_mainwindow.o
+./debug\moc_adminvehiculo.o
 );

@@ -1,6 +1,6 @@
 #include "ClaseTeorica.h"
 
-ClaseTeorica::ClaseTeorica(string json){
+ClaseTeorica::ClaseTeorica(string json) : Instancia(){
   fromJSON(json);
 }
 
@@ -8,11 +8,6 @@ ClaseTeorica::ClaseTeorica(string nUID, string nUidClase):Instancia(nUID){
   uid = nUID;
   uidClase = nUidClase;
   tablePath = "autoescuela.claseteorica";
-}
-
-
-ClaseTeorica::ClaseTeorica(string nUidClase):Instancia(){
-  uidClase = nUidClase;
 }
 
 bool ClaseTeorica::fromJSON(string cadena){

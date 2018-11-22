@@ -12,7 +12,6 @@ class ClasePractica : public Instancia{
   public:
     ClasePractica(string);
     ClasePractica(string,string);
-    ClasePractica(string);
 
     bool fromJSON(string);
     string toJSON();

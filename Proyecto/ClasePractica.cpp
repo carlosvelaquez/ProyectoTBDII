@@ -1,7 +1,7 @@
 #include "ClasePractica.h"
 
 
-ClasePractica::ClasePractica(string json){
+ClasePractica::ClasePractica(string json) : Instancia(){
     fromJSON(json);
 }
 
@@ -9,10 +9,6 @@ ClasePractica::ClasePractica(string nUID,string nUidClase):Instancia(nUID){
   uid = nUID;
   uidClase = nUidClase;
   tablePath = "autoescuela.clasepractica";
-}
-
-ClasePractica::ClasePractica(string nUidClase):Instancia(){
-  uidClase = nUidClase;
 }
 
 bool ClasePractica::fromJSON(string cadena){
