@@ -263,7 +263,6 @@ bool Database::pull(){
           clases[i]->getAlumnos()->push_back(alumnos[k]);
         }
       }
-      //clases[i]->getAlumnos()->push_back(strings[j]);
     }
   }
 
@@ -271,7 +270,11 @@ bool Database::pull(){
   for (size_t i = 0; i < alumnos.size(); i++) {
     vector<string> strings = get_Clases_AlumnosClases(alumnos[i]->getUID());
     for (size_t j = 0; j < strings.size(); j++) {
-      alumnos[i]->getClases()->push_back(strings[j]);
+      for (size_t k = 0; k < clases.size(); k++) {alumnos
+        if (strings[j] = clases[k]->getUID()) {
+          alumnos[i]->getClase()->push_back(clases[k]);
+        }
+      }
     }
   }
 
@@ -279,7 +282,11 @@ bool Database::pull(){
   for (size_t i = 0; i < tiposLicencia.size() ; i++) {
     vector<string> strings = get_Alumnos_LicenciaAlumno(tiposLicencia[i]->getUID());
     for (size_t j = 0; j < strings.size(); j++) {
-      tiposLicencia[i]->getAlumnos()->push_back(strings[j]);
+      for (size_t k = 0; k < alumnos.size(); k++) {
+        if (strings[j] == alumnos[k]->getUID()) {
+          tiposLicencia[i]->getAlumnos()->push_back(alumnos[k]);
+        }
+      }
     }
   }
 
@@ -287,6 +294,11 @@ bool Database::pull(){
   for (size_t i = 0; i < alumnos.size(); i++) {
     vector<string> strings = get_Licencias_LicenciaAlumno(alumnos[i]->getUID());
     for (size_t j = 0; j < strings.size(); j++) {
+      for (size_t k = 0; k < tiposLicencia.size(); k++) {
+        if (strings[j] == tiposLicencia[k]->getUID()) {
+          alumnos[i]->getLicencias()->push_back(tiposLicencia[k]);
+        }
+      }
       alumnos[i]->getLicencias()->push_back(strings[j]);
     }
   }
