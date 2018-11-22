@@ -254,6 +254,12 @@ bool Database::pull(){
     }
   }
 
+  //Alumnos -> Clase
+  for (size_t i = 0; i < clases.size(); i++) {
+    vector<string> strings = get_Alumnos_AlumnosClases(clases[i]->getUID())
+  }
+
+
   return true;
 }
 
