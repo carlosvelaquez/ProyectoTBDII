@@ -16,5 +16,11 @@ class ClaseTeorica : public Instancia{
     bool fromJSON(string);
     string toJSON();
 
+    //Setters
+    void setUIDClase(string);
+
+    //Getters
+    string getUIDClase();
+
 };
 #endif

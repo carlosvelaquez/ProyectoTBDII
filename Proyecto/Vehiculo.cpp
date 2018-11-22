@@ -31,3 +31,15 @@ string Vehiculo::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+void Vehiculo::setUIDCategoria(string nUIDCategoria){
+  alterado = true;
+  uidCategoria = nUIDCategoria;
+}
+
+
+//Getters
+string Vehiculo::getUIDCategoria(){
+  return uidCategoria;
+}

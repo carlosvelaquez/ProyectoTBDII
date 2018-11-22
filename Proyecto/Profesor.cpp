@@ -36,3 +36,24 @@ string Profesor::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+void Profesor::setUIDEmpleado(string nUidEmpleado){
+  alterado  = true;
+  uidEmpleado = nUidEmpleado;
+}
+
+void Profesor::setCategoria(int nCategoria){
+  alterado = true;
+  categoria = nCategoria;
+}
+
+
+//Getters
+string Profesor::getUIDEmpleado(){
+  return uidEmpleado;
+}
+
+int Profesor::getCategoria(){
+  return categoria;
+}

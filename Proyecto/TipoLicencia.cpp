@@ -35,3 +35,24 @@ string TipoLicencia::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+void TipoLicencia::setCostoMatricula(float nCostoMatricula){
+  alterado =true;
+  costoMatricula = nCostoMatricula;
+}
+
+void TipoLicencia::setDocumentos(string nDocumentos){
+  alterado = true;
+  documentos = nDocumentos;
+}
+
+
+//Getters
+float TipoLicencia::getCostoMatricula(){
+  return costoMatricula;
+}
+
+string TipoLicencia::getDocumentos(){
+  return documentos;
+}

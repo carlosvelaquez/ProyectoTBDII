@@ -17,7 +17,14 @@ class Profesor : public Instancia{
 
     bool fromJSON(string);
     string toJSON();
-    
+
+    //Setters
+    void setUIDEmpleado(string);
+    void setCategoria(int);
+
+    //Getters
+    string getUIDEmpleado();
+    int getCategoria();
 };
 
 #endif

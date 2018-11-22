@@ -44,3 +44,33 @@ string Pago::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+void Pago::setUIDAlumno(string nUidAlumno){
+  alterado = true;
+  uidAlumno = nUidAlumno;
+}
+
+void Pago::setMonto(float nMonto){
+  alterado = true;
+  monto = nMonto;
+}
+
+void Pago::setMotivo(string nMotivo){
+  alterado = true;
+  motivo = nMotivo;
+}
+
+
+//Getters
+string Pago::getUIDAlumno(){
+  return uidAlumno;
+}
+
+float Pago::getMonto(){
+  return monto;
+}
+
+string Pago::getMotivo(){
+  return motivo;
+}

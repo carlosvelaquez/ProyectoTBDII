@@ -17,6 +17,12 @@ class Vehiculo : public Instancia{
 
     bool fromJSON(string);
     string toJSON();
+
+    //Setters
+    void setUIDCategoria(string);
+
+    //Getters
+    string getUIDCategoria();
 };
 
 #endif

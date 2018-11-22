@@ -43,3 +43,42 @@ string PruebaTeorica::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+void PruebaTeorica::setUIDClaseTeorica(string nUidClaseTeorica){
+  alterado = true;
+  uidClaseTeorica = nUidClaseTeorica;
+}
+
+void PruebaTeorica::setNotaMaxima(float nNotaMaxima){
+  alterado = true;
+  notaMaxima = nNotaMaxima;
+}
+
+void PruebaTeorica::setNotaObtenida(float nNotaObtenida){
+  alterado = true;
+  notaObtenida = nNotaObtenida;
+}
+
+void PruebaTeorica::setUIDAlumno(string nUidAlumno){
+  alterado = true;
+  uidAlumno = nUidAlumno;
+}
+
+
+//Getters
+string PruebaTeorica::getUIDClaseTeorica(){
+  return uidClaseTeorica;
+}
+
+float PruebaTeorica::getNotaMaxima(){
+  return notaMaxima;
+}
+
+float PruebaTeorica::getNotaObtenida(){
+  return notaObtenida;
+}
+
+string PruebaTeorica::getUIDAlumno(){
+  return uidAlumno;
+}

@@ -51,3 +51,60 @@ string PruebaPractica::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+void PruebaPractica::setUIDClasePractica(string nUidClasePractica){
+  alterado = true;
+  uidClasePractica = nUidClasePractica;
+}
+
+void PruebaPractica::setNotaMaxima(float nNotaMaxima){
+  alterado = true;
+  notaMaxima = nNotaMaxima;
+}
+
+void PruebaPractica::setNotaObtenida(float nNotaObtenida){
+  alterado = true;
+  notaObtenida = nNotaObtenida;
+}
+
+void PruebaPractica::setUIDAlumno(string nUidAlumno){
+  alterado = true;
+  uidAlumno = nUidAlumno;
+}
+
+void PruebaPractica::setHoras(int nHoras){
+  alterado = true;
+  Horas = nHoras;
+}
+
+void PruebaPractica::setIntento(int nIntento){
+  alterado = true;
+  Intento = nIntento;
+}
+
+
+//Getters
+string PruebaPractica::getUIDClasePractica(){
+  return uidClasePractica;
+}
+
+float PruebaPractica::getNotaMaxima(){
+  return notaMaxima;
+}
+
+float PruebaPractica::getNotaObtenida(){
+  return notaObtenida;
+}
+
+string PruebaPractica::getUIDAlumno(){
+  return uidAlumno;
+}
+
+int PruebaPractica::getHoras(){
+  return Horas;
+}
+
+int PruebaPractica::getIntento(){
+  return Intento;
+}

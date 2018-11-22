@@ -31,3 +31,14 @@ string ClasePractica::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+void ClasePractica::setUIDClase(string nUidClase){
+  uidClase = nUidClase;
+  alterado = true;
+}
+
+//Getters
+string ClasePractica::getUIDClase(){
+  return uidClase;
+}

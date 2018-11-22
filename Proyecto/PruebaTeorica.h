@@ -18,6 +18,18 @@ class PruebaTeorica : public Instancia{
 
     bool fromJSON(string);
     string toJSON();
+
+    //Setters
+    void setUIDClaseTeorica(string);
+    void setNotaMaxima(float);
+    void setNotaObtenida(float);
+    void setUIDAlumno(string);
+
+    //Getters
+    string getUIDClaseTeorica();
+    float getNotaMaxima();
+    float getNotaObtenida();
+    string getUIDAlumno();
 };
 
 #endif

@@ -33,3 +33,13 @@ string ClaseTeorica::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+//Setters
+void ClaseTeorica::setUIDClase(string nUidClase){
+  uidClase = nUidClase;
+  alterado = true;
+}
+
+//Getters
+string ClaseTeorica::getUIDClase(){
+  return uidClase;
+}

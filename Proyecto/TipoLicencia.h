@@ -16,6 +16,14 @@ class TipoLicencia : public Instancia{
 
     bool fromJSON(string);
     string toJSON();
+
+    //Setters
+    void setCostoMatricula(float);
+    void setDocumentos(string);
+
+    //Getters
+    float getCostoMatricula();
+    string getDocumentos();
 };
 
 #endif

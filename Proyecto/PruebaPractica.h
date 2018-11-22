@@ -20,6 +20,22 @@ class PruebaPractica : public Instancia{
     bool fromJSON(string);
     string toJSON();
 
+    //Setters
+    void setUIDClasePractica(string);
+    void setNotaMaxima(float);
+    void setNotaObtenida(float);
+    void setUIDAlumno(string);
+    void setHoras(int);
+    void setIntento(int);
+
+    //Getters
+    string getUIDClasePractica();
+    float getNotaMaxima();
+    float getNotaObtenida();
+    string getUIDAlumno();
+    int getHoras();
+    int getIntento();
+
 };
 
 #endif

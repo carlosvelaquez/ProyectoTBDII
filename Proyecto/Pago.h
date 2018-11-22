@@ -17,6 +17,16 @@ class Pago : public Instancia{
       bool fromJSON(string);
       string toJSON();
 
+      //Setters
+      void setUIDAlumno(string);
+      void setMonto(float);
+      void setMotivo(string);
+
+      //Getters
+      string getUIDAlumno();
+      float getMonto();
+      string getMotivo();
+
 };
 
 #endif

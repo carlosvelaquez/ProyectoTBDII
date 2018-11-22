@@ -62,7 +62,7 @@ string Clase::getNombre(){
 }
 
 string Clase::getUIDVehiculo(){
-  return nUidVehiculo;
+  return uidVehiculo;
 }
 
 string Clase::getUIDProfesor(){
