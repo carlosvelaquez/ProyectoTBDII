@@ -22,18 +22,23 @@
      <widget class="QLabel" name="label">
       <property name="font">
        <font>
-        <family>Noto Sans Canadian Aboriginal</family>
+        <family>MS Shell Dlg 2</family>
         <pointsize>30</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>                AUTOESCUELA</string>
+       <string>Tigrillo AMS</string>
       </property>
       <property name="textFormat">
        <enum>Qt::AutoText</enum>
       </property>
       <property name="scaledContents">
        <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>
