@@ -28,7 +28,6 @@ void AdminAlumno::refreshWidgets(){
 
     }
 
-
 }
 
 //Metodo que agrega la variable DataBase que maneja todo
@@ -64,6 +63,8 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
         newAlumno = NULL;
         delete newAlumno;
     }
+    ui->lineEditApellidoAlumno->setText("");
+    ui->lineEditNombreAlumno->setText("");
 }
 
 //Boton que aplica los cambios hechos al alumno.
