@@ -17,6 +17,15 @@ class Clase : public Instancia{
     bool fromJSON(string);
     string toJSON();
 
+    //Setters
+    void setNombre(string);
+    void setUIDVehiculo(string);
+    void setUIDProfesor(string);
+
+    //Getters
+    string getNombre();
+    string getUIDVehiculo();
+    string getUIDProfesor();
 };
 
 #endif

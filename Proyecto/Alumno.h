@@ -7,7 +7,7 @@
 using namespace std;
 
 class Alumno : public Instancia{
-  
+
   private:
     string nombres;
     string apellidos;
@@ -19,6 +19,12 @@ class Alumno : public Instancia{
     bool fromJSON(string);
     string toJSON();
 
+    //Setters
+    void setNombres(string);
+    void setApellidos(string);
+    //Getters
+    string getNombres();
+    string getApellidos();
 };
 
 #endif

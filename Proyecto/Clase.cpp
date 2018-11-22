@@ -39,3 +39,32 @@ string Clase::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+void Clase::setNombre(string nNombre){
+  nombre = nNombre;
+  alterado = true;
+}
+
+void Clase::setUIDVehiculo(string nUidVehiculo){
+  uidVehiculo = nUidVehiculo;
+  alterado  =true;
+}
+
+void Clase::setUIDProfesor(string nUidProfesor){
+  uidProfesor = nUidProfesor;
+  alterado = true;
+}
+
+//Getters
+string Clase::getNombre(){
+  return nombre;
+}
+
+string Clase::getUIDVehiculo(){
+  return nUidVehiculo;
+}
+
+string Clase::getUIDProfesor(){
+  return uidProfesor;
+}

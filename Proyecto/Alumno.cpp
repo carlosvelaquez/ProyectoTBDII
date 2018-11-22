@@ -38,3 +38,23 @@ string Alumno::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+void Alumno::setNombres(string nNombres){
+  nombres = nNombres;
+  alterado = true;
+}
+
+void Alumno::setApellidos(string nApellidos){
+  apellidos = nApellidos;
+  alterado = true;
+}
+
+//Getters
+string Alumno::getNombres(){
+  return nombres;
+}
+
+string Alumno::getApellidos(){
+  return apellidos;
+}
