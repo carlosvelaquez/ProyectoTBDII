@@ -8,11 +8,14 @@ class TipoLicencia : public Instancia{
 
   private:
     float costoMatricula;
+    string documentos;
 
   public:
+    TipoLicencia(string, float, string);
     TipoLicencia(float, string);
-    TipoLicencia(float);
 
+    bool fromJSON(string);
+    string toJSON();
 };
 
 #endif

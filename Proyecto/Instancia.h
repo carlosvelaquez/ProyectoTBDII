@@ -2,6 +2,9 @@
 #define INSTANCIA_H
 
 #include <string>
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QJsonDocument>
 
 using namespace std;
 

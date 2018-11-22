@@ -14,6 +14,8 @@ class Categoria : public Instancia{
     Categoria();
     Categoria(string, string, string, float);
     Categoria(string, string , float);
+    bool fromJSON(string);
+    string toJSON();
 };
 
 #endif

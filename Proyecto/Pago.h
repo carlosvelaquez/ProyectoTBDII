@@ -13,6 +13,10 @@ class Pago : public Instancia{
   public:
       Pago(string, string, float, string);
       Pago(string, float, string);
+
+      bool fromJSON(string);
+      string toJSON();
+
 };
 
 #endif

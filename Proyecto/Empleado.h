@@ -19,6 +19,9 @@ public:
 
   //Nuevo empleado, genera un nuevo UID
   Empleado(string, string, float);
+
+  bool fromJSON(string);
+  string toJSON();
 };
 
 #endif /* end of include guard: EMPLEADO_H */

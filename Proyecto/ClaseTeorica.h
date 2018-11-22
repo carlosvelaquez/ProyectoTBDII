@@ -5,11 +5,16 @@
 #include <string>
 
 class ClaseTeorica : public Instancia{
+
   private:
     string uidClase;
 
   public:
     ClaseTeorica(string, string);
     ClaseTeorica(string);
+
+    bool fromJSON(string);
+    string toJSON();
+
 };
 #endif

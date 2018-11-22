@@ -14,6 +14,10 @@ class Profesor : public Instancia{
 
     Profesor(string, string, int);
     Profesor(string, int);
+
+    bool fromJSON(string);
+    string toJSON();
+    
 };
 
 #endif

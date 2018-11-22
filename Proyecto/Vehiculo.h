@@ -6,14 +6,17 @@
 
 class Vehiculo : public Instancia{
 
-private:
-  
-  string uidCategoria;
+  private:
 
-public:
-  Vehiculo(string, string);
-  Vehiculo(string);
+    string uidCategoria;
 
+  public:
+
+    Vehiculo(string, string);
+    Vehiculo(string);
+
+    bool fromJSON(string);
+    string toJSON();
 };
 
 #endif

@@ -18,12 +18,12 @@ Alumno::Alumno(string nNombres, string nApellidos) : Instancia(){
 
 bool Alumno::fromJSON(string cadena){
   QString json = QString::fromStdString(cadena); // String que contiene el JSON
-  QJsonDocument doc = QJsonDocument::fromJson(data.toUtf8());
+  QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
   if(doc.object().isEmpty()){
     return false;
   }else{
-    nombres = doc["nombres"].toString();
-    apellidos = doc["apellidos"].toString();
+    nombres = doc["nombres"].toString().toStdString();
+    apellidos = doc["apellidos"].toString().toStdString();
     return true;
   }
   return false;
@@ -31,9 +31,9 @@ bool Alumno::fromJSON(string cadena){
 
 string Alumno::toJSON(){
   QJsonObject jsonObj;
-  jsonObj.insert("id",uid);
-  jsonObj.insert("apellidos",apellidos);
-  jsonObj.insert("nombres",nombres);
+  jsonObj.insert("id",QString::fromStdString(uid));
+  jsonObj.insert("apellidos",QString::fromStdString(apellidos));
+  jsonObj.insert("nombres",QString::fromStdString(nombres));
   QJsonDocument dec(jsonObj);
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();

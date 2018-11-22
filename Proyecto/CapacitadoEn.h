@@ -12,6 +12,7 @@ class CapacitadoEn : public Instancia{
   public:
     CapacitadoEn(string,string,string);
     CapacitadoEn(string,string);
+    
     bool fromJSON(string);
     string toJSON();
 };

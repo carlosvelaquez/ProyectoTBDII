@@ -889,10 +889,9 @@ release/adminprofesor.o: adminprofesor.cpp adminprofesor.h \
 
 release/Alumno.o: Alumno.cpp Alumno.h \
 		Instancia.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
@@ -914,19 +913,27 @@ release/Alumno.o: Alumno.cpp Alumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
@@ -934,15 +941,135 @@ release/Alumno.o: Alumno.cpp Alumno.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Alumno.o Alumno.cpp
 
 release/CapacitadoEn.o: CapacitadoEn.cpp CapacitadoEn.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\CapacitadoEn.o CapacitadoEn.cpp
 
 release/Categoria.o: Categoria.cpp Categoria.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Categoria.o Categoria.cpp
 
 release/Clase.o: Clase.cpp Clase.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Clase.o Clase.cpp
 
 release/ClasePractica.o: ClasePractica.cpp ClasePractica.h
@@ -1019,6 +1146,13 @@ release/Database.o: Database.cpp Database.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
 		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
@@ -1034,10 +1168,90 @@ release/Database.o: Database.cpp Database.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Database.o Database.cpp
 
 release/Empleado.o: Empleado.cpp Empleado.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Empleado.o Empleado.cpp
 
-release/Instancia.o: Instancia.cpp Instancia.h
+release/Instancia.o: Instancia.cpp Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Instancia.o Instancia.cpp
 
 release/main.o: main.cpp mainwindow.h \
@@ -1109,6 +1323,13 @@ release/main.o: main.cpp mainwindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
 		Database.h \
 		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
@@ -1262,27 +1483,267 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o mainwindow.cpp
 
 release/Pago.o: Pago.cpp Pago.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Pago.o Pago.cpp
 
 release/Profesor.o: Profesor.cpp Profesor.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Profesor.o Profesor.cpp
 
 release/PruebaPractica.o: PruebaPractica.cpp PruebaPractica.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\PruebaPractica.o PruebaPractica.cpp
 
 release/PruebaTeorica.o: PruebaTeorica.cpp PruebaTeorica.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\PruebaTeorica.o PruebaTeorica.cpp
 
 release/TipoLicencia.o: TipoLicencia.cpp TipoLicencia.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\TipoLicencia.o TipoLicencia.cpp
 
 release/Vehiculo.o: Vehiculo.cpp Vehiculo.h \
-		Instancia.h
+		Instancia.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonArray \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qconfig.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtcore-config.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qlogging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qflags.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qmutex.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonObject \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QJsonDocument \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qjsondocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Vehiculo.o Vehiculo.cpp
 
 release/moc_adminalumno.o: release/moc_adminalumno.cpp 

@@ -7,12 +7,16 @@ class Clase : public Instancia{
 
   private:
     string nombre;
+    string uidVehiculo;
     string uidProfesor;
 
   public:
-
+    Clase(string,string,string,string);
     Clase(string,string,string);
-    Clase(string,string);
+
+    bool fromJSON(string);
+    string toJSON();
+
 };
 
 #endif

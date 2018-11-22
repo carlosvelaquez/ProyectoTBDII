@@ -15,7 +15,9 @@ class PruebaTeorica : public Instancia{
   public:
     PruebaTeorica(string, string, float, float, string);
     PruebaTeorica(string, float, float, string);
-    
+
+    bool fromJSON(string);
+    string toJSON();
 };
 
 #endif
