@@ -39,3 +39,14 @@ string Categoria::toJSON(){
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
 }
+
+//Setters
+/*void setLujo(string);
+void setTamano(string);
+void setTarifa(float);*/
+
+//Getters
+
+/*string getLujo();
+string getTamano();
+float getTarifa();*/

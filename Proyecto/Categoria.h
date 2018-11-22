@@ -14,8 +14,20 @@ class Categoria : public Instancia{
     Categoria();
     Categoria(string, string, string, float);
     Categoria(string, string , float);
+
     bool fromJSON(string);
     string toJSON();
+
+    //Setters
+    void setLujo(string);
+    void setTamano(string);
+    void setTarifa(float);
+
+    //Getters
+
+    string getLujo();
+    string getTamano();
+    float getTarifa();
 };
 
 #endif
