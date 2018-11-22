@@ -307,15 +307,15 @@ release/moc_adminalumno.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
+		Alumno.h \
+		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
 		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h \
 		adminalumno.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
@@ -874,15 +874,15 @@ release/moc_mainwindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindo
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
+		Alumno.h \
+		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
 		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h \
 		mainwindow.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
@@ -1050,15 +1050,15 @@ release/adminalumno.o: adminalumno.cpp adminalumno.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
+		Alumno.h \
+		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
 		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h \
 		ui_adminalumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
@@ -1700,6 +1700,11 @@ release/Alumno.o: Alumno.cpp Alumno.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
 		Clase.h \
+		Profesor.h \
+		TipoLicencia.h \
+		Vehiculo.h \
+		Categoria.h \
+		Pago.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Alumno.o Alumno.cpp
@@ -1851,7 +1856,13 @@ release/Clase.o: Clase.cpp Clase.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		Profesor.h \
+		TipoLicencia.h \
+		Alumno.h \
+		Pago.h \
+		Vehiculo.h \
+		Categoria.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Clase.o Clase.cpp
 
 release/ClasePractica.o: ClasePractica.cpp ClasePractica.h \
@@ -2082,15 +2093,15 @@ release/Database.o: Database.cpp Database.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
+		Alumno.h \
+		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
-		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h
+		PruebaPractica.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Database.o Database.cpp
 
 release/Empleado.o: Empleado.cpp Empleado.h \
@@ -2364,15 +2375,15 @@ release/main.o: main.cpp mainwindow.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
+		Alumno.h \
+		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
 		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
@@ -2504,15 +2515,15 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		Empleado.h \
 		Profesor.h \
 		Clase.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
+		Alumno.h \
+		Pago.h \
 		ClaseTeorica.h \
 		ClasePractica.h \
 		PruebaTeorica.h \
 		PruebaPractica.h \
-		Alumno.h \
-		Pago.h \
-		Vehiculo.h \
-		Categoria.h \
-		TipoLicencia.h \
 		ui_mainwindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
@@ -2616,7 +2627,13 @@ release/Pago.o: Pago.cpp Pago.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		Alumno.h \
+		Clase.h \
+		Profesor.h \
+		TipoLicencia.h \
+		Vehiculo.h \
+		Categoria.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Pago.o Pago.cpp
 
 release/Profesor.o: Profesor.cpp Profesor.h \
@@ -2691,7 +2708,13 @@ release/Profesor.o: Profesor.cpp Profesor.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		Clase.h \
+		Vehiculo.h \
+		Categoria.h \
+		TipoLicencia.h \
+		Alumno.h \
+		Pago.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Profesor.o Profesor.cpp
 
 release/PruebaPractica.o: PruebaPractica.cpp PruebaPractica.h \
@@ -2916,7 +2939,13 @@ release/TipoLicencia.o: TipoLicencia.cpp TipoLicencia.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		Alumno.h \
+		Clase.h \
+		Profesor.h \
+		Vehiculo.h \
+		Categoria.h \
+		Pago.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\TipoLicencia.o TipoLicencia.cpp
 
 release/Vehiculo.o: Vehiculo.cpp Vehiculo.h \
@@ -2991,7 +3020,8 @@ release/Vehiculo.o: Vehiculo.cpp Vehiculo.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		Categoria.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Vehiculo.o Vehiculo.cpp
 
 release/moc_adminalumno.o: release/moc_adminalumno.cpp 

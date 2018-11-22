@@ -21,15 +21,12 @@ public:
 
 
 private slots:
-    void on_pushButton_clicked();
 
     void on_pushButtonEliminarAlumno_clicked();
 
     void on_pushButtonAgregarAlumnos_clicked();
 
     void on_pushButtonAplicarCambiosAlumno_clicked();
-
-    void on_pushButtonAgregarAlumno_clicked();
 
 private:
     Database* database;

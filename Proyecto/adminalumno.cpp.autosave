@@ -33,7 +33,7 @@ void AdminAlumno::setDatabase(Database* ndatabase){
 //Boton que elimina un alumno.
 void AdminAlumno::on_pushButtonEliminarAlumno_clicked()
 {
-
+    
 }
 
 
