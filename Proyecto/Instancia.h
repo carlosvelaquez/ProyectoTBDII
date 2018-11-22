@@ -28,6 +28,7 @@ public:
 
   string getTablePath();
   bool isAlterado();
+  void setAlterado(bool);
   bool isBorrado();
   void setBorrar(bool);
 

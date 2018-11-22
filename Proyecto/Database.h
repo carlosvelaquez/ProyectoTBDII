@@ -63,6 +63,35 @@ public:
   CassResult* getResult();
   vector<string> resultStrings();
 
+
+  //INSERTERS
+  void insertarEmpleado(Empleado*);
+  void insertarProfesor(Profesor*);
+  void insertarClase(Clase*);
+  void insertarClaseTeorica(ClaseTeorica*);
+  void insertarClasePractica(ClasePractica*);
+  void insertarPruebaTeorica(PruebaTeorica*);
+  void insertarPruebaPractica(PruebaPractica*);
+  void insertarAlumno(Alumno*);
+  void insertarPago(Pago*);
+  void insertarVehiculo(Vehiculo*);
+  void insertarCategoria(Categoria*);
+  void insertarTipoLicencia(TipoLicencia*);
+
+  //GETTERS
+  vector<Empleado*>* getEmpleados();
+  vector<Profesor*>* getProfesores();
+  vector<Clase*>* getClases();
+  vector<ClaseTeorica*>* getClasesTeoricas();
+  vector<ClasePractica*>* getClasesPracticas();
+  vector<PruebaTeorica*>* getPruebasTeoricas();
+  vector<PruebaPractica*>* getPruebasPracticas();
+  vector<Alumno*>* getAlumnos();
+  vector<Pago*>* getPagos();
+  vector<Vehiculo*>* getVehiculos();
+  vector<Categoria*>* getCategorias();
+  vector<TipoLicencia*>* getTiposLicencia();
+
   ~Database();
 };
 

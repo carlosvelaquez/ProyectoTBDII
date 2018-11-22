@@ -34,6 +34,10 @@ bool Instancia::isAlterado(){
   }
 }
 
+void Instancia::setAlterado(bool nAlterado){
+  alterado = nAlterado;
+}
+
 bool Instancia::isBorrado(){
   return borrar;
 }

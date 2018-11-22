@@ -18,6 +18,8 @@ int main(int argc, char *argv[])
 
   Empleado emp("{\"id\" : \"4f0a6510-ed09-11e8-9435-51089ff58209\",  \"apellidos\" : \"Perez\",  \"nombres\" : \"Misules\",  \"salario\" : 4005}");
   qDebug() << emp.toJSON().c_str();
+  db.insertarEmpleado(&emp);
+  db.push();
 
   return a.exec();
 }

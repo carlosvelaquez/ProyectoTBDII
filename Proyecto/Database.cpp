@@ -131,6 +131,7 @@ bool Database::push(){
   for (size_t i = 0; i < instancias.size(); i++) {
     if (instancias[i]->isAlterado()) {
       actualizarInstancia(instancias[i]);
+      qDebug() << "Empujando instancias: " << instancias[i]->toJSON().c_str();
     }
   }
 
@@ -183,6 +184,118 @@ vector<string> Database::resultStrings(){
 
   return strings;
 }
+
+
+//INSERTERS
+void Database::insertarEmpleado(Empleado* nEmpleado){
+  empleados.push_back(nEmpleado);
+  instancias.push_back(nEmpleado);
+}
+
+void Database::insertarProfesor(Profesor* nProfesor){
+  profesores.push_back(nProfesor);
+  instancias.push_back(nProfesor);
+}
+
+void Database::insertarClase(Clase* nClase){
+  clases.push_back(nClase);
+  instancias.push_back(nClase);
+}
+
+void Database::insertarClaseTeorica(ClaseTeorica* nClaseTeorica){
+  clasesTeoricas.push_back(nClaseTeorica);
+  instancias.push_back(nClaseTeorica);
+}
+
+void Database::insertarClasePractica(ClasePractica* nClasePractica){
+  clasesPracticas.push_back(nClasePractica);
+  instancias.push_back(nClasePractica);
+}
+
+void Database::insertarPruebaTeorica(PruebaTeorica* nPruebaTeorica){
+  pruebasTeoricas.push_back(nPruebaTeorica);
+  instancias.push_back(nPruebaTeorica);
+}
+
+void Database::insertarPruebaPractica(PruebaPractica* nPruebaPractica){
+  pruebasPracticas.push_back(nPruebaPractica);
+  instancias.push_back(nPruebaPractica);
+}
+
+void Database::insertarAlumno(Alumno* nAlumno){
+  alumnos.push_back(nAlumno);
+  instancias.push_back(nAlumno);
+}
+
+void Database::insertarPago(Pago* nPago){
+  pagos.push_back(nPago);
+  instancias.push_back(nPago);
+}
+
+void Database::insertarVehiculo(Vehiculo* nVehiculo){
+  vehiculos.push_back(nVehiculo);
+  instancias.push_back(nVehiculo);
+}
+
+void Database::insertarCategoria(Categoria* nCategoria){
+  categorias.push_back(nCategoria);
+  instancias.push_back(nCategoria);
+}
+
+void Database::insertarTipoLicencia(TipoLicencia* nTipoLicencia){
+  tiposLicencia.push_back(nTipoLicencia);
+  instancias.push_back(nTipoLicencia);
+}
+
+//GETTERS
+vector<Empleado*>* Database::getEmpleados(){
+  return &empleados;
+}
+
+vector<Profesor*>* Database::getProfesores(){
+  return &profesores;
+}
+
+vector<Clase*>* Database::getClases(){
+  return &clases;
+}
+
+vector<ClaseTeorica*>* Database::getClasesTeoricas(){
+  return &clasesTeoricas;
+}
+
+vector<ClasePractica*>* Database::getClasesPracticas(){
+  return &clasesPracticas;
+}
+
+vector<PruebaTeorica*>* Database::getPruebasTeoricas(){
+  return &pruebasTeoricas;
+}
+
+vector<PruebaPractica*>* Database::getPruebasPracticas(){
+  return &pruebasPracticas;
+}
+
+vector<Alumno*>* Database::getAlumnos(){
+  return &alumnos;
+}
+
+vector<Pago*>* Database::getPagos(){
+  return &pagos;
+}
+
+vector<Vehiculo*>* Database::getVehiculos(){
+  return &vehiculos;
+}
+
+vector<Categoria*>* Database::getCategorias(){
+  return &categorias;
+}
+
+vector<TipoLicencia*>* Database::getTiposLicencia(){
+  return &tiposLicencia;
+}
+
 
 Database::~Database(){
   CassFuture* close_future = cass_session_close(session);
