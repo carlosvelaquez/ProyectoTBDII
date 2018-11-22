@@ -2,6 +2,7 @@
 
 Clase::Clase(string json){
   fromJSON(json);
+  tablePath = "autoescuela.clase";
 }
 
 Clase::Clase(string nUID, string nNombre,string nUidProfesor, string nUidVehiculo): Instancia(nUID){
@@ -16,6 +17,7 @@ Clase::Clase(string nNombre, string nUidProfesor, string nUidVehiculo): Instanci
   nombre = nNombre;
   uidProfesor = nUidProfesor;
   uidVehiculo = nUidVehiculo;
+  tablePath = "autoescuela.clase";
 }
 
 bool Clase::fromJSON(string cadena){

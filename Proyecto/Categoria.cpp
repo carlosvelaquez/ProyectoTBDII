@@ -27,7 +27,7 @@ bool Categoria::fromJSON(string cadena){
     uid = doc["id"].toString().toStdString();
     lujo = doc["lujo"].toString().toStdString();
     tamano = doc["tamano"].toString().toStdString();
-    tarifa = stof(doc["tarifa"].toString().toStdString());
+    tarifa = doc["tarifa"].toString().toFloat();
     return true;
   }
   return false;

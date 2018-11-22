@@ -12,9 +12,11 @@ Database::Database(){
   cass_cluster_set_contact_points(cluster, hosts.c_str());
 
   /* Provide the cluster object as configuration to connect the session */
-  connect_future = cass_session_connect(session, cluster);
+  connect_future = cass_session_connect(session, cluster);\
+  qDebug() << "Conectando a la base de datos...";
 
   if (cass_future_error_code(connect_future) == CASS_OK) {
+    qDebug() << "Conexion con la base de datos exitosa.";
     isConnected = true;
   } else {
     /* Handle error */
@@ -45,7 +47,7 @@ bool Database::actualizarInstancia(Instancia* i){
     query += "INSERT INTO ";
     query += i->getTablePath();
     query += " JSON \'";
-    query += i->toJSON();
+    query += i->toJSON().c_str();
     query += "\';";
 
     runQuery(query);
@@ -359,9 +361,9 @@ bool Database::push(){
     qDebug() << "Empujando elemento " << i;
     if (instancias[i]->isAlterado()) {
       actualizarInstancia(instancias[i]);
-      qDebug() << "Empujando instancias: " << instancias[i]->toJSON().c_str();
+      qDebug() << "Empujando instancia: " << instancias[i]->toJSON().c_str();
     }else{
-      qDebug() << "Elemento no alterado. Abortando.";
+      qDebug() << "Elemento no alterado. Saltando...";
     }
   }
 
@@ -372,7 +374,7 @@ bool Database::push(){
 }
 
 bool Database::runQuery(string query){
-  qDebug() << QString("Ejecutando Query: ") + QString(query.c_str());
+  qDebug() << QString("Ejecutando Query: ") << query.c_str();
 
   CassStatement* statement = cass_statement_new(query.c_str(), 0);
   CassFuture* query_future = cass_session_execute(session, statement);
@@ -381,7 +383,9 @@ bool Database::runQuery(string query){
 
   /* This will block until the query has finished */
   if (cass_future_error_code(query_future) == CASS_OK) {
-    cass_result_free(result);
+    if (result) {
+      cass_result_free(result);
+    }
 
     result = const_cast<CassResult*>(cass_future_get_result(query_future));
     qDebug() << "Query ejecutado exitosamente.";

@@ -3,11 +3,13 @@
 Instancia::Instancia(){
   uid = "";
   alterado = false;
+  borrar = false;
 }
 
 Instancia::Instancia(string nUID){
   uid = nUID;
   alterado = false;
+  borrar = false;
 }
 
 string Instancia::getUID(){

@@ -2,6 +2,7 @@
 
 Empleado::Empleado(string json){
   fromJSON(json);
+  tablePath = "autoescuela.empleado";
 }
 
 Empleado::Empleado(string nUID, string nNombres, string nApellidos, float nSalario) : Instancia(nUID){
@@ -9,7 +10,7 @@ Empleado::Empleado(string nUID, string nNombres, string nApellidos, float nSalar
   nombres = nNombres;
   apellidos = nApellidos;
   salario = nSalario;
-  tablePath = "autoescuela.empleados";
+  tablePath = "autoescuela.empleado";
 
 }
 
@@ -17,6 +18,7 @@ Empleado::Empleado(string nNombres, string nApellidos, float nSalario) : Instanc
   nombres = nNombres;
   apellidos = nApellidos;
   salario = nSalario;
+  tablePath = "autoescuela.empleado";
 }
 
 string Empleado::getNombres(){

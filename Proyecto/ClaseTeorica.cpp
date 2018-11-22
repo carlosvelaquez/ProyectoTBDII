@@ -2,6 +2,7 @@
 
 ClaseTeorica::ClaseTeorica(string json) : Instancia(){
   fromJSON(json);
+  tablePath = "autoescuela.claseteorica";
 }
 
 ClaseTeorica::ClaseTeorica(string nUID, string nUidClase):Instancia(nUID){
