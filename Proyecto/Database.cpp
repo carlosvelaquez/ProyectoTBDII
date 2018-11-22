@@ -235,7 +235,7 @@ bool Database::pull(){
   runQuery("select json * from autoescuela.tipolicencia");
   strings = resultStrings();
 
-  TipoLicencia.clear();
+  tiposLicencia.clear();
 
   for (size_t i = 0; i < strings.size(); i++) {
     TipoLicencia* nTipoLicencia = new TipoLicencia(strings[i]);
@@ -259,7 +259,7 @@ bool Database::pull(){
     vector<string> strings = get_Alumnos_AlumnosClases(clases[i]->getUID());
     for (size_t j = 0; j < strings.size(); j++) {
       for (size_t k = 0; k < alumnos.size(); k++) {
-        if (strings[j] = alumnos[k]->getUID()) {
+        if (strings[j] == alumnos[k]->getUID()) {
           clases[i]->getAlumnos()->push_back(alumnos[k]);
         }
       }
@@ -271,8 +271,8 @@ bool Database::pull(){
     vector<string> strings = get_Clases_AlumnosClases(alumnos[i]->getUID());
     for (size_t j = 0; j < strings.size(); j++) {
       for (size_t k = 0; k < clases.size(); k++) {
-        if (strings[j] = clases[k]->getUID()) {
-          alumnos[i]->getClase()->push_back(clases[k]);
+        if (strings[j] == clases[k]->getUID()) {
+          alumnos[i]->getClases()->push_back(clases[k]);
         }
       }
     }
@@ -341,7 +341,7 @@ bool Database::pull(){
   //Vehiculo / Clase
   for (size_t i = 0; i < clases.size(); i++) {
     for (size_t j = 0; j < vehiculos.size(); j++) {
-      if (vehiculo[j]->getUID() == clases[i]->getUIDVehiculo()) {
+      if (vehiculos[j]->getUID() == clases[i]->getUIDVehiculo()) {
         clases[i]->setVehiculo(vehiculos[j]);
         vehiculos[j]->setClase(clases[i]);
       }

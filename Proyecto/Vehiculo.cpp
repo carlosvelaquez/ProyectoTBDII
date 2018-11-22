@@ -53,5 +53,5 @@ string Vehiculo::getUIDCategoria(){
 }
 
 Clase* Vehiculo::getClase(){
-  return clase
+  return clase;
 }

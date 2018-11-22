@@ -17,6 +17,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTabWidget>
@@ -35,15 +36,15 @@ public:
     QTabWidget *tabWidget;
     QWidget *tab;
     QGridLayout *gridLayout;
+    QLabel *label_3;
     QLineEdit *lineEditNombreAlumno;
     QPushButton *pushButtonAgregarAlumno;
     QLineEdit *lineEditApellidoAlumno;
     QLabel *label_2;
-    QLabel *label_3;
-    QFrame *frame_2;
-    QVBoxLayout *verticalLayout_4;
-    QSpacerItem *verticalSpacer;
+    QLabel *label_7;
     QSpacerItem *verticalSpacer_2;
+    QSpacerItem *verticalSpacer;
+    QListWidget *listWidget;
     QWidget *tab_2;
     QVBoxLayout *verticalLayout_3;
     QLabel *label_4;
@@ -94,6 +95,11 @@ public:
         tab->setObjectName(QStringLiteral("tab"));
         gridLayout = new QGridLayout(tab);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        label_3 = new QLabel(tab);
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        gridLayout->addWidget(label_3, 3, 0, 1, 1);
+
         lineEditNombreAlumno = new QLineEdit(tab);
         lineEditNombreAlumno->setObjectName(QStringLiteral("lineEditNombreAlumno"));
 
@@ -102,7 +108,7 @@ public:
         pushButtonAgregarAlumno = new QPushButton(tab);
         pushButtonAgregarAlumno->setObjectName(QStringLiteral("pushButtonAgregarAlumno"));
 
-        gridLayout->addWidget(pushButtonAgregarAlumno, 7, 0, 1, 1);
+        gridLayout->addWidget(pushButtonAgregarAlumno, 8, 0, 1, 1);
 
         lineEditApellidoAlumno = new QLineEdit(tab);
         lineEditApellidoAlumno->setObjectName(QStringLiteral("lineEditApellidoAlumno"));
@@ -114,27 +120,23 @@ public:
 
         gridLayout->addWidget(label_2, 0, 0, 1, 1);
 
-        label_3 = new QLabel(tab);
-        label_3->setObjectName(QStringLiteral("label_3"));
+        label_7 = new QLabel(tab);
+        label_7->setObjectName(QStringLiteral("label_7"));
 
-        gridLayout->addWidget(label_3, 3, 0, 1, 1);
+        gridLayout->addWidget(label_7, 6, 0, 1, 1);
 
-        frame_2 = new QFrame(tab);
-        frame_2->setObjectName(QStringLiteral("frame_2"));
-        frame_2->setFrameShape(QFrame::StyledPanel);
-        frame_2->setFrameShadow(QFrame::Raised);
-        verticalLayout_4 = new QVBoxLayout(frame_2);
-        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout->addWidget(frame_2, 6, 0, 1, 1);
+        gridLayout->addItem(verticalSpacer_2, 5, 0, 1, 1);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout->addItem(verticalSpacer, 2, 0, 1, 1);
 
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        listWidget = new QListWidget(tab);
+        listWidget->setObjectName(QStringLiteral("listWidget"));
 
-        gridLayout->addItem(verticalSpacer_2, 5, 0, 1, 1);
+        gridLayout->addWidget(listWidget, 7, 0, 1, 1);
 
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
@@ -229,9 +231,10 @@ public:
     {
         AdminAlumno->setWindowTitle(QApplication::translate("AdminAlumno", "Form", nullptr));
         label->setText(QApplication::translate("AdminAlumno", "Administrar Alumnos", nullptr));
+        label_3->setText(QApplication::translate("AdminAlumno", "<html><head/><body><p><span style=\" font-size:10pt;\">Apellidos:</span></p></body></html>", nullptr));
         pushButtonAgregarAlumno->setText(QApplication::translate("AdminAlumno", "Agregar", nullptr));
         label_2->setText(QApplication::translate("AdminAlumno", "<html><head/><body><p><span style=\" font-size:10pt;\">Nombres: </span></p></body></html>", nullptr));
-        label_3->setText(QApplication::translate("AdminAlumno", "<html><head/><body><p><span style=\" font-size:10pt;\">Apellidos:</span></p></body></html>", nullptr));
+        label_7->setText(QApplication::translate("AdminAlumno", "<html><head/><body><p>Tipos de licencia</p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("AdminAlumno", "Agregar Alumno", nullptr));
         label_4->setText(QApplication::translate("AdminAlumno", "Seleccionar Alumno", nullptr));
         pushButtonEliminarAlumno->setText(QApplication::translate("AdminAlumno", "Eliminar Alumno", nullptr));

@@ -25,7 +25,8 @@ void AdminAlumno::refreshWidgets(){
     //Se llena el comboBox de "Eliminar Alumno"
     for(int i=0; i<database->getAlumnos()->size(); i++){
         ui->comboBoxAlumnos->addItem(QString::fromStdString(database->getAlumnos()->at(i)->getUID()));
-
+        ui->listWidget->addItem(QString::fromStdString(database->getAlumnos()->at(i)->getUID()));
+        ui->comboBoxAlumnoActualizar->addItem(QString::fromStdString(database->getAlumnos()->at(i)->getUID()));
     }
 
 }
@@ -38,7 +39,13 @@ void AdminAlumno::setDatabase(Database* ndatabase){
 //Boton que elimina un alumno.
 void AdminAlumno::on_pushButtonEliminarAlumno_clicked()
 {
-
+    QString uid = ui->comboBoxAlumnos->currentText();
+    for(int i=0; i < database->getAlumnos()->size(); i++){
+        if(database->getAlumnos()->at(i)->getNombres() == uid.toStdString()){
+            //database->getAlumnos()->
+        }
+    }
+    refreshWidgets();
 }
 
 
@@ -65,14 +72,25 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
     }
     ui->lineEditApellidoAlumno->setText("");
     ui->lineEditNombreAlumno->setText("");
+    refreshWidgets();
 }
 
 //Boton que aplica los cambios hechos al alumno.
 void AdminAlumno::on_pushButtonAplicarCambiosAlumno_clicked()
 {
-
-    ui->lineEditNombresAlumnosNuevo->text().toStdString();
-    ui->lineEditApellidoAlumnoNuevo->text().toStdString();
+    QString nombre = ui->lineEditNombresAlumnosNuevo->text();
+    QString apellido = ui->lineEditApellidoAlumnoNuevo->text();
+    if(!nombre.isEmpty() || !apellido.isEmpty()){
+        Alumno* temp;
+        QString text = ui->comboBoxAlumnoActualizar->currentText();
+        for(int i=0; i<database->getAlumnos()->size(); i++){
+            if(text.toStdString() == database->getAlumnos()->at(i)->getNombres()){
+                temp = database->getAlumnos()->at(i);
+            }
+        }
+        temp->setNombres(nombre.toStdString());
+        temp->setApellidos(apellido.toStdString());
+    }
 }
 
 //Agrega un tipo de licencia
