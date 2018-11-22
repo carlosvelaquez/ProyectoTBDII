@@ -10,6 +10,13 @@ Vehiculo::Vehiculo(string nUID, string nUIDCategoria) : Instancia(nUID){
   tablePath = "autoescuela.vehiculos";
 }
 
+<<<<<<< HEAD
+/*Vehiculo::Vehiculo(string nUIDCategoria) : Instancia(){
+  uidCategoria = nUIDCategoria;
+}*/
+
+=======
+>>>>>>> 76fe86c347f8c484851fe091fe209595fe431b06
 bool Vehiculo::fromJSON(string cadena){
   QString json = QString::fromStdString(cadena); // String que contiene el JSON
   QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());

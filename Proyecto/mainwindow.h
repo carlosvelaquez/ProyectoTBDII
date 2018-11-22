@@ -18,6 +18,7 @@ public:
 
 private slots:
 
+    void pagoAlumnoWindow();
 
     void on_AdminAlumnosButton_clicked();
 

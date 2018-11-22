@@ -10,6 +10,14 @@ ClaseTeorica::ClaseTeorica(string nUID, string nUidClase):Instancia(nUID){
   tablePath = "autoescuela.claseteorica";
 }
 
+<<<<<<< HEAD
+
+/*ClaseTeorica::ClaseTeorica(string nUidClase):Instancia(){
+  uidClase = nUidClase;
+}*/
+
+=======
+>>>>>>> 76fe86c347f8c484851fe091fe209595fe431b06
 bool ClaseTeorica::fromJSON(string cadena){
   QString json = QString::fromStdString(cadena); // String que contiene el JSON
   QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());

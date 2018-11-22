@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include "Database.h"
-
+#include "Alumno.h"
 
 namespace Ui {
 class AdminAlumno;
@@ -15,6 +15,7 @@ class AdminAlumno : public QWidget
 
 public:
     void setDatabase(Database*);
+    void refreshWidgets();
 
     explicit AdminAlumno(QWidget *parent = 0);
     ~AdminAlumno();
@@ -31,6 +32,7 @@ private slots:
     void on_pushButtonAgregarTipoLicencia_clicked();
 
 private:
+    Alumno* newAlumno;
     Database* database;
     Ui::AdminAlumno *ui;
 };
