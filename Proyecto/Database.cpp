@@ -128,10 +128,14 @@ select json * from autoescuela.tipolicencia;
 }
 
 bool Database::push(){
+  qDebug() << "Pushing... Instancias size: " << instancias.size();
   for (size_t i = 0; i < instancias.size(); i++) {
+    qDebug() << "Empujando elemento " << i;
     if (instancias[i]->isAlterado()) {
       actualizarInstancia(instancias[i]);
       qDebug() << "Empujando instancias: " << instancias[i]->toJSON().c_str();
+    }else{
+      qDebug() << "Elemento no alterado. Abortando.";
     }
   }
 
