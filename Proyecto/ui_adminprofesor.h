@@ -31,7 +31,7 @@ public:
     {
         if (AdminProfesor->objectName().isEmpty())
             AdminProfesor->setObjectName(QStringLiteral("AdminProfesor"));
-        AdminProfesor->resize(800, 500);
+        AdminProfesor->resize(600, 345);
         AdminProfesor->setStyleSheet(QStringLiteral("background-color: white;"));
         verticalLayout = new QVBoxLayout(AdminProfesor);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
@@ -57,6 +57,9 @@ public:
 
         retranslateUi(AdminProfesor);
 
+        tabWidget->setCurrentIndex(0);
+
+
         QMetaObject::connectSlotsByName(AdminProfesor);
     } // setupUi
 
@@ -64,7 +67,7 @@ public:
     {
         AdminProfesor->setWindowTitle(QApplication::translate("AdminProfesor", "Form", nullptr));
         label->setText(QApplication::translate("AdminProfesor", "Administrar Profesor", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("AdminProfesor", "Tab 1", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("AdminProfesor", "Agregar Profesor", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("AdminProfesor", "Tab 2", nullptr));
     } // retranslateUi
 

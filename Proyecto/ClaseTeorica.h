@@ -12,10 +12,6 @@ class ClaseTeorica : public Instancia{
   public:
     ClaseTeorica(string);
     ClaseTeorica(string, string);
-<<<<<<< HEAD
-    //ClaseTeorica(string);
-=======
->>>>>>> 76fe86c347f8c484851fe091fe209595fe431b06
 
     bool fromJSON(string);
     string toJSON();

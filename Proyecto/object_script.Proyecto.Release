@@ -21,10 +21,7 @@ INPUT(
 ./release\TipoLicencia.o
 ./release\Vehiculo.o
 ./release\adminvehiculo.o
-<<<<<<< HEAD
 ./release\pagoalumno.o
-=======
->>>>>>> 76fe86c347f8c484851fe091fe209595fe431b06
 ./release\moc_adminalumno.o
 ./release\moc_adminclase.o
 ./release\moc_adminempleado.o
@@ -32,8 +29,5 @@ INPUT(
 ./release\moc_adminprofesor.o
 ./release\moc_mainwindow.o
 ./release\moc_adminvehiculo.o
-<<<<<<< HEAD
 ./release\moc_pagoalumno.o
-=======
->>>>>>> 76fe86c347f8c484851fe091fe209595fe431b06
 );

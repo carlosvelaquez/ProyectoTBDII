@@ -1,8 +1,12 @@
 #ifndef VEHICULO_H
 #define VEHICULO_H
 
+class Categoria;
+class Clase;
+
 #include "Instancia.h"
 #include "Categoria.h"
+#include "Clase.h"
 #include <string>
 
 class Vehiculo : public Instancia{
@@ -16,10 +20,6 @@ class Vehiculo : public Instancia{
   public:
     Vehiculo(string);
     Vehiculo(string, string);
-<<<<<<< HEAD
-    //Vehiculo(string);
-=======
->>>>>>> 76fe86c347f8c484851fe091fe209595fe431b06
 
     bool fromJSON(string);
     string toJSON();

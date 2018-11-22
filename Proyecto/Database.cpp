@@ -227,8 +227,8 @@ bool Database::pull(){
 
   for (size_t i = 0; i < strings.size(); i++) {
     Pago* nPago = new Pago(strings[i]);
-    pagos.push_back(nPagos);
-    instancias.push_back(nPagos);
+    pagos.push_back(nPago);
+    instancias.push_back(nPago);
   }
 
   //TIPO LICENCIA
@@ -258,7 +258,7 @@ bool Database::pull(){
   for (size_t i = 0; i < clases.size(); i++) {
     vector<string> strings = get_Alumnos_AlumnosClases(clases[i]->getUID());
     for (size_t j = 0; j < strings.size(); j++) {
-      clases[i]->getAlumnos().push_back(strings[j]);
+      clases[i]->getAlumnos()->push_back(strings[j]);
     }
   }
 
@@ -266,23 +266,23 @@ bool Database::pull(){
   for (size_t i = 0; i < alumnos.size(); i++) {
     vector<string> strings = get_Clases_AlumnosClases(alumnos[i]->getUID());
     for (size_t j = 0; j < strings.size(); j++) {
-      alumnos[i]->getClases().push_back(strings[j]);
+      alumnos[i]->getClases()->push_back(strings[j]);
     }
   }
 
   //Alumno -> Licencia
-  for (size_t i = 0; i <tiposLicencia.size() ; i++) {
-    vector<string> strings = get_Alumnos_LicenciaAlumno(tipoLicencia[i]->getUID());
+  for (size_t i = 0; i < tiposLicencia.size() ; i++) {
+    vector<string> strings = get_Alumnos_LicenciaAlumno(tiposLicencia[i]->getUID());
     for (size_t j = 0; j < strings.size(); j++) {
-      tipoLicencia[i]->getAlumnos().push_back(strings[j]);
+      tiposLicencia[i]->getAlumnos()->push_back(strings[j]);
     }
   }
 
   //Licencia -> Alumno
   for (size_t i = 0; i < alumnos.size(); i++) {
     vector<string> strings = get_Licencias_LicenciaAlumno(alumnos[i]->getUID());
-    for (size_t j = 0; j < string.size(); j++) {
-      alumnos[i]->getLicencias().push_back(strings[j]);
+    for (size_t j = 0; j < strings.size(); j++) {
+      alumnos[i]->getLicencias()->push_back(strings[j]);
     }
   }
 
@@ -290,7 +290,7 @@ bool Database::pull(){
   for (size_t i = 0; i < alumnos.size(); i++) {
     for (size_t j = 0; j < pruebasPracticas.size(); j++) {
       if (pruebasPracticas[j]->getUIDAlumno() == alumnos[i]->getUID()) {
-        alumnos[i]->getPruebasP().push_back(pruebasPracticas[j]);
+        alumnos[i]->getPruebasP()->push_back(pruebasPracticas[j]);
       }
     }
   }
@@ -299,7 +299,7 @@ bool Database::pull(){
   for (size_t i = 0; i < alumnos.size(); i++) {
     for (size_t j = 0; j < pruebasTeoricas.size(); j++) {
       if (pruebasTeoricas[j]->getUIDAlumno() == alumnos[i]->getUID()) {
-        alumnos[i]->getPruebasT().push_back(pruebasTeoricas[j]);
+        alumnos[i]->getPruebasT()->push_back(pruebasTeoricas[j]);
       }
     }
   }
@@ -308,7 +308,7 @@ bool Database::pull(){
   for (size_t i = 0; i < alumnos.size(); i++) {
     for (size_t j = 0; j < pagos.size(); j++) {
       if (pagos[j]->getUIDAlumno() == alumnos[i]->getUID()) {
-        alumnos[i]->getPagos().push_back(pagos[j]);
+        alumnos[i]->getPagos()->push_back(pagos[j]);
       }
     }
   }
@@ -317,7 +317,7 @@ bool Database::pull(){
   for (size_t i = 0; i < categorias.size(); i++) {
     for (size_t j = 0; j < vehiculos.size(); j++) {
       if (vehiculos[j]->getUIDCategoria() == categorias[i]->getUID()) {
-        categorias[i]->getVehiculos().push_back(vehiculos[j]);
+        categorias[i]->getVehiculos()->push_back(vehiculos[j]);
       }
     }
   }
