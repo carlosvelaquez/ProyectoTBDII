@@ -2,6 +2,7 @@
 
 Profesor::Profesor(string json){
   fromJSON(json);
+  tablePath  = "autoescuela.profesor";
 }
 
 Profesor::Profesor(string nUID, string nUidEmpleado, int nCategoria): Instancia(nUID){
@@ -14,6 +15,7 @@ Profesor::Profesor(string nUID, string nUidEmpleado, int nCategoria): Instancia(
 Profesor::Profesor(string nUidEmpleado, int nCategoria) : Instancia(){
   uidEmpleado = nUidEmpleado;
   categoria = nCategoria;
+  tablePath  = "autoescuela.profesor";
 }
 
 bool Profesor::fromJSON(string cadena){

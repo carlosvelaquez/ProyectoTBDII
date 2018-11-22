@@ -1,7 +1,8 @@
 #include "Vehiculo.h"
 
-Vehiculo::Vehiculo(string json){
+Vehiculo::Vehiculo(string json) : Instancia(){
   fromJSON(json);
+  tablePath = "autoescuela.vehiculos";
 }
 
 Vehiculo::Vehiculo(string nUID, string nUIDCategoria) : Instancia(nUID){
