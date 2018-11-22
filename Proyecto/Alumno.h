@@ -9,7 +9,8 @@ class Clase;
 #include "Clase.h"
 #include "TipoLicencia.h"
 #include "Pago.h"
-
+#include "PruebaTeorica.h"
+#include "PruebaPractica.h"
 
 using namespace std;
 
@@ -43,8 +44,8 @@ class Alumno : public Instancia{
     vector<Clase*>* getClases();
     vector<TipoLicencia*>* getLicencias();
     vector<Pago*>* getPagos();
-    vector<PruebaTeorica*>* getPruebasT;
-    vector<PruebaPractica*>* getPruebasP;
+    vector<PruebaTeorica*>* getPruebasT();
+    vector<PruebaPractica*>* getPruebasP();
 };
 
 #endif
