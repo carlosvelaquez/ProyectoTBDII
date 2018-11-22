@@ -41,12 +41,32 @@ string Categoria::toJSON(){
 }
 
 //Setters
-/*void setLujo(string);
-void setTamano(string);
-void setTarifa(float);*/
+void  Categoria::setLujo(string nLujo){
+  lujo = nLujo;
+  alterado = true;
+}
+
+void  Categoria::setTamano(string nTamano){
+  tamano = nTamano;
+  alterado = true;
+}
+
+void  Categoria::setTarifa(float nTarifa){
+  tarifa = nTarifa;
+  alterado = true;
+}
+
 
 //Getters
 
-/*string getLujo();
-string getTamano();
-float getTarifa();*/
+string  Categoria::getLujo(){
+  return lujo;
+}
+
+string  Categoria::getTamano(){
+  return tamano;
+}
+
+float Categoria::getTarifa(){
+  return tarifa;
+}
