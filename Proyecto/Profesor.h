@@ -1,7 +1,12 @@
 #ifndef PROFESOR_H
 #define PROFESOR_H
 
+class Clase;
+
 #include "Instancia.h"
+#include "Clase.h"
+#include "TipoLicencia.h"
+
 #include <string>
 
 class Profesor : public Instancia{
@@ -10,8 +15,8 @@ class Profesor : public Instancia{
     string uidEmpleado;
     int categoria;
 
-    vector<Clases*> clases;
-    vector<Licencia*> capacitadoEn;
+    vector<Clase*> clases;
+    vector<TipoLicencia*> capacitadoEn;
 
   public:
 
@@ -28,6 +33,8 @@ class Profesor : public Instancia{
     //Getters
     string getUIDEmpleado();
     int getCategoria();
+    vector<Clase*>* getClases();
+    vector<TipoLicencia*>* getCapacitadoEn();
 };
 
 #endif

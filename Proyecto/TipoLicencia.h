@@ -1,7 +1,11 @@
 #ifndef TIPOLICENCIA_H
 #define TIPOLICENCIA_H
 
+class Alumno;
+
 #include "Instancia.h"
+#include "Alumno.h"
+
 #include <string>
 
 class TipoLicencia : public Instancia{
@@ -26,6 +30,7 @@ class TipoLicencia : public Instancia{
     //Getters
     float getCostoMatricula();
     string getDocumentos();
+    vector<Alumno*>* getAlumnos();
 };
 
 #endif

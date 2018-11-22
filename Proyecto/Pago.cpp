@@ -61,6 +61,11 @@ void Pago::setMotivo(string nMotivo){
   motivo = nMotivo;
 }
 
+void Pago::setAlumno(Alumno* nAlumno){
+  alumno = nAlumno;
+  uidAlumno = nAlumno->getUID();
+  alterado = true;
+}
 
 //Getters
 string Pago::getUIDAlumno(){
@@ -73,4 +78,8 @@ float Pago::getMonto(){
 
 string Pago::getMotivo(){
   return motivo;
+}
+
+Alumno* Pago::getAlumno(){
+  return alumno;
 }

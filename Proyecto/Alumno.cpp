@@ -58,3 +58,15 @@ string Alumno::getNombres(){
 string Alumno::getApellidos(){
   return apellidos;
 }
+
+vector<Clase*>* Alumno::getClases(){
+  return &clases;
+}
+
+vector<TipoLicencia*>* Alumno::getLicencias(){
+  return &licencias;
+}
+
+vector<Pago*>* Alumno::getPagos(){
+  return &pagos;
+}
