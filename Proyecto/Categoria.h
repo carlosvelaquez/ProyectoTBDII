@@ -1,7 +1,10 @@
 #ifndef CATEGORIA_H
 #define CATEGORIA_H
 
+class Vehiculo;
+
 #include "Instancia.h"
+#include "Vehiculo.h"
 
 class Categoria : public Instancia{
 
