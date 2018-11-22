@@ -244,8 +244,15 @@ bool Database::pull(){
   }
 
   //TRANSACCIONALES
-
-
+  //Clase / Profesor
+  for (size_t i = 0; i < clases.size(); i++) {
+    for (size_t j = 0; j < profesores.size(); j++) {
+      if (profesores[j]->getUID() == clases[i]->getUIDProfesor()) {
+        clases[i]->setProfesor(profesores[j]);
+        profesores[j]->getClases()->push_back(clases[i]);
+      }
+    }
+  }
 
   return true;
 }
