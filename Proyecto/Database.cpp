@@ -258,7 +258,12 @@ bool Database::pull(){
   for (size_t i = 0; i < clases.size(); i++) {
     vector<string> strings = get_Alumnos_AlumnosClases(clases[i]->getUID());
     for (size_t j = 0; j < strings.size(); j++) {
-      clases[i]->getAlumnos()->push_back(strings[j]);
+      for (size_t k = 0; k < alumnos.size(); k++) {
+        if (strings[j] = alumnos[k]->getUID()) {
+          clases[i]->getAlumnos()->push_back(alumnos[k]);
+        }
+      }
+      //clases[i]->getAlumnos()->push_back(strings[j]);
     }
   }
 
