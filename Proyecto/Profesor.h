@@ -10,6 +10,9 @@ class Profesor : public Instancia{
     string uidEmpleado;
     int categoria;
 
+    vector<Clases*> clases;
+    vector<Licencia*> capacitadoEn;
+
   public:
 
     Profesor(string, string, int);

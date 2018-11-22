@@ -10,6 +10,8 @@ class TipoLicencia : public Instancia{
     float costoMatricula;
     string documentos;
 
+    vector<Alumno*> alumnos;
+
   public:
     TipoLicencia(string, float, string);
     TipoLicencia(float, string);

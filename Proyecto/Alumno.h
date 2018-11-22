@@ -15,6 +15,10 @@ class Alumno : public Instancia{
     string apellidos;
     vector<Clase*> clases;
 
+    vector<Clases*> clases;
+    vector<Licencias*> licencias;
+    vector<Pago*> pagos;
+
   public:
     Alumno(string, string, string);
     Alumno(string, string);
@@ -25,6 +29,7 @@ class Alumno : public Instancia{
     //Setters
     void setNombres(string);
     void setApellidos(string);
+
     //Getters
     string getNombres();
     string getApellidos();

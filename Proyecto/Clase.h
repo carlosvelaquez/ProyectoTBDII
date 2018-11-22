@@ -9,6 +9,9 @@ class Clase : public Instancia{
     string nombre;
     string uidVehiculo;
     string uidProfesor;
+    
+    Profesor* profesor;
+    vector<Profesor*> profesoresCapacitados;
 
   public:
     Clase(string,string,string,string);

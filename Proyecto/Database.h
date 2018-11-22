@@ -94,6 +94,18 @@ public:
   vector<Categoria*>* getCategorias();
   vector<TipoLicencia*>* getTiposLicencia();
 
+
+  //TRANSACCIONALES - Retornan un vector de los UIDs solicitados
+  vector<string> get_Profesores_CapacitadoEn(string);
+  vector<string> get_Clases_CapacitadoEn(string);
+
+  vector<string> get_Alumnos_AlumnosClases(string);
+  vector<string> get_Clases_AlumnosClases(string);
+
+  vector<string> get_Alumnos_LicenciaAlumno(string);
+  vector<string> get_Licencias_LicenciaAlumno(string);
+  vector<string> get_Profesor_LicenciaAlumno(string, string);
+
   ~Database();
 };
 
