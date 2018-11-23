@@ -20,6 +20,17 @@ AdminClase::~AdminClase()
     delete ui;
 }
 
+bool AdminClase::estaCapacitado(QString uidProfesor, int categoriaNecesaria){
+
+    for(int i=0; i<database->getProfesores()->size(); i++){
+        if(uidProfesor.toStdString() == database->getProfesores()->at(i)->getUID()){
+            if(database->getProfesores()->at(i)->getCategoria() >= categoriaNecesaria){
+                return true;
+            }
+        }
+    }
+    return false;
+}
 
 /* =============== Se añade el "database" principal ===============*/
 void AdminClase::setDatabase(Database* nDatabase){
@@ -69,22 +80,27 @@ qDebug() << imgName.at(0); // result is "name"
 /* =============== Se agrega una clase nueva a database ===============*/
 void AdminClase::on_pushButtonAgregarClase_clicked()
 {   Clase* nuevaClase;
+    int categoriaNecesaria = ui->spinBoxCategoria->value();
     QString nombre = ui->lineEditNombreClase->text();
     if(nombre != ""){
         QString currentUIDProfesor = ui->comboBoxClaseProfesor->currentText();
         QString currentUIDVehiculo = ui->comboBoxClaseVehiculo->currentText();
-        nuevaClase->setNombre(nombre.toStdString());
-        nuevaClase->setUIDProfesor(currentUIDProfesor.toStdString());
-        nuevaClase->setUIDVehiculo(currentUIDVehiculo.toStdString());
-        database->getClases()->push_back(nuevaClase);
+
+        if(estaCapacitado(currentUIDProfesor,categoriaNecesaria)){ //Si el profesor está capacitado se agregará lo demás
+            nuevaClase->setUIDVehiculo(currentUIDVehiculo.toStdString());
+
+            nuevaClase->setNombre(nombre.toStdString());
+            nuevaClase->setUIDProfesor(currentUIDProfesor.toStdString());
+            database->getClases()->push_back(nuevaClase); //Se crea la nueva clase
+
+            ui->lineEditNombreClase->setText("");
+            ui->comboBoxClaseProfesor->setCurrentIndex(0);
+            ui->comboBoxClaseVehiculo->setCurrentIndex(0);
+
+        }
 
         nuevaClase = NULL;
-        delete nuevaClase;
     }
-
-    ui->lineEditNombreClase->setText("");
-    ui->comboBoxClaseProfesor->setCurrentIndex(0);
-    ui->comboBoxClaseVehiculo->setCurrentIndex(0);
 
     refreshWidgets();
 }/*====================================================================*/

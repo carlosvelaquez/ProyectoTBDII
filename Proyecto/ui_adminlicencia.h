@@ -46,11 +46,8 @@ public:
     QPushButton *pushButtonEliminarLicencia;
     QWidget *widget;
     QVBoxLayout *verticalLayout_4;
-<<<<<<< HEAD
     QLabel *label_3;
     QComboBox *comboBoxSeleccionarModificarLicencia;
-=======
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
     QLabel *label_9;
     QDoubleSpinBox *doubleSpinBoxCostoLicenciaNuevo;
     QSpacerItem *verticalSpacer_4;
@@ -146,7 +143,6 @@ public:
         widget->setObjectName(QStringLiteral("widget"));
         verticalLayout_4 = new QVBoxLayout(widget);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
-<<<<<<< HEAD
         label_3 = new QLabel(widget);
         label_3->setObjectName(QStringLiteral("label_3"));
 
@@ -157,8 +153,6 @@ public:
 
         verticalLayout_4->addWidget(comboBoxSeleccionarModificarLicencia);
 
-=======
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         label_9 = new QLabel(widget);
         label_9->setObjectName(QStringLiteral("label_9"));
 
@@ -199,11 +193,7 @@ public:
 
         retranslateUi(AdminLicencia);
 
-<<<<<<< HEAD
         tabWidget->setCurrentIndex(2);
-=======
-        tabWidget->setCurrentIndex(1);
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 
 
         QMetaObject::connectSlotsByName(AdminLicencia);
@@ -220,10 +210,7 @@ public:
         label_2->setText(QApplication::translate("AdminLicencia", "Seleccionar la licencia a eliminar:", nullptr));
         pushButtonEliminarLicencia->setText(QApplication::translate("AdminLicencia", "Eliminar Licencia Seleccionada", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("AdminLicencia", "Eliminar Licencia", nullptr));
-<<<<<<< HEAD
         label_3->setText(QApplication::translate("AdminLicencia", "Selecccionar licencia para modificar:", nullptr));
-=======
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         label_9->setText(QApplication::translate("AdminLicencia", "Costo:", nullptr));
         label_10->setText(QApplication::translate("AdminLicencia", "Documento:", nullptr));
         pushButtonModificaLicencia_2->setText(QApplication::translate("AdminLicencia", "Agregar Tipo de licencia", nullptr));

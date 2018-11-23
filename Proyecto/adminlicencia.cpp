@@ -40,13 +40,13 @@ void AdminLicencia::refreshWidgets(){
 /* =============== Agregar Licencia ===============*/
 void AdminLicencia::pushButtonAgregarLicencia(){
 
-    float number = ui->doubleSpinBoxCostoLicencia->value();
+    float number = ui->doubleSpinBoxCostoLicenciaL->value();
     QString documento = ui->lineEditDocumentoAlumno->text();
 
     if(number!=0 && documento!=""){
         database->getTiposLicencia()->push_back(new TipoLicencia(number, documento.toStdString()));
 
-        ui->doubleSpinBoxCostoLicencia->setValue(0);
+        ui->doubleSpinBoxCostoLicenciaL->setValue(0);
         ui->lineEditDocumentoAlumno->setText("");
 
         refreshWidgets();

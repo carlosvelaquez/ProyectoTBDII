@@ -15,6 +15,8 @@ class AdminClase : public QWidget
 
 public:
 
+    bool estaCapacitado(QString, int);
+
     //Se añade el "database" principal
     void setDatabase(Database*);
 

@@ -15,10 +15,8 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-<<<<<<< HEAD
 #include <QtWidgets/QSpacerItem>
-=======
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -34,11 +32,9 @@ public:
     QWidget *tab;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_3;
-<<<<<<< HEAD
     QLineEdit *lineEditNombreClase;
-=======
-    QLineEdit *lineEdit;
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
+    QLabel *label_11;
+    QSpinBox *spinBoxCategoria;
     QLabel *label_4;
     QComboBox *comboBoxClaseVehiculo;
     QLabel *label_5;
@@ -49,7 +45,6 @@ public:
     QVBoxLayout *verticalLayout_3;
     QLabel *label_6;
     QComboBox *comboBoxClasesEliminar;
-<<<<<<< HEAD
     QSpacerItem *verticalSpacer;
     QPushButton *pushButtonEliminarClases;
     QWidget *tab_2;
@@ -65,28 +60,13 @@ public:
     QLabel *label_8;
     QComboBox *comboBoxClaseProfesorNuevo;
     QSpacerItem *verticalSpacer_2;
-=======
-    QPushButton *pushButtonEliminarClases;
-    QWidget *tab_2;
-    QVBoxLayout *verticalLayout_4;
-    QLabel *label_7;
-    QLineEdit *lineEditClaseNombreNuevo;
-    QLabel *label_9;
-    QComboBox *comboBoxClaseVehiculoNuevo;
-    QLabel *label_8;
-    QComboBox *comboBoxClaseProfesorNuevo;
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
     QPushButton *pushButtonModificarClase;
 
     void setupUi(QWidget *AdminClase)
     {
         if (AdminClase->objectName().isEmpty())
             AdminClase->setObjectName(QStringLiteral("AdminClase"));
-<<<<<<< HEAD
         AdminClase->resize(586, 413);
-=======
-        AdminClase->resize(581, 321);
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         AdminClase->setStyleSheet(QStringLiteral("background-color: white;"));
         verticalLayout = new QVBoxLayout(AdminClase);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
@@ -109,17 +89,20 @@ public:
 
         verticalLayout_2->addWidget(label_3);
 
-<<<<<<< HEAD
         lineEditNombreClase = new QLineEdit(tab);
         lineEditNombreClase->setObjectName(QStringLiteral("lineEditNombreClase"));
 
         verticalLayout_2->addWidget(lineEditNombreClase);
-=======
-        lineEdit = new QLineEdit(tab);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
 
-        verticalLayout_2->addWidget(lineEdit);
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
+        label_11 = new QLabel(tab);
+        label_11->setObjectName(QStringLiteral("label_11"));
+
+        verticalLayout_2->addWidget(label_11);
+
+        spinBoxCategoria = new QSpinBox(tab);
+        spinBoxCategoria->setObjectName(QStringLiteral("spinBoxCategoria"));
+
+        verticalLayout_2->addWidget(spinBoxCategoria);
 
         label_4 = new QLabel(tab);
         label_4->setObjectName(QStringLiteral("label_4"));
@@ -166,13 +149,10 @@ public:
 
         verticalLayout_3->addWidget(comboBoxClasesEliminar);
 
-<<<<<<< HEAD
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout_3->addItem(verticalSpacer);
 
-=======
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         pushButtonEliminarClases = new QPushButton(tab_3);
         pushButtonEliminarClases->setObjectName(QStringLiteral("pushButtonEliminarClases"));
 
@@ -183,7 +163,6 @@ public:
         tab_2->setObjectName(QStringLiteral("tab_2"));
         verticalLayout_4 = new QVBoxLayout(tab_2);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
-<<<<<<< HEAD
         label_10 = new QLabel(tab_2);
         label_10->setObjectName(QStringLiteral("label_10"));
 
@@ -194,8 +173,6 @@ public:
 
         verticalLayout_4->addWidget(comboBoxElegirClase);
 
-=======
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         label_7 = new QLabel(tab_2);
         label_7->setObjectName(QStringLiteral("label_7"));
 
@@ -206,13 +183,10 @@ public:
 
         verticalLayout_4->addWidget(lineEditClaseNombreNuevo);
 
-<<<<<<< HEAD
         verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout_4->addItem(verticalSpacer_4);
 
-=======
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         label_9 = new QLabel(tab_2);
         label_9->setObjectName(QStringLiteral("label_9"));
 
@@ -223,13 +197,10 @@ public:
 
         verticalLayout_4->addWidget(comboBoxClaseVehiculoNuevo);
 
-<<<<<<< HEAD
         verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout_4->addItem(verticalSpacer_3);
 
-=======
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         label_8 = new QLabel(tab_2);
         label_8->setObjectName(QStringLiteral("label_8"));
 
@@ -240,13 +211,10 @@ public:
 
         verticalLayout_4->addWidget(comboBoxClaseProfesorNuevo);
 
-<<<<<<< HEAD
         verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout_4->addItem(verticalSpacer_2);
 
-=======
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         pushButtonModificarClase = new QPushButton(tab_2);
         pushButtonModificarClase->setObjectName(QStringLiteral("pushButtonModificarClase"));
 
@@ -259,11 +227,7 @@ public:
 
         retranslateUi(AdminClase);
 
-<<<<<<< HEAD
-        tabWidget->setCurrentIndex(1);
-=======
         tabWidget->setCurrentIndex(0);
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 
 
         QMetaObject::connectSlotsByName(AdminClase);
@@ -274,6 +238,7 @@ public:
         AdminClase->setWindowTitle(QApplication::translate("AdminClase", "Form", nullptr));
         label->setText(QApplication::translate("AdminClase", "Administrar Clase", nullptr));
         label_3->setText(QApplication::translate("AdminClase", "Nombre:", nullptr));
+        label_11->setText(QApplication::translate("AdminClase", "Categoria Necesaria", nullptr));
         label_4->setText(QApplication::translate("AdminClase", "Seleccionar Vehiculo:", nullptr));
         label_5->setText(QApplication::translate("AdminClase", "Seleccionar Profesor:", nullptr));
         label_2->setText(QString());
@@ -282,16 +247,10 @@ public:
         label_6->setText(QApplication::translate("AdminClase", "Seleccionar Clase para eliminar:", nullptr));
         pushButtonEliminarClases->setText(QApplication::translate("AdminClase", "Eliminar Clases", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("AdminClase", "Eliminar Clases", nullptr));
-<<<<<<< HEAD
         label_10->setText(QApplication::translate("AdminClase", "Elegir alumno para modificar", nullptr));
         label_7->setText(QApplication::translate("AdminClase", "Nombre:", nullptr));
         label_9->setText(QApplication::translate("AdminClase", "Seleccionar Nuevo Vehiculo:", nullptr));
         label_8->setText(QApplication::translate("AdminClase", "Seleccionar Nuevo Profesor:", nullptr));
-=======
-        label_7->setText(QApplication::translate("AdminClase", "Nombre:", nullptr));
-        label_9->setText(QApplication::translate("AdminClase", "Seleccionar Vehiculo:", nullptr));
-        label_8->setText(QApplication::translate("AdminClase", "Seleccionar Profesor:", nullptr));
->>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         pushButtonModificarClase->setText(QApplication::translate("AdminClase", "Agregar Clases", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("AdminClase", "Modificar Clase", nullptr));
     } // retranslateUi
