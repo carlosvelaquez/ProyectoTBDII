@@ -11,6 +11,7 @@ class Pago : public Instancia{
   private:
       string uidAlumno;
       float monto;
+      float abonado;
       string motivo;
       Alumno* alumno;
 
@@ -25,12 +26,14 @@ class Pago : public Instancia{
       //Setters
       void setUIDAlumno(string);
       void setMonto(float);
+      void setAbonado(float);
       void setMotivo(string);
       void setAlumno(Alumno*);
 
       //Getters
       string getUIDAlumno();
       float getMonto();
+      float getAbonado();
       string getMotivo();
       Alumno* getAlumno();
 };

@@ -20,6 +20,7 @@ bool ClasePractica::fromJSON(string cadena){
   }else{
     uid = doc["id"].toString().toStdString();
     uidClase = doc["id_clase"].toString().toStdString();
+    UIDLicencia = doc["id_tipolicencia"].toString().toStdString();
     return true;
   }
   return false;
@@ -29,6 +30,7 @@ string ClasePractica::toJSON(){
   QJsonObject jsonObj;
   jsonObj.insert("id",QString::fromStdString(uid));
   jsonObj.insert("id_clase",QString::fromStdString(uidClase));
+  jsonObj.insert("id_tipolicencia",QString::fromStdString(UIDLicencia));
   QJsonDocument dec(jsonObj);
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();

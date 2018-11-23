@@ -30,6 +30,7 @@ bool Clase::fromJSON(string cadena){
     uidProfesor = doc["id_profesor"].toString().toStdString();
     uidVehiculo = doc["id_vehiculo"].toString().toStdString();
     nombre = doc["nombre"].toString().toStdString();
+    categoriaNecesaria = doc["categorianecesaria"].toInt();
     return true;
   }
   return false;
@@ -41,6 +42,7 @@ string Clase::toJSON(){
   jsonObj.insert("id_profesor",QString::fromStdString(uidProfesor));
   jsonObj.insert("id_vehiculo",QString::fromStdString(uidVehiculo));
   jsonObj.insert("nombre",QString::fromStdString(nombre));
+  jsonObj.insert("categorianecesaria",categoriaNecesaria);
   QJsonDocument dec(jsonObj);
   QString strJson(dec.toJson(QJsonDocument::Compact));
   return strJson.toStdString();
@@ -76,6 +78,7 @@ void Clase::setVehiculo(Vehiculo* nVehiculo){
 
 void Clase::setCategoriaNecesaria(int nCat){
   categoriaNecesaria = nCat;
+  alterado = true;
 }
 
 //Getters
