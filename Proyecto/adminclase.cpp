@@ -22,7 +22,7 @@ AdminClase::~AdminClase()
 
 bool AdminClase::estaCapacitado(QString uidProfesor, int categoriaNecesaria){
 
-    for(int i=0; i<database->getProfesores()->size(); i++){
+    for(size_t i=0; i<database->getProfesores()->size(); i++){
         if(uidProfesor.toStdString() == database->getProfesores()->at(i)->getUID()){
             if(database->getProfesores()->at(i)->getCategoria() >= categoriaNecesaria){
                 return true;
@@ -50,21 +50,21 @@ qDebug() << imgName.at(0); // result is "name"
     //Se añade al comboBox de agregar y modificar
     QString word;
 
-    for(int i=0; i<database->getProfesores()->size(); i++){
+    for(size_t i=0; i<database->getProfesores()->size(); i++){
         word = QString::fromStdString(database->getProfesores()->at(i)->getUID());
         ui->comboBoxClaseProfesor->addItem(word);
         ui->comboBoxClaseProfesorNuevo->addItem(word);
     }
 
     //Se añade al comboBox de agregar y modificar
-    for(int i=0; i<database->getVehiculos()->size(); i++){
+    for(size_t i=0; i<database->getVehiculos()->size(); i++){
         word = QString::fromStdString(database->getVehiculos()->at(i)->getUID());
         ui->comboBoxClaseVehiculo->addItem(word);
         ui->comboBoxClaseVehiculoNuevo->addItem(word);
     }
 
     //Se añade al comboBox de eliminar
-    for(int i=0; i<database->getClases()->size(); i++){
+    for(size_t i=0; i<database->getClases()->size(); i++){
         if(!database->getClases()->at(i)->isBorrado()){
             word = QString::fromStdString(database->getClases()->at(i)->getUID())+" | "+QString::fromStdString(database->getClases()->at(i)->getNombre());
             ui->comboBoxElegirClase->addItem(word);
@@ -115,7 +115,7 @@ void AdminClase::pushButtonEliminarClase(){
     QString uid = ui->comboBoxClasesEliminar->currentText();
     QStringList array = uid.split(" | ");
 
-    for(int i=0; i<database->getClases()->size(); i++){
+    for(size_t i=0; i<database->getClases()->size(); i++){
         if(array.at(0).toStdString() == database->getClases()->at(i)->getUID()){
             database->getClases()->at(i)->setBorrar(true);
         }
@@ -135,7 +135,7 @@ void AdminClase::pushButtonModificarClase(){
     QString uidVehiculo = ui->comboBoxClaseVehiculoNuevo->currentText();
 
     //Se busca la clase seleccionada
-    for(int i=0; i<database->getClases()->size(); i++){
+    for(size_t i=0; i<database->getClases()->size(); i++){
         if(uid.toStdString() == database->getClases()->at(i)->getUID()){
             currentClase = database->getClases()->at(i);
         }

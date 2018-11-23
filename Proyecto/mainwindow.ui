@@ -59,16 +59,16 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="AdminEmpleadosButton">
+        <widget class="QPushButton" name="AdminClaseButton">
          <property name="text">
-          <string>Administrar Empleados</string>
+          <string>Administrar Clase</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="AdminProfesoresButton">
+        <widget class="QPushButton" name="AdminEmpleadosButton">
          <property name="text">
-          <string>Administrar Profesores</string>
+          <string>Administrar Empleados</string>
          </property>
         </widget>
        </item>
@@ -80,16 +80,23 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButtonPago">
+        <widget class="QPushButton" name="AdminProfesoresButton">
          <property name="text">
-          <string>Pago</string>
+          <string>Administrar Profesores</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="AdminClaseButton">
+        <widget class="QPushButton" name="pushButton">
          <property name="text">
-          <string>Administrar Clase</string>
+          <string>Administrar Vehiculo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonPago">
+         <property name="text">
+          <string>Pago</string>
          </property>
         </widget>
        </item>

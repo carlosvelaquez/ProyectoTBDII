@@ -32,7 +32,7 @@ public:
     QWidget *tab;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_7;
-    QDoubleSpinBox *doubleSpinBoxCostoLicenciaL;
+    QDoubleSpinBox *doubleSpinBoxCostoLicencia;
     QSpacerItem *verticalSpacer_2;
     QLabel *label_8;
     QLineEdit *lineEditDocumentoAlumno;
@@ -86,10 +86,10 @@ public:
 
         verticalLayout_2->addWidget(label_7);
 
-        doubleSpinBoxCostoLicenciaL = new QDoubleSpinBox(tab);
-        doubleSpinBoxCostoLicenciaL->setObjectName(QStringLiteral("doubleSpinBoxCostoLicenciaL"));
+        doubleSpinBoxCostoLicencia = new QDoubleSpinBox(tab);
+        doubleSpinBoxCostoLicencia->setObjectName(QStringLiteral("doubleSpinBoxCostoLicencia"));
 
-        verticalLayout_2->addWidget(doubleSpinBoxCostoLicenciaL);
+        verticalLayout_2->addWidget(doubleSpinBoxCostoLicencia);
 
         verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -193,7 +193,7 @@ public:
 
         retranslateUi(AdminLicencia);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(AdminLicencia);

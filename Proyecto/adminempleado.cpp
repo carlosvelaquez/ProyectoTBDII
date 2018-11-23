@@ -1,5 +1,6 @@
 #include "adminempleado.h"
 #include "ui_adminempleado.h"
+#include <QString>
 
 AdminEmpleado::AdminEmpleado(QWidget *parent) :
     QWidget(parent),
@@ -27,11 +28,11 @@ void AdminEmpleado::refreshWidgets(){
 
     //ComboBox de eliminar y modificar empleados
     QString word;
-    for(int i=0; i<database->getEmpleados()->size(); i++){
+    /*for(int i=0; i<database->getEmpleados()->size(); i++){
         word = QString::fromStdString(database->getEmpleados()->at(i)->getUID())+" | "+QString::fromStdString(database->getEmpleados()->at(i)->getNombres());
         ui->comboBoxEliminarEmpleado->addItem(word);
         ui->comboBoxModificarEmpleado->addItem(word);
-    }
+    }*/
 
 }
 
@@ -60,12 +61,12 @@ void AdminEmpleado::pushButtonEliminarEmpleado(){
 
     QString uid = ui->comboBoxEliminarEmpleado->currentText();
     QStringList array = uid.split(" | ");
-    for(int i=0; i<database->getEmpleados()->size(); i++){
+    for(size_t i=0; i<database->getEmpleados()->size(); i++){
         if(database->getEmpleados()->at(i)->getUID() == array.at(0).toStdString()){
             database->getEmpleados()->at(i)->setBorrar(true);
         }
     }
-
+    qDebug()<<"DIIOASDIASDIASDISAODIASOIDASHHFBASJDVASHJDVSAJD";
     ui->comboBoxEliminarEmpleado->setCurrentIndex(0);
     refreshWidgets();
 }/*====================================================================*/
@@ -81,7 +82,7 @@ void AdminEmpleado::pushButtonModificarEmpleado(){
     if(nuevoNombre!="" && nuevoApellido!="" && value!=0){
         QString uid = ui->comboBoxModificarEmpleado->currentText();
         QStringList array = uid.split(" | ");
-        for(int i=0; i<database->getEmpleados()->size(); i++){
+        for(size_t i=0; i<database->getEmpleados()->size(); i++){
             if(database->getEmpleados()->at(i)->getUID() == array.at(0).toStdString()){
                 database->getEmpleados()->at(i)->setNombres(nuevoNombre.toStdString());
                 database->getEmpleados()->at(i)->setApellidos(nuevoApellido.toStdString());

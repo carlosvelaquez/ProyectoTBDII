@@ -12,6 +12,9 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -25,6 +28,11 @@ public:
     QLabel *label;
     QTabWidget *tabWidget;
     QWidget *tab;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label_3;
+    QLineEdit *lineEdit;
+    QSpacerItem *verticalSpacer;
+    QPushButton *pushButton;
     QWidget *tab_2;
     QWidget *tab_3;
 
@@ -48,6 +56,27 @@ public:
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
+        verticalLayout_2 = new QVBoxLayout(tab);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        label_3 = new QLabel(tab);
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        verticalLayout_2->addWidget(label_3);
+
+        lineEdit = new QLineEdit(tab);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+
+        verticalLayout_2->addWidget(lineEdit);
+
+        verticalSpacer = new QSpacerItem(20, 176, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer);
+
+        pushButton = new QPushButton(tab);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+
+        verticalLayout_2->addWidget(pushButton);
+
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -61,7 +90,7 @@ public:
 
         retranslateUi(AdminProfesor);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(AdminProfesor);
@@ -71,6 +100,8 @@ public:
     {
         AdminProfesor->setWindowTitle(QApplication::translate("AdminProfesor", "Form", nullptr));
         label->setText(QApplication::translate("AdminProfesor", "Administrar Profesor", nullptr));
+        label_3->setText(QApplication::translate("AdminProfesor", "Categoria del profesor:", nullptr));
+        pushButton->setText(QApplication::translate("AdminProfesor", "Agregar nuevo profesor", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("AdminProfesor", "Agregar Profesor", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("AdminProfesor", "Eliminar Profesor", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("AdminProfesor", "Modificar Profesor", nullptr));

@@ -30,11 +30,12 @@ public:
     QFrame *frame;
     QVBoxLayout *verticalLayout;
     QPushButton *AdminAlumnosButton;
-    QPushButton *AdminEmpleadosButton;
-    QPushButton *AdminProfesoresButton;
-    QPushButton *AdminLicenciaButton;
-    QPushButton *pushButtonPago;
     QPushButton *AdminClaseButton;
+    QPushButton *AdminEmpleadosButton;
+    QPushButton *AdminLicenciaButton;
+    QPushButton *AdminProfesoresButton;
+    QPushButton *pushButton;
+    QPushButton *pushButtonPago;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -76,30 +77,35 @@ public:
 
         verticalLayout->addWidget(AdminAlumnosButton);
 
+        AdminClaseButton = new QPushButton(frame);
+        AdminClaseButton->setObjectName(QStringLiteral("AdminClaseButton"));
+
+        verticalLayout->addWidget(AdminClaseButton);
+
         AdminEmpleadosButton = new QPushButton(frame);
         AdminEmpleadosButton->setObjectName(QStringLiteral("AdminEmpleadosButton"));
 
         verticalLayout->addWidget(AdminEmpleadosButton);
-
-        AdminProfesoresButton = new QPushButton(frame);
-        AdminProfesoresButton->setObjectName(QStringLiteral("AdminProfesoresButton"));
-
-        verticalLayout->addWidget(AdminProfesoresButton);
 
         AdminLicenciaButton = new QPushButton(frame);
         AdminLicenciaButton->setObjectName(QStringLiteral("AdminLicenciaButton"));
 
         verticalLayout->addWidget(AdminLicenciaButton);
 
+        AdminProfesoresButton = new QPushButton(frame);
+        AdminProfesoresButton->setObjectName(QStringLiteral("AdminProfesoresButton"));
+
+        verticalLayout->addWidget(AdminProfesoresButton);
+
+        pushButton = new QPushButton(frame);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+
+        verticalLayout->addWidget(pushButton);
+
         pushButtonPago = new QPushButton(frame);
         pushButtonPago->setObjectName(QStringLiteral("pushButtonPago"));
 
         verticalLayout->addWidget(pushButtonPago);
-
-        AdminClaseButton = new QPushButton(frame);
-        AdminClaseButton->setObjectName(QStringLiteral("AdminClaseButton"));
-
-        verticalLayout->addWidget(AdminClaseButton);
 
 
         verticalLayout_2->addWidget(frame);
@@ -119,11 +125,12 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
         label->setText(QApplication::translate("MainWindow", "Tigrillo AMS", nullptr));
         AdminAlumnosButton->setText(QApplication::translate("MainWindow", "Administrar Alumnos", nullptr));
-        AdminEmpleadosButton->setText(QApplication::translate("MainWindow", "Administrar Empleados", nullptr));
-        AdminProfesoresButton->setText(QApplication::translate("MainWindow", "Administrar Profesores", nullptr));
-        AdminLicenciaButton->setText(QApplication::translate("MainWindow", "Administrar Licencia", nullptr));
-        pushButtonPago->setText(QApplication::translate("MainWindow", "Pago", nullptr));
         AdminClaseButton->setText(QApplication::translate("MainWindow", "Administrar Clase", nullptr));
+        AdminEmpleadosButton->setText(QApplication::translate("MainWindow", "Administrar Empleados", nullptr));
+        AdminLicenciaButton->setText(QApplication::translate("MainWindow", "Administrar Licencia", nullptr));
+        AdminProfesoresButton->setText(QApplication::translate("MainWindow", "Administrar Profesores", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Administrar Vehiculo", nullptr));
+        pushButtonPago->setText(QApplication::translate("MainWindow", "Pago", nullptr));
     } // retranslateUi
 
 };

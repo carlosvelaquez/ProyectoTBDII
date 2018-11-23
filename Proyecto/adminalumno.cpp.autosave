@@ -74,7 +74,8 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
         newAlumno->setNombres(nombre.toStdString()); // Asigna nombre
         newAlumno->setApellidos(apellido.toStdString()); //Asigna apellido
 
-
+        //Agregando Licencias
+        
         database->getAlumnos()->push_back(newAlumno); //Se agrega a "database" el nuevo alumno
 
 

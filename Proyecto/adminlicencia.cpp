@@ -27,7 +27,7 @@ void AdminLicencia::setDatabase(Database* nDatabase){
 //Se refrescan los widgets de adminclase
 void AdminLicencia::refreshWidgets(){
     QString word;
-    for(int i=0; i<database->getTiposLicencia()->size(); i++){
+    for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
         word = QString::fromStdString(database->getTiposLicencia()->at(i)->getUID())+" | "+QString::fromStdString(database->getTiposLicencia()->at(i)->getDocumentos());
         ui->comboBox->addItem(word);
         ui->comboBoxSeleccionarModificarLicencia->addItem(word);
@@ -40,13 +40,13 @@ void AdminLicencia::refreshWidgets(){
 /* =============== Agregar Licencia ===============*/
 void AdminLicencia::pushButtonAgregarLicencia(){
 
-    float number = ui->doubleSpinBoxCostoLicenciaL->value();
+    float number = ui->doubleSpinBoxCostoLicencia->value();
     QString documento = ui->lineEditDocumentoAlumno->text();
 
     if(number!=0 && documento!=""){
         database->getTiposLicencia()->push_back(new TipoLicencia(number, documento.toStdString()));
 
-        ui->doubleSpinBoxCostoLicenciaL->setValue(0);
+        ui->doubleSpinBoxCostoLicencia->setValue(0);
         ui->lineEditDocumentoAlumno->setText("");
 
         refreshWidgets();
@@ -59,7 +59,7 @@ void AdminLicencia::pushButtonAgregarLicencia(){
 void AdminLicencia::pushButtonEliminarLicencia(){
     QString currentLicencia = ui->comboBox->currentText();
     QStringList array = currentLicencia.split(" | ");
-    for(int i=0; i<database->getTiposLicencia()->size(); i++){
+    for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
         if(database->getTiposLicencia()->at(i)->getUID() == array.at(0).toStdString()){
             database->getTiposLicencia()->at(i)->setBorrar(true);
         }

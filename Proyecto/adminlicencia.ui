@@ -37,7 +37,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>2</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -52,7 +52,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBoxCostoLicenciaL"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBoxCostoLicencia"/>
        </item>
        <item>
         <spacer name="verticalSpacer_2">
