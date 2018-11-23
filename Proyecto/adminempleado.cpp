@@ -28,7 +28,7 @@ void AdminEmpleado::refreshWidgets(){
 
     //ComboBox de eliminar y modificar empleados
     QString word;
-    for(int i=0; i<database->getEmpleados()->size(); i++){
+    for(size_t i=0; i<database->getEmpleados()->size(); i++){
         word = QString::fromStdString(database->getEmpleados()->at(i)->getUID())+" | "+QString::fromStdString(database->getEmpleados()->at(i)->getNombres());
         ui->comboBoxEliminarEmpleado->addItem(word);
         ui->comboBoxModificarEmpleado->addItem(word);
