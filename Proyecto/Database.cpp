@@ -413,8 +413,9 @@ bool Database::push(){
   for (size_t i = 0; i < alumnos.size(); i++) {
     for (size_t j = 0; j < alumnos[i]->getClases()->size(); j++) {
       //se pushea lo siguiente:
-      alumnos[i]->getUID();
-      alumnos[i]->getClases()->at(j)->getUID();
+      string uidalumno = alumnos[i]->getUID();
+      string uidclase = alumnos[i]->getClases()->at(j)->getUID();
+      runQuery("insert into alumnosclases(id_alumno, id_clase) values(" + uidalumno + ", " + uidclase + ");");
     }
   }
 
