@@ -32,6 +32,7 @@ public:
     QWidget *tab;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_2;
+<<<<<<< HEAD
     QLineEdit *lineEditNombre;
     QSpacerItem *verticalSpacer;
     QLabel *label_3;
@@ -40,6 +41,16 @@ public:
     QLabel *label_4;
     QDoubleSpinBox *doubleSpinBoxSalario;
     QPushButton *pushButtonAgregarEmpleado;
+=======
+    QLineEdit *lineEdit;
+    QSpacerItem *verticalSpacer;
+    QLabel *label_3;
+    QLineEdit *lineEdit_2;
+    QSpacerItem *verticalSpacer_2;
+    QLabel *label_4;
+    QDoubleSpinBox *doubleSpinBox;
+    QPushButton *pushButton;
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
     QWidget *tab_2;
     QVBoxLayout *verticalLayout_3;
     QLabel *label_5;
@@ -48,8 +59,11 @@ public:
     QPushButton *pushButtonEliminarEmpleado;
     QWidget *tab_3;
     QVBoxLayout *verticalLayout_4;
+<<<<<<< HEAD
     QLabel *label_9;
     QComboBox *comboBoxModificarEmpleado;
+=======
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
     QLabel *label_6;
     QLineEdit *lineEditNuevoNombreEmpleado;
     QSpacerItem *verticalSpacer_4;
@@ -88,10 +102,17 @@ public:
 
         verticalLayout_2->addWidget(label_2);
 
+<<<<<<< HEAD
         lineEditNombre = new QLineEdit(tab);
         lineEditNombre->setObjectName(QStringLiteral("lineEditNombre"));
 
         verticalLayout_2->addWidget(lineEditNombre);
+=======
+        lineEdit = new QLineEdit(tab);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+
+        verticalLayout_2->addWidget(lineEdit);
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -102,10 +123,17 @@ public:
 
         verticalLayout_2->addWidget(label_3);
 
+<<<<<<< HEAD
         lineEditApellido = new QLineEdit(tab);
         lineEditApellido->setObjectName(QStringLiteral("lineEditApellido"));
 
         verticalLayout_2->addWidget(lineEditApellido);
+=======
+        lineEdit_2 = new QLineEdit(tab);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+
+        verticalLayout_2->addWidget(lineEdit_2);
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 
         verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -116,6 +144,7 @@ public:
 
         verticalLayout_2->addWidget(label_4);
 
+<<<<<<< HEAD
         doubleSpinBoxSalario = new QDoubleSpinBox(tab);
         doubleSpinBoxSalario->setObjectName(QStringLiteral("doubleSpinBoxSalario"));
 
@@ -125,6 +154,17 @@ public:
         pushButtonAgregarEmpleado->setObjectName(QStringLiteral("pushButtonAgregarEmpleado"));
 
         verticalLayout_2->addWidget(pushButtonAgregarEmpleado);
+=======
+        doubleSpinBox = new QDoubleSpinBox(tab);
+        doubleSpinBox->setObjectName(QStringLiteral("doubleSpinBox"));
+
+        verticalLayout_2->addWidget(doubleSpinBox);
+
+        pushButton = new QPushButton(tab);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+
+        verticalLayout_2->addWidget(pushButton);
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
@@ -155,6 +195,7 @@ public:
         tab_3->setObjectName(QStringLiteral("tab_3"));
         verticalLayout_4 = new QVBoxLayout(tab_3);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+<<<<<<< HEAD
         label_9 = new QLabel(tab_3);
         label_9->setObjectName(QStringLiteral("label_9"));
 
@@ -165,6 +206,8 @@ public:
 
         verticalLayout_4->addWidget(comboBoxModificarEmpleado);
 
+=======
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         label_6 = new QLabel(tab_3);
         label_6->setObjectName(QStringLiteral("label_6"));
 
@@ -232,12 +275,19 @@ public:
         label_2->setText(QApplication::translate("AdminEmpleado", "Nombres:", nullptr));
         label_3->setText(QApplication::translate("AdminEmpleado", "Apellidos", nullptr));
         label_4->setText(QApplication::translate("AdminEmpleado", "Salario:", nullptr));
+<<<<<<< HEAD
         pushButtonAgregarEmpleado->setText(QApplication::translate("AdminEmpleado", "Agregar Empleado", nullptr));
+=======
+        pushButton->setText(QApplication::translate("AdminEmpleado", "Agregar Empleado", nullptr));
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("AdminEmpleado", "Agregar Empleado", nullptr));
         label_5->setText(QApplication::translate("AdminEmpleado", "Elegir Empleado", nullptr));
         pushButtonEliminarEmpleado->setText(QApplication::translate("AdminEmpleado", "Eliminar Empleado", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("AdminEmpleado", "Eliminar Empleado", nullptr));
+<<<<<<< HEAD
         label_9->setText(QApplication::translate("AdminEmpleado", "Seleccionar empleado:", nullptr));
+=======
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         label_6->setText(QApplication::translate("AdminEmpleado", "Nuevo nombres:", nullptr));
         label_8->setText(QApplication::translate("AdminEmpleado", "Nuevo apellidos", nullptr));
         label_7->setText(QApplication::translate("AdminEmpleado", "Nuevo salario:", nullptr));

@@ -2,6 +2,7 @@
 
 PruebaPractica::PruebaPractica(string json){
   fromJSON(json);
+  tablePath = "autoescuela.pruebapractica";
 }
 
 PruebaPractica::PruebaPractica(string nUID, string nUidClasePractica, float nNotaMaxima, float nNotaObtenida, string nUidAlumno, int nHoras, int nIntentos ) : Instancia(nUID){
@@ -22,6 +23,7 @@ PruebaPractica::PruebaPractica(string nUidClasePractica, float nNotaMaxima, floa
   uidAlumno = nUidAlumno;
   Horas = nHoras;
   Intento = nIntentos;
+  tablePath = "autoescuela.pruebapractica";
 }
 
 bool PruebaPractica::fromJSON(string cadena){
@@ -111,4 +113,8 @@ int PruebaPractica::getHoras(){
 
 int PruebaPractica::getIntento(){
   return Intento;
+}
+
+float PruebaPractica::calcularPago(){
+  return -1;
 }

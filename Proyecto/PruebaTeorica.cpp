@@ -2,6 +2,7 @@
 
 PruebaTeorica::PruebaTeorica(string json){
   fromJSON(json);
+  tablePath = "autoescuela.pruebateorica";
 }
 
 PruebaTeorica::PruebaTeorica(string nUID, string nUidClaseTeorica, float nNotaMaxima, float nNotaObtenida, string nNuidAlumno) : Instancia(nUID){
@@ -18,6 +19,7 @@ PruebaTeorica::PruebaTeorica(string nUidClaseTeorica, float nNotaMaxima, float n
   notaMaxima = nNotaMaxima;
   notaObtenida = nNotaObtenida;
   uidAlumno = nNuidAlumno;
+  tablePath = "autoescuela.pruebateorica";
 }
 
 bool PruebaTeorica::fromJSON(string cadena){

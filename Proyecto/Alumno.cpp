@@ -30,6 +30,7 @@ bool Alumno::fromJSON(string cadena){
   if(doc.object().isEmpty()){
     return false;
   }else{
+    uid = doc["id"].toString().toStdString();
     nombres = doc["nombres"].toString().toStdString();
     apellidos = doc["apellidos"].toString().toStdString();
     return true;
