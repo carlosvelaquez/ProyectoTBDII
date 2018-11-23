@@ -29,16 +29,16 @@ void adminvehiculo::refreshWidgets(){
     QString word;
 
     //Combobox de agregar vehiculo
-    for(size_t i=0; i<database->getCategorias()->size(); i++){
-        word = QString::fromStdString(database->getCategorias()->at(i)->toJSON());
+    for(size_t i=0; i<database->getCategorias().size(); i++){
+        word = QString::fromStdString(database->getCategorias().at(i)->toJSON());
         ui->comboBoxVehiculaAgregar->addItem(word);
         ui->comboBoxCategoriaVehiculoModificar->addItem(word);
     }
 
 
     // Combobox de modificar Vehiculo
-    for(size_t i=0; i<database->getVehiculos()->size(); i++){
-        word = QString::fromStdString(database->getVehiculos()->at(i)->toJSON());
+    for(size_t i=0; i<database->getVehiculos().size(); i++){
+        word = QString::fromStdString(database->getVehiculos().at(i)->toJSON());
         ui->comboBoxVehiculoModificar->addItem(word);
         ui->comboBoxSeleccionarVehiculoEliminar->addItem(word);
     }
@@ -53,21 +53,21 @@ void adminvehiculo::pushButtonAgregarVehiculo(){
     }
 
     ui->comboBoxVehiculaAgregar->setCurrentIndex(0);
-    refreshWidgets();
+    database->push();
 }
 
 void adminvehiculo::pushButtonEliminarVehiculo(){
     QString word = ui->comboBoxSeleccionarVehiculoEliminar->currentText();
     QStringList array = word.split(" | ");
 
-    for(size_t i=0; i<database->getVehiculos()->size(); i++){
-        if(array.at(0).toStdString() == database->getVehiculos()->at(i)->getUID()){
-            database->getVehiculos()->at(i)->setBorrar(true);
+    for(size_t i=0; i<database->getVehiculos().size(); i++){
+        if(array.at(0).toStdString() == database->getVehiculos().at(i)->getUID()){
+            database->getVehiculos().at(i)->setBorrar(true);
         }
     }
 
     ui->comboBoxSeleccionarVehiculoEliminar->setCurrentIndex(0);
-    refreshWidgets();
+    database->push();
 }
 
 void adminvehiculo::pushButtonModificaVehiculo(){
@@ -79,9 +79,9 @@ void adminvehiculo::pushButtonModificaVehiculo(){
 
     Vehiculo* temp;
 
-    for(size_t i=0; i<database->getVehiculos()->size(); i++){
-        if(array.at(0).toStdString() == database->getVehiculos()->at(i)->getUID()){
-            temp = database->getVehiculos()->at(i);
+    for(size_t i=0; i<database->getVehiculos().size(); i++){
+        if(array.at(0).toStdString() == database->getVehiculos().at(i)->getUID()){
+            temp = database->getVehiculos().at(i);
             temp->setUIDCategoria(arrayCategoria.at(0).toStdString());
         }
     }

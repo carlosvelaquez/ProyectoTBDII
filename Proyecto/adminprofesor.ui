@@ -40,6 +40,16 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>ID de Empleado</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item>
         <widget class="QLabel" name="label_3">
          <property name="text">
           <string>Categoria del profesor:</string>

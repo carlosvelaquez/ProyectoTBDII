@@ -10,7 +10,7 @@ ui(new Ui::AdminEmpleado)
   connect(ui->pushButtonAgregarEmpleado, SIGNAL(clicked()), this, SLOT(pushButtonAgregarEmpleado()));
   connect(ui->pushButtonEliminarEmpleado, SIGNAL(clicked()), this, SLOT(pushButtonEliminarEmpleado()));
   connect(ui->pushButtonActualizarEmpleados, SIGNAL(clicked()), this, SLOT(pushButtonModificarEmpleado()));
-  refreshWidgets();
+  //refreshWidgets();
 }
 
 AdminEmpleado::~AdminEmpleado()
@@ -29,21 +29,21 @@ void AdminEmpleado::refreshWidgets(){
 
   //ComboBox de eliminar y modificar empleados
   QString word = "1";
-  vector<Empleado*>* empleados = database->getEmpleados();
+  vector<Empleado*> empleados = database->getEmpleados();
 
-  if (empleados) {
-    qDebug() << empleados->size();
-    for(size_t i=0; i <empleados->size(); i++){
+  //if (e) {
+    qDebug() << empleados.size();
+    for(size_t i=0; i <empleados.size(); i++){
       qDebug() << "i =" << i;
-      //word = QString::fromStdString(database->getEmpleados()->at(i)->getUID())+" | "+QString::fromStdString(database->getEmpleados()->at(i)->getNombres());
-      //word = QString::fromStdString(database->getEmpleados()->at(i)->getUID())+" | "+QString::fromStdString(database->getEmpleados()->at(i)->getNombres());
+      //word = QString::fromStdString(database->getEmpleados().at(i)->getUID())+" | "+QString::fromStdString(database->getEmpleados().at(i)->getNombres());
+      //word = QString::fromStdString(database->getEmpleados().at(i)->getUID())+" | "+QString::fromStdString(database->getEmpleados().at(i)->getNombres());
 
-      Empleado* e = empleados->at(i);
+      Empleado* e = empleados.at(i);
       ui->comboBoxEliminarEmpleado->addItem(word);
       ui->comboBoxModificarEmpleado->addItem(word);
     }
 
-  }
+  //}
 
 }
 
@@ -61,7 +61,8 @@ void AdminEmpleado::pushButtonAgregarEmpleado(){
     ui->lineEditNombre->setText("");
     ui->lineEditApellido->setText("");
     ui->doubleSpinBoxSalario->setValue(0);
-    refreshWidgets();
+    //refreshWidgets();
+    database->push();
   }
 }/*====================================================================*/
 
@@ -72,15 +73,16 @@ void AdminEmpleado::pushButtonEliminarEmpleado(){
 
   QString uid = ui->comboBoxEliminarEmpleado->currentText();
   QStringList array = uid.split(" | ");
-  for(size_t i=0; i<database->getEmpleados()->size(); i++){
-    if(database->getEmpleados()->at(i)->getUID() == array.at(0).toStdString()){
+  for(size_t i=0; i<database->getEmpleados().size(); i++){
+    if(database->getEmpleados().at(i)->getUID() == array.at(0).toStdString()){
 
-      database->getEmpleados()->at(i)->setBorrar(true);
+      database->getEmpleados().at(i)->setBorrar(true);
       ui->comboBoxEliminarEmpleado->setCurrentIndex(0);
 
     }
   }
-  refreshWidgets();
+  //refreshWidgets();
+  database->push();
 }/*====================================================================*/
 
 
@@ -94,11 +96,11 @@ void AdminEmpleado::pushButtonModificarEmpleado(){
   if(nuevoNombre!="" && nuevoApellido!="" && value!=0){
     QString uid = ui->comboBoxModificarEmpleado->currentText();
     QStringList array = uid.split(" | ");
-    for(size_t i=0; i<database->getEmpleados()->size(); i++){
-      if(database->getEmpleados()->at(i)->getUID() == array.at(0).toStdString()){
-        database->getEmpleados()->at(i)->setNombres(nuevoNombre.toStdString());
-        database->getEmpleados()->at(i)->setApellidos(nuevoApellido.toStdString());
-        database->getEmpleados()->at(i)->setSalario(value);
+    for(size_t i=0; i<database->getEmpleados().size(); i++){
+      if(database->getEmpleados().at(i)->getUID() == array.at(0).toStdString()){
+        database->getEmpleados().at(i)->setNombres(nuevoNombre.toStdString());
+        database->getEmpleados().at(i)->setApellidos(nuevoApellido.toStdString());
+        database->getEmpleados().at(i)->setSalario(value);
 
         ui->lineEditNuevoNombreEmpleado->setText("");
         ui->lineEditNuevoApellido->setText("");
@@ -106,7 +108,8 @@ void AdminEmpleado::pushButtonModificarEmpleado(){
       }
     }
 
-    refreshWidgets();
+    //refreshWidgets();
+    database->push();
   }
 
 }/*====================================================================*/

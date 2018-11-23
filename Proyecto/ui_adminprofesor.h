@@ -30,6 +30,8 @@ public:
     QTabWidget *tabWidget;
     QWidget *tab;
     QVBoxLayout *verticalLayout_2;
+    QLabel *label_6;
+    QLineEdit *lineEdit;
     QLabel *label_3;
     QLineEdit *lineEditCategoriaProfesor;
     QSpacerItem *verticalSpacer;
@@ -72,6 +74,16 @@ public:
         tab->setObjectName(QStringLiteral("tab"));
         verticalLayout_2 = new QVBoxLayout(tab);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        label_6 = new QLabel(tab);
+        label_6->setObjectName(QStringLiteral("label_6"));
+
+        verticalLayout_2->addWidget(label_6);
+
+        lineEdit = new QLineEdit(tab);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+
+        verticalLayout_2->addWidget(lineEdit);
+
         label_3 = new QLabel(tab);
         label_3->setObjectName(QStringLiteral("label_3"));
 
@@ -170,6 +182,7 @@ public:
     {
         AdminProfesor->setWindowTitle(QApplication::translate("AdminProfesor", "Form", nullptr));
         label->setText(QApplication::translate("AdminProfesor", "Administrar Profesor", nullptr));
+        label_6->setText(QApplication::translate("AdminProfesor", "ID de Empleado", nullptr));
         label_3->setText(QApplication::translate("AdminProfesor", "Categoria del profesor:", nullptr));
         pushButtonAgregarProfesor->setText(QApplication::translate("AdminProfesor", "Agregar nuevo profesor", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("AdminProfesor", "Agregar Profesor", nullptr));

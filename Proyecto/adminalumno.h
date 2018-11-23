@@ -41,7 +41,7 @@ private slots:
     void getLicencia();
 
 private:
-    vector<TipoLicencia*>* licencias;
+    vector<TipoLicencia*> licencias;
     Alumno* newAlumno;
     Database* database;
     Ui::AdminAlumno *ui;

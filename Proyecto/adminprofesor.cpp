@@ -9,7 +9,7 @@ AdminProfesor::AdminProfesor(QWidget *parent) :
     connect(ui->pushButtonAgregarProfesor, SIGNAL(clicked()), this, SLOT(pushButtonAgregarProfesor()));
     connect(ui->pushButtonEliminarProfesor, SIGNAL(clicked()), this, SLOT(pushButtonEliminarProfesor()));
     connect(ui->pushButtonModificarProfesor, SIGNAL(clicked()), this, SLOT(pushButtonModificarProfesor()));
-    refreshWidgets();
+    //refreshWidgets();
 }
 
 AdminProfesor::~AdminProfesor()

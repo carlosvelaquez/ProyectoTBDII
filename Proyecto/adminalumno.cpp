@@ -15,7 +15,7 @@ AdminAlumno::AdminAlumno(QWidget *parent) :
     connect(ui->pushButtonEliminarAlumno, SIGNAL(clicked()), this, SLOT(on_pushButtonAgregarAlumnos_clicked()));
     connect(ui->comboBoxAlumnoActualizar, SIGNAL(clicked()), this, SLOT(on_pushButtonAplicarCambiosAlumno_clicked()));
     connect(ui->pushButtonLicenciaAlumno, SIGNAL(clicked()), this, SLOT(getLicencia()));
-    refreshWidgets();
+    //refreshWidgets();
 }
 
 AdminAlumno::~AdminAlumno()
@@ -31,7 +31,7 @@ void AdminAlumno::refreshWidgets(){
         ui->comboBoxAlumnoActualizar->addItem(QString::fromStdString(database->getAlumnos().at(i)->getUID()));
     }
 
-    for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
+    for(size_t i=0; i<database->getTiposLicencia().size(); i++){
         ui->comboBoxLicenciaAlumno->addItem(QString::fromStdString(database->getTiposLicencia().at(i)->getUID()));
     }
 }/* ============================================================================== */
@@ -51,12 +51,12 @@ void AdminAlumno::setDatabase(Database* ndatabase){
 void AdminAlumno::on_pushButtonEliminarAlumno_clicked()
 {
     QString uid = ui->comboBoxAlumnos->currentText();
-    for(size_t i=0; i < database->getAlumnos()->size(); i++){
-        if(database->getAlumnos()->at(i)->getUID() == uid.toStdString()){
-            database->getAlumnos()->at(i)->setBorrar(true);
+    for(size_t i=0; i < database->getAlumnos().size(); i++){
+        if(database->getAlumnos().at(i)->getUID() == uid.toStdString()){
+            database->getAlumnos().at(i)->setBorrar(true);
         }
     }
-    refreshWidgets();
+    database->push();
 }/* ============================================================================== */
 
 
@@ -79,9 +79,9 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
         newAlumno->setApellidos(apellido.toStdString()); //Asigna apellido
 
 
-        if(licencias->size()>0){
-            for(size_t i = 0; i< licencias->size(); i++){ //Se añaden las licencias hechas con anticipacion
-                newAlumno->getLicencias()->push_back(licencias->at(i));
+        if(licencias.size()>0){
+            for(size_t i = 0; i< licencias.size(); i++){ //Se añaden las licencias hechas con anticipacion
+                newAlumno->getLicencias()->push_back(licencias.at(i));
             }
             database->insertarAlumno(newAlumno); //Se agrega a "database" el nuevo alumno
 
@@ -93,7 +93,8 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
 
         newAlumno = NULL;
 
-        refreshWidgets();
+        //database->push();
+        database->push();
     }
 
 }/* ============================================================================== */
@@ -111,9 +112,9 @@ void AdminAlumno::on_pushButtonAplicarCambiosAlumno_clicked()
         Alumno* temp;
         QString text = ui->comboBoxAlumnoActualizar->currentText(); //El UID que se selecciona del combobox
 
-        for(size_t i=0; i<database->getAlumnos()->size(); i++){
-            if(text.toStdString() == database->getAlumnos()->at(i)->getUID()){
-                temp = database->getAlumnos()->at(i);
+        for(size_t i=0; i<database->getAlumnos().size(); i++){
+            if(text.toStdString() == database->getAlumnos().at(i)->getUID()){
+                temp = database->getAlumnos().at(i);
 
                 //Al temporal se le agregan los nombres y los apellidos
                 temp->setNombres(nombre.toStdString());
@@ -131,7 +132,7 @@ void AdminAlumno::on_pushButtonAplicarCambiosAlumno_clicked()
     }
 
 
-    refreshWidgets();
+    database->push();
 }/* ============================================================================== */
 
 
@@ -139,9 +140,9 @@ void AdminAlumno::getLicencia(){
 
     qDebug()<<"Tomando licencia";
     QString word = ui->comboBoxLicenciaAlumno->currentText();
-    for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
-        if(word.toStdString() == database->getTiposLicencia()->at(i)->getUID() ){
-            licencias->push_back(database->getTiposLicencia()->at(i));
+    for(size_t i=0; i<database->getTiposLicencia().size(); i++){
+        if(word.toStdString() == database->getTiposLicencia().at(i)->getUID() ){
+            licencias.push_back(database->getTiposLicencia().at(i));
         }
     }
 

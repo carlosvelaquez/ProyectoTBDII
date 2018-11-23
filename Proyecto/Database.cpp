@@ -28,7 +28,9 @@ Database::Database(){
 }
 
 bool Database::actualizarInstancia(Instancia* i){
+if (i) {
   if (i->getUID() == "") {
+    qDebug() << "generando UID";
     CassUuidGen* uuid_gen = cass_uuid_gen_new();
     CassUuid uuid;
     cass_uuid_gen_random(uuid_gen, &uuid);
@@ -39,7 +41,7 @@ bool Database::actualizarInstancia(Instancia* i){
 
     string nUID(uuid_str);
 
-    cass_uuid_gen_free(uuid_gen);
+    //cass_uuid_gen_free(uuid_gen);
 
     i->setUID(nUID);
 
@@ -77,6 +79,7 @@ bool Database::actualizarInstancia(Instancia* i){
 
     runQuery(query);
   }
+}
 
   return true;
 }
@@ -410,14 +413,24 @@ bool Database::push(){
 
   //AQUI VA EL MAPEO DE APUNTADORES
   //Alumnos clases
+  /*
   for (size_t i = 0; i < alumnos.size(); i++) {
     for (size_t j = 0; j < alumnos[i]->getClases()->size(); j++) {
       //se pushea lo siguiente:
       string uidalumno = alumnos[i]->getUID();
-      string uidclase = alumnos[i]->getClases()->at(j)->getUID();
+      Clase* c = alumnos[i]->getClases()->at(j);
+
+      string uidclase = "";
+
+       if (c) {
+         uidclase = c->getUID();
+       }
+
       runQuery("insert into alumnosclases(id_alumno, id_clase) values(" + uidalumno + ", " + uidclase + ");");
     }
-  }
+  }*/
+
+  qDebug() << "Push terminado.";
 
   return true;
 }
@@ -432,11 +445,6 @@ bool Database::runQuery(string query){
 
   /* This will block until the query has finished */
   if (cass_future_error_code(query_future) == CASS_OK) {
-
-    if (result) {
-      cass_result_free(result);
-    }
-
     result = const_cast<CassResult*>(cass_future_get_result(query_future));
     qDebug() << "Query ejecutado exitosamente.";
     cass_future_free(query_future);

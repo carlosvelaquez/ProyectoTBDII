@@ -27,6 +27,7 @@ void MainWindow::on_AdminAlumnosButton_clicked()
 {
     AdminAlumno* ad = new AdminAlumno();
     ad->setDatabase(&database);
+    ad->refreshWidgets();
     ad->show();
 }
 
@@ -35,6 +36,7 @@ void MainWindow::on_AdminEmpleadosButton_clicked()
 {
     AdminEmpleado* ad = new AdminEmpleado();
     ad->setDatabase(&database);
+    ad->refreshWidgets();
     ad->show();
 }
 
@@ -42,7 +44,8 @@ void MainWindow::on_AdminEmpleadosButton_clicked()
 void MainWindow::on_AdminProfesoresButton_clicked()
 {
     AdminProfesor* ad = new AdminProfesor();
-    ad->show();
+    ad->refreshWidgets();
+        ad->show();
 }
 
 //Administrar Licencias
@@ -50,6 +53,7 @@ void MainWindow::on_AdminLicenciaButton_clicked()
 {
     AdminLicencia* ad = new AdminLicencia();
     ad->setDatabase(&database);
+    ad->refreshWidgets();
     ad->show();
 }
 
@@ -60,18 +64,22 @@ void MainWindow::on_AdminClaseButton_clicked()
 {
     AdminClase* ad = new AdminClase();
     ad->setDatabase(&database);
+    ad->refreshWidgets();
     ad->show();
 }
 
 //Administrar Pagos
 void MainWindow::pagoAlumnoWindow(){
     PagoAlumno* ad = new PagoAlumno();
-    ad->show();
+    //ad->refreshWidgets();
+        ad->show();
+
 }
 
 //Administrar Vehiculos
 void MainWindow::adminVehiculos(){
     adminvehiculo* ad = new adminvehiculo();
     ad->setDatabase(&database);
+    ad->refreshWidgets();
     ad->show();
 }

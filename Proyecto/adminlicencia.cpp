@@ -11,7 +11,7 @@ AdminLicencia::AdminLicencia(QWidget *parent) :
     connect(ui->pushButtonAgregarLicencia, SIGNAL(clicked()), this, SLOT(pushButtonAgregarLicencia()));
     connect(ui->pushButtonEliminarLicencia, SIGNAL(clicked()), this, SLOT(pushButtonEliminarLicencia()));
     connect(ui->pushButtonModificaLicencia_2, SIGNAL(clicked()), this, SLOT(pushButtonModificarLicencia()));
-    refreshWidgets();
+    //refreshWidgets();
 }
 
 AdminLicencia::~AdminLicencia()
@@ -27,8 +27,8 @@ void AdminLicencia::setDatabase(Database* nDatabase){
 //Se refrescan los widgets de adminclase
 void AdminLicencia::refreshWidgets(){
     QString word;
-    for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
-        word = QString::fromStdString(database->getTiposLicencia()->at(i)->getUID())+" | "+QString::fromStdString(database->getTiposLicencia()->at(i)->getDocumentos());
+    for(size_t i=0; i<database->getTiposLicencia().size(); i++){
+        word = QString::fromStdString(database->getTiposLicencia().at(i)->getUID())+" | "+QString::fromStdString(database->getTiposLicencia().at(i)->getDocumentos());
         ui->comboBox->addItem(word);
         ui->comboBoxSeleccionarModificarLicencia->addItem(word);
     }
@@ -51,7 +51,7 @@ void AdminLicencia::pushButtonAgregarLicencia(){
 
     }
 
-    refreshWidgets();
+    database->push();
 }/*====================================================================*/
 
 
@@ -60,12 +60,12 @@ void AdminLicencia::pushButtonAgregarLicencia(){
 void AdminLicencia::pushButtonEliminarLicencia(){
     QString currentLicencia = ui->comboBox->currentText();
     QStringList array = currentLicencia.split(" | ");
-    for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
-        if(database->getTiposLicencia()->at(i)->getUID() == array.at(0).toStdString()){
-            database->getTiposLicencia()->at(i)->setBorrar(true);
+    for(size_t i=0; i<database->getTiposLicencia().size(); i++){
+        if(database->getTiposLicencia().at(i)->getUID() == array.at(0).toStdString()){
+            database->getTiposLicencia().at(i)->setBorrar(true);
         }
     }
-    refreshWidgets();
+    database->push();
 }/*====================================================================*/
 
 
@@ -81,9 +81,9 @@ void AdminLicencia::pushButtonModificarLicencia(){
         QStringList array = word.split(" | ");
 
         TipoLicencia* temp;
-        for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
-            if(array.at(0).toStdString() == database->getTiposLicencia()->at(i)->getUID()){
-                temp = database->getTiposLicencia()->at(i);
+        for(size_t i=0; i<database->getTiposLicencia().size(); i++){
+            if(array.at(0).toStdString() == database->getTiposLicencia().at(i)->getUID()){
+                temp = database->getTiposLicencia().at(i);
 
                 temp->setDocumentos(documento.toStdString());
                 temp->setCostoMatricula(costo);
@@ -93,5 +93,5 @@ void AdminLicencia::pushButtonModificarLicencia(){
         delete temp;
     }
 
-    refreshWidgets();
+    database->push();
 }/*====================================================================*/
