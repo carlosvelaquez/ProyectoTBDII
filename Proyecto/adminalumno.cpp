@@ -14,6 +14,8 @@ AdminAlumno::AdminAlumno(QWidget *parent) :
     connect(ui->pushButtonAgregarAlumno, SIGNAL(clicked()), this, SLOT(on_pushButtonEliminarAlumno_clicked()));
     connect(ui->pushButtonEliminarAlumno, SIGNAL(clicked()), this, SLOT(on_pushButtonAgregarAlumnos_clicked()));
     connect(ui->comboBoxAlumnoActualizar, SIGNAL(clicked()), this, SLOT(on_pushButtonAplicarCambiosAlumno_clicked()));
+    connect(ui->pushButtonLicenciaAlumno, SIGNAL(clicked()), this, SLOT(getLicencia()));
+    refreshWidgets();
 }
 
 AdminAlumno::~AdminAlumno()
@@ -23,13 +25,15 @@ AdminAlumno::~AdminAlumno()
 
 /* ============= Metodo que actualiza todos los componentes que haga uso de Alumnos en DataBase ============= */
 void AdminAlumno::refreshWidgets(){
-
     //Se llena el comboBox de "Eliminar Alumno" y de "Actualizar"
     for(size_t i=0; i<database->getAlumnos()->size(); i++){
         ui->comboBoxAlumnos->addItem(QString::fromStdString(database->getAlumnos()->at(i)->getUID()));
         ui->comboBoxAlumnoActualizar->addItem(QString::fromStdString(database->getAlumnos()->at(i)->getUID()));
     }
 
+    for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
+        ui->comboBoxLicenciaAlumno->addItem(QString::fromStdString(database->getTiposLicencia()->at(i)->getUID()));
+    }
 }/* ============================================================================== */
 
 
@@ -75,13 +79,20 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
         newAlumno->setApellidos(apellido.toStdString()); //Asigna apellido
 
 
-        database->getAlumnos()->push_back(newAlumno); //Se agrega a "database" el nuevo alumno
+        if(licencias->size()>0){
+            for(size_t i = 0; i< licencias->size(); i++){ //Se añaden las licencias hechas con anticipacion
+                newAlumno->getLicencias()->push_back(licencias->at(i));
+            }
+            database->getAlumnos()->push_back(newAlumno); //Se agrega a "database" el nuevo alumno
+
+            ui->lineEditApellidoAlumno->setText("");
+            ui->lineEditNombreAlumno->setText("");
+        }
+
 
 
         newAlumno = NULL;
 
-        ui->lineEditApellidoAlumno->setText("");
-        ui->lineEditNombreAlumno->setText("");
         refreshWidgets();
     }
 
@@ -92,6 +103,7 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
 /* ============= Boton que aplica los cambios hechos al alumno. ============= */
 void AdminAlumno::on_pushButtonAplicarCambiosAlumno_clicked()
 {
+    qDebug()<<"Aplicando cambios";
     QString nombre = ui->lineEditNombresAlumnosNuevo->text(); //Se toma el nombre
     QString apellido = ui->lineEditApellidoAlumnoNuevo->text(); //Se toma el apellido
 
@@ -102,22 +114,38 @@ void AdminAlumno::on_pushButtonAplicarCambiosAlumno_clicked()
         for(size_t i=0; i<database->getAlumnos()->size(); i++){
             if(text.toStdString() == database->getAlumnos()->at(i)->getUID()){
                 temp = database->getAlumnos()->at(i);
+
+                //Al temporal se le agregan los nombres y los apellidos
+                temp->setNombres(nombre.toStdString());
+                temp->setApellidos(apellido.toStdString());
+
+                //Se vacian los lineEdit
+                ui->lineEditApellidoAlumnoNuevo->setText("");
+                ui->lineEditNombresAlumnosNuevo->setText("");
+                ui->comboBoxAlumnoActualizar->setCurrentIndex(0);
             }
         }
 
-        //Al temporal se le agregan los nombres y los apellidos
-        temp->setNombres(nombre.toStdString());
-        temp->setApellidos(apellido.toStdString());
-
-        //Se vacian los lineEdit
-        ui->lineEditApellidoAlumnoNuevo->setText("");
-        ui->lineEditNombresAlumnosNuevo->setText("");
+        temp = 0;
+        delete temp;
     }
 
 
     refreshWidgets();
 }/* ============================================================================== */
 
+
+void AdminAlumno::getLicencia(){
+
+    qDebug()<<"Tomando licencia";
+    QString word = ui->comboBoxLicenciaAlumno->currentText();
+    for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
+        if(word.toStdString() == database->getTiposLicencia()->at(i)->getUID() ){
+            licencias->push_back(database->getTiposLicencia()->at(i));
+        }
+    }
+
+}
 
 
 

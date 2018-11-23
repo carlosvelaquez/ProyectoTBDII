@@ -79,7 +79,7 @@ qDebug() << imgName.at(0); // result is "name"
 
 /* =============== Se agrega una clase nueva a database ===============*/
 void AdminClase::on_pushButtonAgregarClase_clicked()
-{   Clase* nuevaClase;
+{
     int categoriaNecesaria = ui->spinBoxCategoria->value();
     QString nombre = ui->lineEditNombreClase->text();
     if(nombre != ""){
@@ -87,11 +87,8 @@ void AdminClase::on_pushButtonAgregarClase_clicked()
         QString currentUIDVehiculo = ui->comboBoxClaseVehiculo->currentText();
 
         if(estaCapacitado(currentUIDProfesor,categoriaNecesaria)){ //Si el profesor está capacitado se agregará lo demás
-            nuevaClase->setUIDVehiculo(currentUIDVehiculo.toStdString());
 
-            nuevaClase->setNombre(nombre.toStdString());
-            nuevaClase->setUIDProfesor(currentUIDProfesor.toStdString());
-            database->getClases()->push_back(nuevaClase); //Se crea la nueva clase
+            database->getClases()->push_back(new Clase(nombre.toStdString(), currentUIDProfesor.toStdString(),currentUIDProfesor.toStdString())); //Se crea la nueva clase
 
             ui->lineEditNombreClase->setText("");
             ui->comboBoxClaseProfesor->setCurrentIndex(0);
@@ -99,7 +96,6 @@ void AdminClase::on_pushButtonAgregarClase_clicked()
 
         }
 
-        nuevaClase = NULL;
     }
 
     refreshWidgets();
