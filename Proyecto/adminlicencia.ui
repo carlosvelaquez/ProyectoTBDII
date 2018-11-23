@@ -37,7 +37,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -141,6 +141,16 @@
        <string>Modificar Licencia</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Selecccionar licencia para modificar:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxSeleccionarModificarLicencia"/>
+       </item>
        <item>
         <widget class="QLabel" name="label_9">
          <property name="text">

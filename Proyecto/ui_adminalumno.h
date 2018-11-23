@@ -15,12 +15,22 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
+<<<<<<< HEAD
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTableWidget>
+=======
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTabWidget>
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -36,6 +46,18 @@ public:
     QTabWidget *tabWidget;
     QWidget *tab;
     QGridLayout *gridLayout;
+<<<<<<< HEAD
+    QLabel *label_7;
+    QLabel *label_2;
+    QPushButton *pushButtonAgregarAlumno;
+    QLineEdit *lineEditApellidoAlumno;
+    QLineEdit *lineEditNombreAlumno;
+    QLabel *label_3;
+    QSpacerItem *verticalSpacer_2;
+    QSpacerItem *verticalSpacer_7;
+    QSpacerItem *verticalSpacer;
+    QTableWidget *tableWidgetAlumnoAgregar;
+=======
     QLabel *label_3;
     QLineEdit *lineEditNombreAlumno;
     QPushButton *pushButtonAgregarAlumno;
@@ -45,6 +67,7 @@ public:
     QSpacerItem *verticalSpacer_2;
     QSpacerItem *verticalSpacer;
     QListWidget *listWidget;
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
     QWidget *tab_2;
     QVBoxLayout *verticalLayout_3;
     QLabel *label_4;
@@ -68,7 +91,11 @@ public:
     {
         if (AdminAlumno->objectName().isEmpty())
             AdminAlumno->setObjectName(QStringLiteral("AdminAlumno"));
+<<<<<<< HEAD
+        AdminAlumno->resize(641, 489);
+=======
         AdminAlumno->resize(641, 376);
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         AdminAlumno->setStyleSheet(QStringLiteral("background-color: white;"));
         verticalLayout = new QVBoxLayout(AdminAlumno);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
@@ -95,6 +122,17 @@ public:
         tab->setObjectName(QStringLiteral("tab"));
         gridLayout = new QGridLayout(tab);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
+<<<<<<< HEAD
+        label_7 = new QLabel(tab);
+        label_7->setObjectName(QStringLiteral("label_7"));
+
+        gridLayout->addWidget(label_7, 6, 0, 1, 1);
+
+        label_2 = new QLabel(tab);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        gridLayout->addWidget(label_2, 0, 0, 1, 1);
+=======
         label_3 = new QLabel(tab);
         label_3->setObjectName(QStringLiteral("label_3"));
 
@@ -104,17 +142,33 @@ public:
         lineEditNombreAlumno->setObjectName(QStringLiteral("lineEditNombreAlumno"));
 
         gridLayout->addWidget(lineEditNombreAlumno, 1, 0, 1, 1);
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 
         pushButtonAgregarAlumno = new QPushButton(tab);
         pushButtonAgregarAlumno->setObjectName(QStringLiteral("pushButtonAgregarAlumno"));
 
+<<<<<<< HEAD
+        gridLayout->addWidget(pushButtonAgregarAlumno, 9, 0, 1, 1);
+=======
         gridLayout->addWidget(pushButtonAgregarAlumno, 8, 0, 1, 1);
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 
         lineEditApellidoAlumno = new QLineEdit(tab);
         lineEditApellidoAlumno->setObjectName(QStringLiteral("lineEditApellidoAlumno"));
 
         gridLayout->addWidget(lineEditApellidoAlumno, 4, 0, 1, 1);
 
+<<<<<<< HEAD
+        lineEditNombreAlumno = new QLineEdit(tab);
+        lineEditNombreAlumno->setObjectName(QStringLiteral("lineEditNombreAlumno"));
+
+        gridLayout->addWidget(lineEditNombreAlumno, 1, 0, 1, 1);
+
+        label_3 = new QLabel(tab);
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        gridLayout->addWidget(label_3, 3, 0, 1, 1);
+=======
         label_2 = new QLabel(tab);
         label_2->setObjectName(QStringLiteral("label_2"));
 
@@ -124,19 +178,34 @@ public:
         label_7->setObjectName(QStringLiteral("label_7"));
 
         gridLayout->addWidget(label_7, 6, 0, 1, 1);
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 
         verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout->addItem(verticalSpacer_2, 5, 0, 1, 1);
 
+<<<<<<< HEAD
+        verticalSpacer_7 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer_7, 7, 0, 1, 1);
+
+=======
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout->addItem(verticalSpacer, 2, 0, 1, 1);
 
+<<<<<<< HEAD
+        tableWidgetAlumnoAgregar = new QTableWidget(tab);
+        tableWidgetAlumnoAgregar->setObjectName(QStringLiteral("tableWidgetAlumnoAgregar"));
+
+        gridLayout->addWidget(tableWidgetAlumnoAgregar, 8, 0, 1, 1);
+=======
         listWidget = new QListWidget(tab);
         listWidget->setObjectName(QStringLiteral("listWidget"));
 
         gridLayout->addWidget(listWidget, 7, 0, 1, 1);
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
 
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
@@ -231,10 +300,17 @@ public:
     {
         AdminAlumno->setWindowTitle(QApplication::translate("AdminAlumno", "Form", nullptr));
         label->setText(QApplication::translate("AdminAlumno", "Administrar Alumnos", nullptr));
+<<<<<<< HEAD
+        label_7->setText(QApplication::translate("AdminAlumno", "Elejir tipos de Licencias:", nullptr));
+        label_2->setText(QApplication::translate("AdminAlumno", "<html><head/><body><p><span style=\" font-size:10pt;\">Nombres: </span></p></body></html>", nullptr));
+        pushButtonAgregarAlumno->setText(QApplication::translate("AdminAlumno", "Agregar", nullptr));
+        label_3->setText(QApplication::translate("AdminAlumno", "<html><head/><body><p><span style=\" font-size:10pt;\">Apellidos:</span></p></body></html>", nullptr));
+=======
         label_3->setText(QApplication::translate("AdminAlumno", "<html><head/><body><p><span style=\" font-size:10pt;\">Apellidos:</span></p></body></html>", nullptr));
         pushButtonAgregarAlumno->setText(QApplication::translate("AdminAlumno", "Agregar", nullptr));
         label_2->setText(QApplication::translate("AdminAlumno", "<html><head/><body><p><span style=\" font-size:10pt;\">Nombres: </span></p></body></html>", nullptr));
         label_7->setText(QApplication::translate("AdminAlumno", "<html><head/><body><p>Tipos de licencia</p></body></html>", nullptr));
+>>>>>>> 148d9cc1d79fb0699f2df57b6690d2517f2b9570
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("AdminAlumno", "Agregar Alumno", nullptr));
         label_4->setText(QApplication::translate("AdminAlumno", "Seleccionar Alumno", nullptr));
         pushButtonEliminarAlumno->setText(QApplication::translate("AdminAlumno", "Eliminar Alumno", nullptr));

@@ -47,7 +47,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="lineEditNombre"/>
        </item>
        <item>
         <spacer name="verticalSpacer">
@@ -70,7 +70,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="lineEditApellido"/>
        </item>
        <item>
         <spacer name="verticalSpacer_2">
@@ -93,10 +93,10 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBoxSalario"/>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="pushButtonAgregarEmpleado">
          <property name="text">
           <string>Agregar Empleado</string>
          </property>
@@ -146,6 +146,16 @@
        <string>Actualizar Empleado</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Seleccionar empleado:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxModificarEmpleado"/>
+       </item>
        <item>
         <widget class="QLabel" name="label_6">
          <property name="text">
