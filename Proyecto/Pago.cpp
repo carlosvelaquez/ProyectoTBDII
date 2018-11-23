@@ -28,7 +28,8 @@ bool Pago::fromJSON(string cadena){
   }else{
     uid = doc["id"].toString().toStdString();
     uidAlumno = doc["id_alumno"].toString().toStdString();
-    monto = doc["monto"].toInt();
+    monto = doc["monto"].toFloat();
+    abonado = doc["abonado"].toFloat();
     motivo = doc["motivo"].toString().toStdString();
     return true;
   }
@@ -40,6 +41,7 @@ string Pago::toJSON(){
   jsonObj.insert("id",QString::fromStdString(uid));
   jsonObj.insert("id_alumno",QString::fromStdString(uidAlumno));
   jsonObj.insert("monto",monto);
+  jsonObj.insert("abonado",abonado);
   jsonObj.insert("motivo",QString::fromStdString(motivo));
   QJsonDocument dec(jsonObj);
   QString strJson(dec.toJson(QJsonDocument::Compact));
@@ -57,6 +59,11 @@ void Pago::setMonto(float nMonto){
   monto = nMonto;
 }
 
+void Pago::setAbonado(float nAbonado){
+  alterado = true;
+  abonado = nAbonado;
+}
+
 void Pago::setMotivo(string nMotivo){
   alterado = true;
   motivo = nMotivo;
@@ -65,6 +72,11 @@ void Pago::setMotivo(string nMotivo){
 void Pago::setAlumno(Alumno* nAlumno){
   alumno = nAlumno;
   uidAlumno = nAlumno->getUID();
+  alterado = true;
+}
+
+void Pago::setAbonado(float nAbonado){
+  abonado = nAbonado;
   alterado = true;
 }
 
@@ -77,10 +89,18 @@ float Pago::getMonto(){
   return monto;
 }
 
+float Pago::getAbonado(){
+  return abonado;
+}
+
 string Pago::getMotivo(){
   return motivo;
 }
 
 Alumno* Pago::getAlumno(){
   return alumno;
+}
+
+float Pago::getAbonado(){
+  return abonado;
 }

@@ -25,6 +25,7 @@ bool Categoria::fromJSON(string cadena){
     return false;
   }else{
     uid = doc["id"].toString().toStdString();
+    uidLicencia = doc["id_tipolicencia"].toString().toStdString();
     lujo = doc["lujo"].toString().toStdString();
     tamano = doc["tamano"].toString().toStdString();
     tarifa = doc["tarifa"].toString().toFloat();
@@ -35,7 +36,8 @@ bool Categoria::fromJSON(string cadena){
 
 string Categoria::toJSON(){
   QJsonObject jsonObj;
-  jsonObj.insert("id",QString::fromStdString(uid));
+  jsonObj.insert("id",QString::fromStdString(uidLicencia));
+  jsonObj.insert("id_tipolicencia",QString::fromStdString(uid));
   jsonObj.insert("lujo",QString::fromStdString(lujo));
   jsonObj.insert("tamano",QString::fromStdString(tamano));
   jsonObj.insert("tarifa",tarifa);
@@ -60,6 +62,15 @@ void  Categoria::setTarifa(float nTarifa){
   alterado = true;
 }
 
+void Categoria::setUIDLicencia(string nUIDLicencia){
+  uidLicencia = nUIDLicencia;
+  alterado = true;
+}
+
+void Categoria::setLicencia(TipoLicencia* nLicencia){
+  licencia = nLicencia;
+  alterado = true;
+}
 
 //Getters
 
@@ -77,4 +88,12 @@ float Categoria::getTarifa(){
 
 vector<Vehiculo*>* Categoria::getVehiculos(){
   return &vehiculos;
+}
+
+string Categoria::getUIDLicencia(){
+  return uidLicencia;
+}
+
+TipoLicencia* Categoria::getLicencia(){
+  return licencia;
 }

@@ -13,6 +13,8 @@ class Categoria : public Instancia{
     string tamano;
     float tarifa;
     vector<Vehiculo*> vehiculos;
+    string uidLicencia;
+    TipoLicencia* licencia;
 
   public:
     Categoria(string);
@@ -26,6 +28,8 @@ class Categoria : public Instancia{
     void setLujo(string);
     void setTamano(string);
     void setTarifa(float);
+    void setUIDLicencia(string);
+    void setLicencia(TipoLicencia*);
 
     //Getters
 
@@ -33,6 +37,8 @@ class Categoria : public Instancia{
     string getTamano();
     float getTarifa();
     vector<Vehiculo*>* getVehiculos();
+    string getUIDLicencia();
+    TipoLicencia* getLicencia();
 };
 
 #endif
