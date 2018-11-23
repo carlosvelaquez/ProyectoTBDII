@@ -57,7 +57,14 @@ void AdminLicencia::pushButtonAgregarLicencia(){
 
 /* =============== Eliminar Licencia ===============*/
 void AdminLicencia::pushButtonEliminarLicencia(){
-
+    QString currentLicencia = ui->comboBox->currentText();
+    QStringList array = currentLicencia.split(" | ");
+    for(int i=0; i<database->getTiposLicencia()->size(); i++){
+        if(database->getTiposLicencia()->at(i)->getUID() == array.at(0).toStdString()){
+            database->getTiposLicencia()->at(i)->setBorrar(true);
+        }
+    }
+    refreshWidgets();
 }/*====================================================================*/
 
 
