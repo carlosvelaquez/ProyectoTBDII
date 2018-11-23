@@ -373,6 +373,14 @@ bool Database::pull(){
     }
   }
 
+  //PruebaPracica / ClasePractica
+  for (size_t i = 0; i < pruebasPracticas.size(); i++) {
+    for (size_t j = 0; j < clasesPracticas.size(); j++) {
+      if (pruebasPracticas[i]->getUIDClasePractica() == clasesPracticas[j]->getUID()) {
+        pruebasPracticas[i]->setClasePractica(clasesPracticas[j]);
+      }
+    }
+  }
   qDebug() << "---------------------";
   qDebug() << "Imprimiendo todos los UID de Instancias. Size:" << instancias.size();
   for (size_t i = 0; i < instancias.size(); i++) {

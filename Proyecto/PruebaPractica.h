@@ -12,6 +12,7 @@ class PruebaPractica : public Instancia{
     string uidAlumno;
     int Horas;
     int Intento;
+    ClasePractica* clasePractica;
 
   public:
 
@@ -29,6 +30,7 @@ class PruebaPractica : public Instancia{
     void setUIDAlumno(string);
     void setHoras(int);
     void setIntento(int);
+    void setClasePractica(ClasePractica*);
 
     //Getters
     string getUIDClasePractica();
@@ -39,6 +41,7 @@ class PruebaPractica : public Instancia{
     int getIntento();
 
     float calcularPago();
+    ClasePractica* getClasePractica();
 
 };
 

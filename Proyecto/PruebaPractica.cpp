@@ -89,6 +89,11 @@ void PruebaPractica::setIntento(int nIntento){
   Intento = nIntento;
 }
 
+void PruebaPractica::setClasePractica(ClasePractica* nClasePractica){
+  clasePractica = nClasePractica;
+  alterado = true;
+}
+
 
 //Getters
 string PruebaPractica::getUIDClasePractica(){
@@ -117,4 +122,8 @@ int PruebaPractica::getIntento(){
 
 float PruebaPractica::calcularPago(){
   return -1;
+}
+
+ClasePractica* PruebaPractica::getClasePractica(){
+  return clasePractica;
 }
