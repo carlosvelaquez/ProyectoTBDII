@@ -1,7 +1,10 @@
 #ifndef PRUEBAPRACTICA_H
 #define PRUEBAPRACTICA_H
 
+class ClasePractica;
+
 #include "Instancia.h"
+#include "ClasePractica.h"
 
 class PruebaPractica : public Instancia{
 

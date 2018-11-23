@@ -62,5 +62,5 @@ TipoLicencia* ClasePractica::getLicencia(){
 }
 
 string ClasePractica::getUIDLicencia(){
-  return UIDlicencia;
+  return UIDLicencia;
 }
