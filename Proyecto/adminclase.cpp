@@ -88,7 +88,7 @@ void AdminClase::on_pushButtonAgregarClase_clicked()
 
         if(estaCapacitado(currentUIDProfesor,categoriaNecesaria)){ //Si el profesor está capacitado se agregará lo demás
 
-            database->getClases()->push_back(new Clase(nombre.toStdString(), currentUIDProfesor.toStdString(),currentUIDProfesor.toStdString())); //Se crea la nueva clase
+            database->insertarClase(new Clase(nombre.toStdString(), currentUIDProfesor.toStdString(),currentUIDProfesor.toStdString())); //Se crea la nueva clase
 
             ui->lineEditNombreClase->setText("");
             ui->comboBoxClaseProfesor->setCurrentIndex(0);

@@ -83,7 +83,7 @@ void AdminAlumno::on_pushButtonAgregarAlumnos_clicked()
             for(size_t i = 0; i< licencias->size(); i++){ //Se añaden las licencias hechas con anticipacion
                 newAlumno->getLicencias()->push_back(licencias->at(i));
             }
-            database->getAlumnos()->push_back(newAlumno); //Se agrega a "database" el nuevo alumno
+            database->insertarAlumno(newAlumno); //Se agrega a "database" el nuevo alumno
 
             ui->lineEditApellidoAlumno->setText("");
             ui->lineEditNombreAlumno->setText("");

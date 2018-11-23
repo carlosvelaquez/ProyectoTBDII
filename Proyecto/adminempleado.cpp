@@ -45,7 +45,7 @@ void AdminEmpleado::pushButtonAgregarEmpleado(){
 
     if(name!="" && apellido!="" && salario!=0){
 
-        database->getEmpleados()->push_back(new Empleado(name.toStdString(), apellido.toStdString(), salario));
+        database->insertarEmpleado(new Empleado(name.toStdString(), apellido.toStdString(), salario));
 
         ui->lineEditNombre->setText("");
         ui->lineEditApellido->setText("");

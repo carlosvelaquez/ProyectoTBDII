@@ -20,6 +20,8 @@ private slots:
 
     void pagoAlumnoWindow();
 
+    void adminVehiculos();
+
     void on_AdminAlumnosButton_clicked();
 
     void on_AdminEmpleadosButton_clicked();

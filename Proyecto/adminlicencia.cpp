@@ -44,7 +44,7 @@ void AdminLicencia::pushButtonAgregarLicencia(){
     QString documento = ui->lineEditDocumentoAlumno->text();
 
     if(number!=0 && documento!=""){
-        database->getTiposLicencia()->push_back(new TipoLicencia(number, documento.toStdString()));
+        database->insertarTipoLicencia(new TipoLicencia(number, documento.toStdString()));
 
         ui->doubleSpinBoxCostoLicencia->setValue(0);
         ui->lineEditDocumentoAlumno->setText("");

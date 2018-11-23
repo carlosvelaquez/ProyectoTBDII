@@ -7,12 +7,14 @@
 #include "adminlicencia.h"
 #include "Database.h"
 #include "pagoalumno.h"
+#include "adminvehiculo.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->pushButtonVehiculos, SIGNAL(clicked()), this, SLOT(adminVehiculos()));
 }
 
 MainWindow::~MainWindow()
@@ -51,15 +53,25 @@ void MainWindow::on_AdminLicenciaButton_clicked()
     ad->show();
 }
 
+//Administrar Vehiculos
 
+//
 void MainWindow::on_AdminClaseButton_clicked()
 {
     AdminClase* ad = new AdminClase();
+    ad->setDatabase(&database);
     ad->show();
 }
 
 //Administrar Pagos
 void MainWindow::pagoAlumnoWindow(){
     PagoAlumno* ad = new PagoAlumno();
+    ad->show();
+}
+
+//Administrar Vehiculos
+void MainWindow::adminVehiculos(){
+    adminvehiculo* ad = new adminvehiculo();
+    ad->setDatabase(&database);
     ad->show();
 }
