@@ -2,6 +2,7 @@
 
 TipoLicencia::TipoLicencia(string json){
   fromJSON(json);
+  tablePath = "autoescuela.tipolicencia";
 }
 
 TipoLicencia::TipoLicencia(string nUID, float nCantidadMatricula, string nDocumentos) : Instancia(nUID){
@@ -14,6 +15,7 @@ TipoLicencia::TipoLicencia(string nUID, float nCantidadMatricula, string nDocume
 TipoLicencia::TipoLicencia(float nCantidadMatricula, string nDocumentos) : Instancia(){
   costoMatricula = nCantidadMatricula;
   documentos = nDocumentos;
+  tablePath = "autoescuela.tipolicencia";
 }
 
 bool TipoLicencia::fromJSON(string cadena){

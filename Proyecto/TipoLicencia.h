@@ -12,7 +12,7 @@ class TipoLicencia : public Instancia{
 
   private:
     float costoMatricula;
-    string documentos;
+    string documentos = "-";
 
     vector<Alumno*> alumnos;
 

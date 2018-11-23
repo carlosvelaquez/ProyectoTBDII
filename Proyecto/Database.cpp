@@ -168,6 +168,7 @@ bool Database::pull(){
   clases.clear();
 
   for (size_t i = 0; i < strings.size(); i++) {
+    qDebug() << "Importando clase " << strings[i].c_str();
     Clase* nClase = new Clase(strings[i]);
     clases.push_back(nClase);
     instancias.push_back(nClase);
@@ -257,9 +258,13 @@ bool Database::pull(){
   }
 
   //Alumnos -> Clase
+  qDebug() << "Buscando alumnos para cada clase. Size clases:" << clases.size();
   for (size_t i = 0; i < clases.size(); i++) {
+    qDebug() << "Iterando" << i;
     vector<string> strings = get_Alumnos_AlumnosClases(clases[i]->getUID());
+
     for (size_t j = 0; j < strings.size(); j++) {
+      qDebug() << "Alumno" << strings[j].c_str() << "encontrado para clase" << clases[i]->getUID().c_str();
       for (size_t k = 0; k < alumnos.size(); k++) {
         if (strings[j] == alumnos[k]->getUID()) {
           clases[i]->getAlumnos()->push_back(alumnos[k]);
@@ -350,6 +355,12 @@ bool Database::pull(){
     }
   }
 
+  qDebug() << "---------------------";
+  qDebug() << "Imprimiendo todos los UID de Instancias. Size:" << instancias.size();
+  for (size_t i = 0; i < instancias.size(); i++) {
+    qDebug() << instancias[i]->getUID().c_str();
+  }
+
 
   return true;
 }
@@ -381,7 +392,7 @@ bool Database::push(){
 }
 
 bool Database::runQuery(string query){
-  qDebug() << QString("Ejecutando Query: ") << query.c_str();
+  qDebug() << "Ejecutando Query:" << query.c_str();
 
   CassStatement* statement = cass_statement_new(query.c_str(), 0);
   CassFuture* query_future = cass_session_execute(session, statement);
@@ -420,11 +431,13 @@ vector<string> Database::resultStrings(){
   while (cass_iterator_next (iterator)) {
     row = const_cast<CassRow*>(cass_iterator_get_row(iterator));
 
-   const CassValue* value = cass_row_get_column ( row, 0 );
-   const char* valString;
-   size_t valSize;
-   cass_value_get_string(value, &valString, &valSize);
-   strings.push_back(string(valString));
+    if (row) {
+      const CassValue* value = cass_row_get_column ( row, 0 );
+      const char* valString;
+      size_t valSize;
+      cass_value_get_string(value, &valString, &valSize);
+      strings.push_back(string(valString));
+    }
  }
 
   return strings;
@@ -550,13 +563,39 @@ select json id_profesor from autoescuela.capacitadoen where id_clase=? allow fil
 select json id_clase from autoescuela.capacitadoen where id_profesor=? allow filtering;
 */
 vector<string> Database::get_Profesores_CapacitadoEn(string uid){
-  runQuery("select id_profesor from autoescuela.capacitadoen where id_clase=" + uid + " allow filtering;");
-  return resultStrings();
+  runQuery("select json id_profesor from autoescuela.capacitadoen where id_clase=" + uid + " allow filtering;");
+  vector<string> strings = resultStrings();
+
+  vector<string> returnStrings;
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    QString json = QString::fromStdString(strings[i]); // String que contiene el JSON
+    QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+
+    if(!doc.object().isEmpty()){
+      returnStrings.push_back(doc["id_profesor"].toString().toStdString());
+    }
+  }
+
+  return returnStrings;
 }
 
 vector<string> Database::get_Clases_CapacitadoEn(string uid){
-  runQuery("select id_clase from autoescuela.capacitadoen where id_profesor=" + uid + " allow filtering;");
-  return resultStrings();
+  runQuery("select json id_clase from autoescuela.capacitadoen where id_profesor=" + uid + " allow filtering;");
+  vector<string> strings = resultStrings();
+
+  vector<string> returnStrings;
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    QString json = QString::fromStdString(strings[i]); // String que contiene el JSON
+    QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+
+    if(!doc.object().isEmpty()){
+      returnStrings.push_back(doc["id_clase"].toString().toStdString());
+    }
+  }
+
+  return returnStrings;
 }
 
 /*
@@ -565,13 +604,39 @@ select id_alumno from autoescuela.alumnosclases where id_clase=? allow filtering
 select id_clase from autoescuela.alumnosclases where id_alumno=? allow filtering;
 */
 vector<string> Database::get_Alumnos_AlumnosClases(string uid){
-  runQuery("select id_alumno from autoescuela.alumnosclases where id_clase=" + uid + " allow filtering;");
-  return resultStrings();
+  runQuery("select json id_alumno from autoescuela.alumnosclases where id_clase=" + uid + " allow filtering;");
+  vector<string> strings = resultStrings();
+
+  vector<string> returnStrings;
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    QString json = QString::fromStdString(strings[i]); // String que contiene el JSON
+    QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+
+    if(!doc.object().isEmpty()){
+      returnStrings.push_back(doc["id_alumno"].toString().toStdString());
+    }
+  }
+
+  return returnStrings;
 }
 
 vector<string> Database::get_Clases_AlumnosClases(string uid){
-  runQuery("select id_clase from autoescuela.alumnosclases where id_alumno=" + uid + " allow filtering;");
-  return resultStrings();
+  runQuery("select json id_clase from autoescuela.alumnosclases where id_alumno=" + uid + " allow filtering;");
+  vector<string> strings = resultStrings();
+
+  vector<string> returnStrings;
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    QString json = QString::fromStdString(strings[i]); // String que contiene el JSON
+    QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+
+    if(!doc.object().isEmpty()){
+      returnStrings.push_back(doc["id_clase"].toString().toStdString());
+    }
+  }
+
+  return returnStrings;
 }
 
 /*
@@ -580,18 +645,57 @@ select id_licencia from autoescuela.licenciaalumno where id_alumno=? allow filte
 select id_alumno from autoescuela.licenciaalumno where id_licencia=? allow filtering;
 */
 vector<string> Database::get_Alumnos_LicenciaAlumno(string uid){
-  runQuery("select id_alumno from autoescuela.licenciaalumno where id_licencia=" + uid + " allow filtering;");
-  return resultStrings();
+  runQuery("select json id_alumno from autoescuela.licenciaalumno where id_licencia=" + uid + " allow filtering;");
+  vector<string> strings = resultStrings();
+
+  vector<string> returnStrings;
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    QString json = QString::fromStdString(strings[i]); // String que contiene el JSON
+    QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+
+    if(!doc.object().isEmpty()){
+      returnStrings.push_back(doc["id_alumno"].toString().toStdString());
+    }
+  }
+
+  return returnStrings;
 }
 
 vector<string> Database::get_Licencias_LicenciaAlumno(string uid){
-  runQuery("select id_licencia from autoescuela.licenciaalumno where id_alumno=" + uid + " allow filtering;");
-  return resultStrings();
+  runQuery("select json id_licencia from autoescuela.licenciaalumno where id_alumno=" + uid + " allow filtering;");
+  vector<string> strings = resultStrings();
+
+  vector<string> returnStrings;
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    QString json = QString::fromStdString(strings[i]); // String que contiene el JSON
+    QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+
+    if(!doc.object().isEmpty()){
+      returnStrings.push_back(doc["id_licencia"].toString().toStdString());
+    }
+  }
+
+  return returnStrings;
 }
 
 vector<string> Database::get_Profesor_LicenciaAlumno(string uidAlumno, string uidLicencia){
-  runQuery("select id_profesor from autoescuela.licenciaalumno where id_alumno=" + uidAlumno + " AND id_licencia=" + uidLicencia + "allow filtering;");
-  return resultStrings();
+  runQuery("select json id_profesor from autoescuela.licenciaalumno where id_alumno=" + uidAlumno + " AND id_licencia=" + uidLicencia + "allow filtering;");
+  vector<string> strings = resultStrings();
+
+  vector<string> returnStrings;
+
+  for (size_t i = 0; i < strings.size(); i++) {
+    QString json = QString::fromStdString(strings[i]); // String que contiene el JSON
+    QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+
+    if(!doc.object().isEmpty()){
+      returnStrings.push_back(doc["id_profesor"].toString().toStdString());
+    }
+  }
+
+  return returnStrings;
 }
 
 
