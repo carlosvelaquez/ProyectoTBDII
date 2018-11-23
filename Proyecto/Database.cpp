@@ -538,6 +538,7 @@ void Database::insertarPago(Pago* nPago){
 
 void Database::insertarVehiculo(Vehiculo* nVehiculo){
   vehiculos.push_back(nVehiculo);
+  runQuery("insert into logvehiculo(id, id_clase, id_vehiculo) values(now()," + nVehiculo->getUID() + ", " + nVehiculo->getClase()->getUID() + ");");
   instancias.push_back(nVehiculo);
 }
 
