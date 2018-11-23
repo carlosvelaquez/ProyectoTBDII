@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    connect(ui->pushButtonVehiculos, SIGNAL(clicked()), this, SLOT(adminVehiculos()));
+    connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(adminVehiculos()));
 }
 
 MainWindow::~MainWindow()

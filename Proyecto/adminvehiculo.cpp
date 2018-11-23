@@ -5,9 +5,11 @@ adminvehiculo::adminvehiculo(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::adminvehiculo)
 {
+  qDebug() << "Construyendo adminvehiculo";
     ui->setupUi(this);
     connect(ui->pushButtonAgregarVehiculo, SIGNAL(clicked()), this, SLOT(pushButtonAgregarProfesor()));
     connect(ui->pushButtonEliminarVehiculo, SIGNAL(clicked()), this, SLOT(pushButtonEliminarProfesor()));
+    qDebug() << "Listo";
     //connect(ui->pushButtonModificarProfesor, SIGNAL(clicked()), this, SLOT(pushButtonModificarProfesor()));
 }
 
@@ -23,11 +25,12 @@ void adminvehiculo::setDatabase(Database* nDatabase){
 
 //Se refrescan los widgets de adminclase
 void adminvehiculo::refreshWidgets(){
+  qDebug() << "Refrescando Widgets";
     QString word;
 
     //Combobox de agregar vehiculo
     for(size_t i=0; i<database->getCategorias()->size(); i++){
-        word = QString::fromStdString(database->getCategorias()->at(i)->getTablePath())+" | "+QString::fromStdString(database->getCategorias()->at(i)->getLujo());
+        word = QString::fromStdString(database->getCategorias()->at(i)->toJSON());
         ui->comboBoxVehiculaAgregar->addItem(word);
         ui->comboBoxCategoriaVehiculoModificar->addItem(word);
     }
@@ -35,7 +38,7 @@ void adminvehiculo::refreshWidgets(){
 
     // Combobox de modificar Vehiculo
     for(size_t i=0; i<database->getVehiculos()->size(); i++){
-        word = QString::fromStdString(database->getVehiculos()->at(i)->getUID())+" | "+QString::fromStdString(database->getVehiculos()->at(i)->getClase()->getNombre());
+        word = QString::fromStdString(database->getVehiculos()->at(i)->toJSON());
         ui->comboBoxVehiculoModificar->addItem(word);
         ui->comboBoxSeleccionarVehiculoEliminar->addItem(word);
     }

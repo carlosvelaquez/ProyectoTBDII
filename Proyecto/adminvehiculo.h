@@ -2,6 +2,7 @@
 #define ADMINVEHICULO_H
 
 #include <QWidget>
+#include <QDebug>
 #include "Vehiculo.h"
 #include "Database.h"
 

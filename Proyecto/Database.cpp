@@ -553,52 +553,52 @@ void Database::insertarTipoLicencia(TipoLicencia* nTipoLicencia){
 }
 
 //GETTERS
-vector<Empleado*>* Database::getEmpleados(){
-  return &empleados;
+vector<Empleado*> Database::getEmpleados(){
+  return empleados;
 }
 
-vector<Profesor*>* Database::getProfesores(){
-  return &profesores;
+vector<Profesor*> Database::getProfesores(){
+  return profesores;
 }
 
-vector<Clase*>* Database::getClases(){
-  return &clases;
+vector<Clase*> Database::getClases(){
+  return clases;
 }
 
-vector<ClaseTeorica*>* Database::getClasesTeoricas(){
-  return &clasesTeoricas;
+vector<ClaseTeorica*> Database::getClasesTeoricas(){
+  return clasesTeoricas;
 }
 
-vector<ClasePractica*>* Database::getClasesPracticas(){
-  return &clasesPracticas;
+vector<ClasePractica*> Database::getClasesPracticas(){
+  return clasesPracticas;
 }
 
-vector<PruebaTeorica*>* Database::getPruebasTeoricas(){
-  return &pruebasTeoricas;
+vector<PruebaTeorica*> Database::getPruebasTeoricas(){
+  return pruebasTeoricas;
 }
 
-vector<PruebaPractica*>* Database::getPruebasPracticas(){
-  return &pruebasPracticas;
+vector<PruebaPractica*> Database::getPruebasPracticas(){
+  return pruebasPracticas;
 }
 
-vector<Alumno*>* Database::getAlumnos(){
-  return &alumnos;
+vector<Alumno*> Database::getAlumnos(){
+  return alumnos;
 }
 
-vector<Pago*>* Database::getPagos(){
-  return &pagos;
+vector<Pago*> Database::getPagos(){
+  return pagos;
 }
 
-vector<Vehiculo*>* Database::getVehiculos(){
-  return &vehiculos;
+vector<Vehiculo*> Database::getVehiculos(){
+  return vehiculos;
 }
 
-vector<Categoria*>* Database::getCategorias(){
-  return &categorias;
+vector<Categoria*> Database::getCategorias(){
+  return categorias;
 }
 
-vector<TipoLicencia*>* Database::getTiposLicencia(){
-  return &tiposLicencia;
+vector<TipoLicencia*> Database::getTiposLicencia(){
+  return tiposLicencia;
 }
 
 
