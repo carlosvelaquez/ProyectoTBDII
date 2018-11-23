@@ -19,16 +19,16 @@ int main(int argc, char *argv[])
   db.pull();
   qDebug() << "Pull realizado exitosamente.";
 
-  /*
   Empleado emp("Carlos André", "Velásquez Martínez", 696969.69);
   qDebug() << emp.toJSON().c_str();
   db.insertarEmpleado(&emp);
-  emp.setAlterado(true);
-  */
 
   qDebug() << "Subiendo informacion...";
   db.push();
   qDebug() << "Push realizado exitosamente.";
+  qDebug() << "Recuperando info de bd...";
+  db.pull();
+  qDebug() << "Pull realizado exitosamente.";
 
   //qDebug() << &emp->toJSON().c_str();
 
