@@ -74,6 +74,10 @@ void Clase::setVehiculo(Vehiculo* nVehiculo){
   alterado = true;
 }
 
+void Clase::setCategoriaNecesaria(int nCat){
+  categoriaNecesaria = nCat;
+}
+
 //Getters
 string Clase::getNombre(){
   return nombre;
@@ -97,4 +101,8 @@ Vehiculo* Clase::getVehiculo(){
 
 vector<Alumno*>* Clase::getAlumnos(){
   return &alumnos;
+}
+
+int Clase::getCategoriaNecesaria(){
+  return categoriaNecesaria;
 }

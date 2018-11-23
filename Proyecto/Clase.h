@@ -16,6 +16,8 @@ class Clase : public Instancia{
     string uidVehiculo;
     string uidProfesor;
 
+    int categoriaNecesaria
+
     Profesor* profesor;
     Vehiculo* vehiculo;
     vector<Alumno*> alumnos;
@@ -34,6 +36,7 @@ class Clase : public Instancia{
     void setUIDProfesor(string);
     void setProfesor(Profesor*);
     void setVehiculo(Vehiculo*);
+    void setCategoriaNecesaria(int);
 
     //Getters
     string getNombre();
@@ -42,6 +45,7 @@ class Clase : public Instancia{
     Profesor* getProfesor();
     Vehiculo* getVehiculo();
     vector<Alumno*>* getAlumnos();
+    int getCategoriaNecesaria();
 };
 
 #endif
