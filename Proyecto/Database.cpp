@@ -355,12 +355,20 @@ bool Database::pull(){
     }
   }
 
+  //ClasePractica / TipoLicencia
+  for (size_t i = 0; i < clasesPracticas.size(); i++) {
+    for (size_t j = 0; j < tiposLicencia.size(); j++) {
+      if (clasesPracticas[i]->getUIDLicencia() == tiposLicencia[j]->getUID()) {
+        clasesPracticas[i]->setLicencia(tiposLicencia[j]);
+      }
+    }
+  }
+
   qDebug() << "---------------------";
   qDebug() << "Imprimiendo todos los UID de Instancias. Size:" << instancias.size();
   for (size_t i = 0; i < instancias.size(); i++) {
     qDebug() << instancias[i]->getUID().c_str();
   }
-
 
   return true;
 }

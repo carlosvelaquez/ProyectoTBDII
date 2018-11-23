@@ -8,6 +8,8 @@ class ClasePractica : public Instancia{
 
   private:
     string uidClase;
+    TipoLicencia* licencia;
+    string UIDLicencia;
 
   public:
     ClasePractica(string);
@@ -18,9 +20,13 @@ class ClasePractica : public Instancia{
 
     //Setters
     void setUIDClase(string);
+    void setLicencia(TipoLicencia*);
+    void setUIDLicencia(string);
 
     //Getters
     string getUIDClase();
+    TipoLicencia* getLicencia();
+    string getUIDLicencia();
 };
 
 #endif

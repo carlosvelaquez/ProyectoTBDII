@@ -40,7 +40,25 @@ void ClasePractica::setUIDClase(string nUidClase){
   alterado = true;
 }
 
+void ClasePractica::setLicencia(TipoLicencia* nLicencia){
+  licencia = nLicencia;
+  alterado = true;
+}
+
+void ClasePractica::setUIDLicencia(string nUIDLicencia){
+  UIDLicencia = nUIDLicencia;
+  alterado = true;
+}
+
 //Getters
 string ClasePractica::getUIDClase(){
   return uidClase;
+}
+
+TipoLicencia* ClasePractica::getLicencia(){
+  return licencia;
+}
+
+string ClasePractica::getUIDLicencia(){
+  return UIDlicencia;
 }
