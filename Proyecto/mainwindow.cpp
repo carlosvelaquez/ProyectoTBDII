@@ -31,6 +31,7 @@ void MainWindow::on_AdminAlumnosButton_clicked()
 void MainWindow::on_AdminEmpleadosButton_clicked()
 {
     AdminEmpleado* ad = new AdminEmpleado();
+    ad->setDatabase(&database);
     ad->show();
 }
 

@@ -32,7 +32,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -128,6 +128,16 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Elegir alumno para modificar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxElegirClase"/>
+       </item>
+       <item>
         <widget class="QLabel" name="label_7">
          <property name="text">
           <string>Nombre:</string>
@@ -153,7 +163,7 @@
        <item>
         <widget class="QLabel" name="label_9">
          <property name="text">
-          <string>Seleccionar Vehiculo:</string>
+          <string>Seleccionar Nuevo Vehiculo:</string>
          </property>
         </widget>
        </item>
@@ -176,7 +186,7 @@
        <item>
         <widget class="QLabel" name="label_8">
          <property name="text">
-          <string>Seleccionar Profesor:</string>
+          <string>Seleccionar Nuevo Profesor:</string>
          </property>
         </widget>
        </item>

@@ -28,6 +28,7 @@ private slots:
 
   void pushButtonEliminarClase();
   void on_pushButtonAgregarClase_clicked();
+  void pushButtonModificarClase();
 
 private:
     Database* database;
