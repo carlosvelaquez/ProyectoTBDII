@@ -54,6 +54,7 @@ void Empleado::setSalario(float nSalario){
 bool Empleado::fromJSON(string cadena){
   QString json = QString::fromStdString(cadena); // String que contiene el JSON
   QJsonDocument doc = QJsonDocument::fromJson(json.toUtf8());
+
   if(doc.object().isEmpty()){
     return false;
   }else{

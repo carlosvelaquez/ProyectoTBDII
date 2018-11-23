@@ -101,6 +101,8 @@ QString Database::version(){
 }
 
 bool Database::pull(){
+  instancias.clear();
+
   //EMPLEADO
   runQuery("select json * from autoescuela.empleado");
   vector<string> strings = resultStrings();
@@ -381,11 +383,14 @@ bool Database::pull(){
       }
     }
   }
-  qDebug() << "---------------------";
+  qDebug() << "-------------------------------";
+  qDebug() << "-------------------------------";
   qDebug() << "Imprimiendo todos los UID de Instancias. Size:" << instancias.size();
   for (size_t i = 0; i < instancias.size(); i++) {
     qDebug() << instancias[i]->getUID().c_str();
   }
+  qDebug() << "-------------------------------";
+  qDebug() << "-------------------------------";
 
   return true;
 }
@@ -453,6 +458,9 @@ vector<string> Database::resultStrings(){
   CassIterator* iterator = cass_iterator_from_result(result);
   CassRow* row;
 
+  qDebug() << "---------------------";
+  qDebug() << "Procesando resultados del query...";
+
   while (cass_iterator_next (iterator)) {
     row = const_cast<CassRow*>(cass_iterator_get_row(iterator));
 
@@ -461,9 +469,21 @@ vector<string> Database::resultStrings(){
       const char* valString;
       size_t valSize;
       cass_value_get_string(value, &valString, &valSize);
-      strings.push_back(string(valString));
+
+      string sanitize(valString);
+
+      for (size_t i = 0; i < sanitize.length(); i++) {
+        if (sanitize[i] == '}') {
+          sanitize = sanitize.substr(0, i+1);
+          break;
+        }
+      }
+
+      strings.push_back(sanitize);
+      qDebug() << sanitize.c_str();
     }
  }
+ qDebug() << "---------------------";
 
   return strings;
 }
