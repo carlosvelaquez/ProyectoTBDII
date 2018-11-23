@@ -60,6 +60,15 @@ void  Categoria::setTarifa(float nTarifa){
   alterado = true;
 }
 
+void Categoria::setUIDLicencia(string nUIDLicencia){
+  uidLicencia = nUIDLicencia;
+  alterado = true;
+}
+
+void Categoria::setLicencia(TipoLicencia* nLicencia){
+  licencia = nLicencia;
+  alterado = true;
+}
 
 //Getters
 
@@ -77,4 +86,12 @@ float Categoria::getTarifa(){
 
 vector<Vehiculo*>* Categoria::getVehiculos(){
   return &vehiculos;
+}
+
+string Categoria::getUIDLicencia(){
+  return uidLicencia;
+}
+
+TipoLicencia* Categoria::getLicencia(){
+  return licencia;
 }

@@ -364,6 +364,15 @@ bool Database::pull(){
     }
   }
 
+  // Categoria / TipoLicencia
+  for (size_t i = 0; i < categorias; i++) {
+    for (size_t j = 0; j < tiposLicencia.size(); j++) {
+      if (categorias[i]->getUIDLicencia() == tiposLicencia[j]->getUID()) {
+        categorias[i]->setLicencia(tiposLicencia[j]);
+      }
+    }
+  }
+
   qDebug() << "---------------------";
   qDebug() << "Imprimiendo todos los UID de Instancias. Size:" << instancias.size();
   for (size_t i = 0; i < instancias.size(); i++) {
