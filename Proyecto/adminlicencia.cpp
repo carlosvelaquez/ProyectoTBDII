@@ -49,8 +49,9 @@ void AdminLicencia::pushButtonAgregarLicencia(){
         ui->doubleSpinBoxCostoLicencia->setValue(0);
         ui->lineEditDocumentoAlumno->setText("");
 
-        refreshWidgets();
     }
+
+    refreshWidgets();
 }/*====================================================================*/
 
 
@@ -71,5 +72,26 @@ void AdminLicencia::pushButtonEliminarLicencia(){
 
 /* =============== Modificar Licencia ===============*/
 void AdminLicencia::pushButtonModificarLicencia(){
+    float costo = ui->doubleSpinBoxCostoLicenciaNuevo->value();
+    QString documento = ui->lineEditDocumentoAlumnoNuevo->text();
 
+    if(costo!=0 && documento!=""){
+
+        QString word = ui->comboBoxSeleccionarModificarLicencia->currentText();
+        QStringList array = word.split(" | ");
+
+        TipoLicencia* temp;
+        for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
+            if(array.at(0).toStdString() == database->getTiposLicencia()->at(i)->getUID()){
+                temp = database->getTiposLicencia()->at(i);
+
+                temp->setDocumentos(documento.toStdString());
+                temp->setCostoMatricula(costo);
+            }
+        }
+        temp = 0;
+        delete temp;
+    }
+
+    refreshWidgets();
 }/*====================================================================*/

@@ -6,6 +6,7 @@
 #include "adminclase.h"
 #include "adminlicencia.h"
 #include "Database.h"
+#include "pagoalumno.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -27,7 +28,7 @@ void MainWindow::on_AdminAlumnosButton_clicked()
     ad->show();
 }
 
-
+// Administrar Empleados
 void MainWindow::on_AdminEmpleadosButton_clicked()
 {
     AdminEmpleado* ad = new AdminEmpleado();
@@ -35,18 +36,18 @@ void MainWindow::on_AdminEmpleadosButton_clicked()
     ad->show();
 }
 
-
+//Administrar Profesores
 void MainWindow::on_AdminProfesoresButton_clicked()
 {
     AdminProfesor* ad = new AdminProfesor();
     ad->show();
 }
 
-
-
+//Administrar Licencias
 void MainWindow::on_AdminLicenciaButton_clicked()
 {
     AdminLicencia* ad = new AdminLicencia();
+    ad->setDatabase(&database);
     ad->show();
 }
 
@@ -57,6 +58,8 @@ void MainWindow::on_AdminClaseButton_clicked()
     ad->show();
 }
 
+//Administrar Pagos
 void MainWindow::pagoAlumnoWindow(){
-
+    PagoAlumno* ad = new PagoAlumno();
+    ad->show();
 }

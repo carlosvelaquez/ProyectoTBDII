@@ -6,6 +6,7 @@
 #include "Alumno.h"
 #include "Clase.h"
 #include <vector>
+#include "TipoLicencia.h"
 
 namespace Ui {
 class AdminAlumno;
@@ -37,9 +38,10 @@ private slots:
 
     void on_pushButtonAgregarTipoLicencia_clicked();
 
+    void getLicencia();
 
 private:
-    vector<Clase*>* clasesSeleccionadas;
+    vector<TipoLicencia*>* licencias;
     Alumno* newAlumno;
     Database* database;
     Ui::AdminAlumno *ui;

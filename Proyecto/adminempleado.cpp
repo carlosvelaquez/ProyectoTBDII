@@ -28,11 +28,11 @@ void AdminEmpleado::refreshWidgets(){
 
     //ComboBox de eliminar y modificar empleados
     QString word;
-    /*for(int i=0; i<database->getEmpleados()->size(); i++){
+    for(size_t i=0; i<database->getEmpleados()->size(); i++){
         word = QString::fromStdString(database->getEmpleados()->at(i)->getUID())+" | "+QString::fromStdString(database->getEmpleados()->at(i)->getNombres());
         ui->comboBoxEliminarEmpleado->addItem(word);
         ui->comboBoxModificarEmpleado->addItem(word);
-    }*/
+    }
 
 }
 
@@ -63,11 +63,12 @@ void AdminEmpleado::pushButtonEliminarEmpleado(){
     QStringList array = uid.split(" | ");
     for(size_t i=0; i<database->getEmpleados()->size(); i++){
         if(database->getEmpleados()->at(i)->getUID() == array.at(0).toStdString()){
+
             database->getEmpleados()->at(i)->setBorrar(true);
+            ui->comboBoxEliminarEmpleado->setCurrentIndex(0);
+
         }
     }
-    qDebug()<<"DIIOASDIASDIASDISAODIASOIDASHHFBASJDVASHJDVSAJD";
-    ui->comboBoxEliminarEmpleado->setCurrentIndex(0);
     refreshWidgets();
 }/*====================================================================*/
 
@@ -87,11 +88,12 @@ void AdminEmpleado::pushButtonModificarEmpleado(){
                 database->getEmpleados()->at(i)->setNombres(nuevoNombre.toStdString());
                 database->getEmpleados()->at(i)->setApellidos(nuevoApellido.toStdString());
                 database->getEmpleados()->at(i)->setSalario(value);
+
+                ui->lineEditNuevoNombreEmpleado->setText("");
+                ui->lineEditNuevoApellido->setText("");
+                ui->doubleSpinBoxSalario->setValue(0);
             }
         }
-        ui->lineEditNuevoNombreEmpleado->setText("");
-        ui->lineEditNuevoApellido->setText("");
-        ui->doubleSpinBoxSalario->setValue(0);
 
         refreshWidgets();
     }
