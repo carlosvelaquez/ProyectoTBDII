@@ -114,3 +114,7 @@ int PruebaPractica::getHoras(){
 int PruebaPractica::getIntento(){
   return Intento;
 }
+
+float PruebaPractica::calcularPago(){
+  return -1;
+}

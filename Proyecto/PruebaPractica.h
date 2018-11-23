@@ -38,6 +38,8 @@ class PruebaPractica : public Instancia{
     int getHoras();
     int getIntento();
 
+    float calcularPago();
+
 };
 
 #endif
