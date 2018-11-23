@@ -16,7 +16,7 @@ class Clase : public Instancia{
     string uidVehiculo;
     string uidProfesor;
 
-    int categoriaNecesaria
+    int categoriaNecesaria;
 
     Profesor* profesor;
     Vehiculo* vehiculo;
