@@ -28,8 +28,8 @@ bool Pago::fromJSON(string cadena){
   }else{
     uid = doc["id"].toString().toStdString();
     uidAlumno = doc["id_alumno"].toString().toStdString();
-    monto = doc["monto"].toFloat();
-    abonado = doc["abonado"].toFloat();
+    monto = doc["monto"].toString().toFloat();
+    abonado = doc["abonado"].toString().toFloat();
     motivo = doc["motivo"].toString().toStdString();
     return true;
   }
@@ -75,10 +75,6 @@ void Pago::setAlumno(Alumno* nAlumno){
   alterado = true;
 }
 
-void Pago::setAbonado(float nAbonado){
-  abonado = nAbonado;
-  alterado = true;
-}
 
 //Getters
 string Pago::getUIDAlumno(){
@@ -99,8 +95,4 @@ string Pago::getMotivo(){
 
 Alumno* Pago::getAlumno(){
   return alumno;
-}
-
-float Pago::getAbonado(){
-  return abonado;
 }

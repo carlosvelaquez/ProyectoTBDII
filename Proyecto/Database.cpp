@@ -365,7 +365,7 @@ bool Database::pull(){
   }
 
   // Categoria / TipoLicencia
-  for (size_t i = 0; i < categorias; i++) {
+  for (size_t i = 0; i < categorias.size(); i++) {
     for (size_t j = 0; j < tiposLicencia.size(); j++) {
       if (categorias[i]->getUIDLicencia() == tiposLicencia[j]->getUID()) {
         categorias[i]->setLicencia(tiposLicencia[j]);
@@ -373,6 +373,14 @@ bool Database::pull(){
     }
   }
 
+  //PruebaPracica / ClasePractica
+  for (size_t i = 0; i < pruebasPracticas.size(); i++) {
+    for (size_t j = 0; j < clasesPracticas.size(); j++) {
+      if (pruebasPracticas[i]->getUIDClasePractica() == clasesPracticas[j]->getUID()) {
+        pruebasPracticas[i]->setClasePractica(clasesPracticas[j]);
+      }
+    }
+  }
   qDebug() << "---------------------";
   qDebug() << "Imprimiendo todos los UID de Instancias. Size:" << instancias.size();
   for (size_t i = 0; i < instancias.size(); i++) {
@@ -398,10 +406,10 @@ bool Database::push(){
   //AQUI VA EL MAPEO DE APUNTADORES
   //Alumnos clases
   for (size_t i = 0; i < alumnos.size(); i++) {
-    for (size_t j = 0; j < alumnos[i]->getClases().size(); j++) {
+    for (size_t j = 0; j < alumnos[i]->getClases()->size(); j++) {
       //se pushea lo siguiente:
-      alumno[i]->getUID();
-      alumno[i]->getClases()[j]->getUID();
+      alumnos[i]->getUID();
+      alumnos[i]->getClases()->at(j)->getUID();
     }
   }
 

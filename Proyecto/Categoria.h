@@ -2,9 +2,11 @@
 #define CATEGORIA_H
 
 class Vehiculo;
+class TipoLicencia;
 
 #include "Instancia.h"
 #include "Vehiculo.h"
+#include "TipoLicencia.h"
 
 class Categoria : public Instancia{
 

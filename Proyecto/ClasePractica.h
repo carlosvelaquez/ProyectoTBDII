@@ -1,8 +1,11 @@
 #ifndef CLASEPRACTICA_H
 #define CLASEPRACTICA_H
 
+class TipoLicencia;
+
 #include <string>
 #include "Instancia.h"
+#include "TipoLicencia.h"
 
 class ClasePractica : public Instancia{
 

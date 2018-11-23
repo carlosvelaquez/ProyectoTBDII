@@ -4,6 +4,7 @@
 class TipoLicencia;
 class Pago;
 class Clase;
+class PruebaPractica;
 
 #include "Instancia.h"
 #include "Clase.h"
