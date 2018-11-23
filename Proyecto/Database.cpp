@@ -368,7 +368,14 @@ bool Database::push(){
   }
 
   //AQUI VA EL MAPEO DE APUNTADORES
-
+  //Alumnos clases
+  for (size_t i = 0; i < alumnos.size(); i++) {
+    for (size_t j = 0; j < alumnos[i]->getClases().size(); j++) {
+      //se pushea lo siguiente:
+      alumno[i]->getUID();
+      alumno[i]->getClases()[j]->getUID();
+    }
+  }
 
   return true;
 }
