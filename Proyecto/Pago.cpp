@@ -68,6 +68,11 @@ void Pago::setAlumno(Alumno* nAlumno){
   alterado = true;
 }
 
+void Pago::setAbonado(float nAbonado){
+  abonado = nAbonado;
+  alterado = true;
+}
+
 //Getters
 string Pago::getUIDAlumno(){
   return uidAlumno;
@@ -83,4 +88,8 @@ string Pago::getMotivo(){
 
 Alumno* Pago::getAlumno(){
   return alumno;
+}
+
+float Pago::getAbonado(){
+  return abonado;
 }

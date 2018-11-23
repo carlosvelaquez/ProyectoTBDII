@@ -13,6 +13,7 @@ class Pago : public Instancia{
       float monto;
       string motivo;
       Alumno* alumno;
+      float abonado;
 
   public:
       Pago(string);
@@ -27,12 +28,14 @@ class Pago : public Instancia{
       void setMonto(float);
       void setMotivo(string);
       void setAlumno(Alumno*);
+      void setAbonado(float);
 
       //Getters
       string getUIDAlumno();
       float getMonto();
       string getMotivo();
       Alumno* getAlumno();
+      float getAbonado();
 };
 
 #endif
