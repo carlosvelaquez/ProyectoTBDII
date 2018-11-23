@@ -11,13 +11,17 @@ int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
   MainWindow w;
-  w.show();
-
   Database db;
-  qDebug() << db.version();
+
+  qDebug() << "-------------------------------";
+  qDebug() << "Iniciando Tigrillo AMS...";
+  qDebug() << "Version de Cassandra:" << db.version();
+  qDebug() << "-------------------------------";
   qDebug() << "Recuperando info de bd...";
   db.pull();
   qDebug() << "Pull realizado exitosamente.";
+  qDebug() << "-------------------------------";
+
 
   Empleado emp("Carlos André", "Velásquez Martínez", 696969.69);
   qDebug() << emp.toJSON().c_str();
@@ -26,11 +30,18 @@ int main(int argc, char *argv[])
   qDebug() << "Subiendo informacion...";
   db.push();
   qDebug() << "Push realizado exitosamente.";
+  qDebug() << "-------------------------------";
+
   qDebug() << "Recuperando info de bd...";
   db.pull();
   qDebug() << "Pull realizado exitosamente.";
+  qDebug() << "-------------------------------";
+  qDebug() << "Cargando interfaz gráfica...";
+
 
   //qDebug() << &emp->toJSON().c_str();
 
+  w.show();
+  qDebug() << "-------------------------------";
   return a.exec();
 }

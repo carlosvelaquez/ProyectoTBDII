@@ -26,13 +26,13 @@ AdminAlumno::~AdminAlumno()
 /* ============= Metodo que actualiza todos los componentes que haga uso de Alumnos en DataBase ============= */
 void AdminAlumno::refreshWidgets(){
     //Se llena el comboBox de "Eliminar Alumno" y de "Actualizar"
-    for(size_t i=0; i<database->getAlumnos()->size(); i++){
-        ui->comboBoxAlumnos->addItem(QString::fromStdString(database->getAlumnos()->at(i)->getUID()));
-        ui->comboBoxAlumnoActualizar->addItem(QString::fromStdString(database->getAlumnos()->at(i)->getUID()));
+    for(size_t i=0; i<database->getAlumnos().size(); i++){
+        ui->comboBoxAlumnos->addItem(QString::fromStdString(database->getAlumnos().at(i)->getUID()));
+        ui->comboBoxAlumnoActualizar->addItem(QString::fromStdString(database->getAlumnos().at(i)->getUID()));
     }
 
     for(size_t i=0; i<database->getTiposLicencia()->size(); i++){
-        ui->comboBoxLicenciaAlumno->addItem(QString::fromStdString(database->getTiposLicencia()->at(i)->getUID()));
+        ui->comboBoxLicenciaAlumno->addItem(QString::fromStdString(database->getTiposLicencia().at(i)->getUID()));
     }
 }/* ============================================================================== */
 
@@ -156,4 +156,3 @@ void AdminAlumno::on_pushButtonAgregarTipoLicencia_clicked()
 {
 
 }/* ============================================================================== */
-

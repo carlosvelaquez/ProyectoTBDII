@@ -40,6 +40,14 @@ public:
     QSpacerItem *verticalSpacer_2;
     QPushButton *pushButtonEliminarVehiculo;
     QWidget *tab_3;
+    QVBoxLayout *verticalLayout_4;
+    QLabel *label_4;
+    QComboBox *comboBoxVehiculoModificar;
+    QSpacerItem *verticalSpacer_3;
+    QLabel *label_5;
+    QComboBox *comboBoxCategoriaVehiculoModificar;
+    QSpacerItem *verticalSpacer_4;
+    QPushButton *pushButtonModificarVehiculo;
 
     void setupUi(QWidget *adminvehiculo)
     {
@@ -109,6 +117,41 @@ public:
         tabWidget->addTab(tab_2, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
+        verticalLayout_4 = new QVBoxLayout(tab_3);
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        label_4 = new QLabel(tab_3);
+        label_4->setObjectName(QStringLiteral("label_4"));
+
+        verticalLayout_4->addWidget(label_4);
+
+        comboBoxVehiculoModificar = new QComboBox(tab_3);
+        comboBoxVehiculoModificar->setObjectName(QStringLiteral("comboBoxVehiculoModificar"));
+
+        verticalLayout_4->addWidget(comboBoxVehiculoModificar);
+
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_4->addItem(verticalSpacer_3);
+
+        label_5 = new QLabel(tab_3);
+        label_5->setObjectName(QStringLiteral("label_5"));
+
+        verticalLayout_4->addWidget(label_5);
+
+        comboBoxCategoriaVehiculoModificar = new QComboBox(tab_3);
+        comboBoxCategoriaVehiculoModificar->setObjectName(QStringLiteral("comboBoxCategoriaVehiculoModificar"));
+
+        verticalLayout_4->addWidget(comboBoxCategoriaVehiculoModificar);
+
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_4->addItem(verticalSpacer_4);
+
+        pushButtonModificarVehiculo = new QPushButton(tab_3);
+        pushButtonModificarVehiculo->setObjectName(QStringLiteral("pushButtonModificarVehiculo"));
+
+        verticalLayout_4->addWidget(pushButtonModificarVehiculo);
+
         tabWidget->addTab(tab_3, QString());
 
         verticalLayout->addWidget(tabWidget);
@@ -116,7 +159,7 @@ public:
 
         retranslateUi(adminvehiculo);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(adminvehiculo);
@@ -132,6 +175,9 @@ public:
         label_3->setText(QApplication::translate("adminvehiculo", "Seleccionar Vehiculo:", nullptr));
         pushButtonEliminarVehiculo->setText(QApplication::translate("adminvehiculo", "Eliminar Vehiculo", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("adminvehiculo", "Eliminar Vehiculo", nullptr));
+        label_4->setText(QApplication::translate("adminvehiculo", "Seleccionar nuevo vehiculo:", nullptr));
+        label_5->setText(QApplication::translate("adminvehiculo", "Seleccionar su categoria nueva:", nullptr));
+        pushButtonModificarVehiculo->setText(QApplication::translate("adminvehiculo", "PushButton", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("adminvehiculo", "Modificar Vehiculo", nullptr));
     } // retranslateUi
 

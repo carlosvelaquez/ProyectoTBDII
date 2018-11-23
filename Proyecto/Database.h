@@ -81,18 +81,18 @@ public:
   void insertarTipoLicencia(TipoLicencia*);
 
   //GETTERS
-  vector<Empleado*>* getEmpleados();
-  vector<Profesor*>* getProfesores();
-  vector<Clase*>* getClases();
-  vector<ClaseTeorica*>* getClasesTeoricas();
-  vector<ClasePractica*>* getClasesPracticas();
-  vector<PruebaTeorica*>* getPruebasTeoricas();
-  vector<PruebaPractica*>* getPruebasPracticas();
-  vector<Alumno*>* getAlumnos();
-  vector<Pago*>* getPagos();
-  vector<Vehiculo*>* getVehiculos();
-  vector<Categoria*>* getCategorias();
-  vector<TipoLicencia*>* getTiposLicencia();
+  vector<Empleado*> getEmpleados();
+  vector<Profesor*> getProfesores();
+  vector<Clase*> getClases();
+  vector<ClaseTeorica*> getClasesTeoricas();
+  vector<ClasePractica*> getClasesPracticas();
+  vector<PruebaTeorica*> getPruebasTeoricas();
+  vector<PruebaPractica*> getPruebasPracticas();
+  vector<Alumno*> getAlumnos();
+  vector<Pago*> getPagos();
+  vector<Vehiculo*> getVehiculos();
+  vector<Categoria*> getCategorias();
+  vector<TipoLicencia*> getTiposLicencia();
 
 
   //TRANSACCIONALES - Retornan un vector de los UIDs solicitados
