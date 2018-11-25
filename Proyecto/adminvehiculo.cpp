@@ -29,16 +29,18 @@ void adminvehiculo::refreshWidgets(){
     QString word;
 
     //Combobox de agregar vehiculo
-    for(size_t i=0; i<database->getCategorias().size(); i++){
-        word = QString::fromStdString(database->getCategorias().at(i)->toJSON());
+    for(size_t i=0; i<10; i++){
+        //word = QString::fromStdString(database->getCategorias().at(i)->toJSON());
+        word = QString::fromStdString(database->genUID());
         ui->comboBoxVehiculaAgregar->addItem(word);
         ui->comboBoxCategoriaVehiculoModificar->addItem(word);
     }
 
 
     // Combobox de modificar Vehiculo
-    for(size_t i=0; i<database->getVehiculos().size(); i++){
-        word = QString::fromStdString(database->getVehiculos().at(i)->toJSON());
+    for(size_t i=0; i<10; i++){
+        //word = QString::fromStdString(database->getVehiculos().at(i)->toJSON());
+        word = QString::fromStdString(database->genUID());
         ui->comboBoxVehiculoModificar->addItem(word);
         ui->comboBoxSeleccionarVehiculoEliminar->addItem(word);
     }

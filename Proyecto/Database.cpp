@@ -753,6 +753,19 @@ vector<string> Database::get_Profesor_LicenciaAlumno(string uidAlumno, string ui
   return returnStrings;
 }
 
+string Database::genUID(){
+  CassUuidGen* uuid_gen = cass_uuid_gen_new();
+  CassUuid uuid;
+  cass_uuid_gen_random(uuid_gen, &uuid);
+
+  /* Get string representation of the UUID */
+  char uuid_str[CASS_UUID_STRING_LENGTH];
+  cass_uuid_string(uuid, uuid_str);
+
+  string nUID(uuid_str);
+  return nUID;
+}
+
 
 Database::~Database(){
   CassFuture* close_future = cass_session_close(session);

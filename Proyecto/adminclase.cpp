@@ -50,23 +50,23 @@ qDebug() << imgName.at(0); // result is "name"
     //Se añade al comboBox de agregar y modificar
     QString word;
 
-    for(size_t i=0; i<database->getProfesores().size(); i++){
-        word = QString::fromStdString(database->getProfesores().at(i)->getUID());
+    for(size_t i=0; i<10; i++){
+        word = QString::fromStdString(database->genUID());
         ui->comboBoxClaseProfesor->addItem(word);
         ui->comboBoxClaseProfesorNuevo->addItem(word);
     }
 
     //Se añade al comboBox de agregar y modificar
-    for(size_t i=0; i<database->getVehiculos().size(); i++){
-        word = QString::fromStdString(database->getVehiculos().at(i)->getUID());
+    for(size_t i=0; i<10; i++){
+        word = QString::fromStdString(database->genUID());
         ui->comboBoxClaseVehiculo->addItem(word);
         ui->comboBoxClaseVehiculoNuevo->addItem(word);
     }
 
     //Se añade al comboBox de eliminar
-    for(size_t i=0; i<database->getClases().size(); i++){
-        if(!database->getClases().at(i)->isBorrado()){
-            word = QString::fromStdString(database->getClases().at(i)->getUID())+" | "+QString::fromStdString(database->getClases().at(i)->getNombre());
+    for(size_t i=0; i<10; i++){
+        if(true){
+            word = QString::fromStdString(database->genUID());
             ui->comboBoxElegirClase->addItem(word);
         }
     }

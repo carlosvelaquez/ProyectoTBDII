@@ -106,6 +106,8 @@ public:
   vector<string> get_Licencias_LicenciaAlumno(string);
   vector<string> get_Profesor_LicenciaAlumno(string, string);
 
+  string genUID();
+
   ~Database();
 };
 

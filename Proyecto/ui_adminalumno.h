@@ -66,6 +66,15 @@ public:
     QSpacerItem *verticalSpacer_3;
     QPushButton *pushButtonEliminarAlumno;
     QWidget *tab_4;
+    QWidget *tab_5;
+    QVBoxLayout *verticalLayout_6;
+    QLabel *label_8;
+    QComboBox *comboBoxAlumnoRegistrar;
+    QSpacerItem *verticalSpacer_8;
+    QLabel *label_10;
+    QComboBox *comboBoxClaseRegistrar;
+    QSpacerItem *verticalSpacer_9;
+    QPushButton *pushButtonRegistrarAlumno;
 
     void setupUi(QWidget *AdminAlumno)
     {
@@ -239,13 +248,51 @@ public:
         tab_4 = new QWidget();
         tab_4->setObjectName(QStringLiteral("tab_4"));
         tabWidget->addTab(tab_4, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QStringLiteral("tab_5"));
+        verticalLayout_6 = new QVBoxLayout(tab_5);
+        verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
+        label_8 = new QLabel(tab_5);
+        label_8->setObjectName(QStringLiteral("label_8"));
+
+        verticalLayout_6->addWidget(label_8);
+
+        comboBoxAlumnoRegistrar = new QComboBox(tab_5);
+        comboBoxAlumnoRegistrar->setObjectName(QStringLiteral("comboBoxAlumnoRegistrar"));
+
+        verticalLayout_6->addWidget(comboBoxAlumnoRegistrar);
+
+        verticalSpacer_8 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_6->addItem(verticalSpacer_8);
+
+        label_10 = new QLabel(tab_5);
+        label_10->setObjectName(QStringLiteral("label_10"));
+
+        verticalLayout_6->addWidget(label_10);
+
+        comboBoxClaseRegistrar = new QComboBox(tab_5);
+        comboBoxClaseRegistrar->setObjectName(QStringLiteral("comboBoxClaseRegistrar"));
+
+        verticalLayout_6->addWidget(comboBoxClaseRegistrar);
+
+        verticalSpacer_9 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_6->addItem(verticalSpacer_9);
+
+        pushButtonRegistrarAlumno = new QPushButton(tab_5);
+        pushButtonRegistrarAlumno->setObjectName(QStringLiteral("pushButtonRegistrarAlumno"));
+
+        verticalLayout_6->addWidget(pushButtonRegistrarAlumno);
+
+        tabWidget->addTab(tab_5, QString());
 
         verticalLayout->addWidget(tabWidget);
 
 
         retranslateUi(AdminAlumno);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(4);
 
 
         QMetaObject::connectSlotsByName(AdminAlumno);
@@ -270,6 +317,10 @@ public:
         pushButtonEliminarAlumno->setText(QApplication::translate("AdminAlumno", "Eliminar Alumno", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("AdminAlumno", "Eliminar Alumno", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("AdminAlumno", "Registrar Pruebas", nullptr));
+        label_8->setText(QApplication::translate("AdminAlumno", "Seleccionar Alumno:", nullptr));
+        label_10->setText(QApplication::translate("AdminAlumno", "Seleccionar Clase:", nullptr));
+        pushButtonRegistrarAlumno->setText(QApplication::translate("AdminAlumno", "PushButton", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("AdminAlumno", "Registrar Alumno", nullptr));
     } // retranslateUi
 
 };

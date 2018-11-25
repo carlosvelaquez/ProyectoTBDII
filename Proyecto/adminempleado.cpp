@@ -33,10 +33,11 @@ void AdminEmpleado::refreshWidgets(){
 
   //if (e) {
     qDebug() << empleados.size();
-    for(size_t i=0; i <empleados.size(); i++){
+    for(size_t i=0; i <10; i++){
       qDebug() << "i =" << i;
       //word = QString::fromStdString(database->getEmpleados().at(i)->getUID())+" | "+QString::fromStdString(database->getEmpleados().at(i)->getNombres());
       //word = QString::fromStdString(database->getEmpleados().at(i)->getUID())+" | "+QString::fromStdString(database->getEmpleados().at(i)->getNombres());
+      word = QString::fromStdString(database->genUID());
 
       Empleado* e = empleados.at(i);
       ui->comboBoxEliminarEmpleado->addItem(word);
